@@ -1,0 +1,15 @@
+/* 
+* @Author: liangjie
+*/
+
+@charset "utf-8";
+/* CSS Document */
+
+.comBg{
+    position: relative;
+}
+.note_po{
+    position: absolute;
+    left: .8rem;
+    top: .1rem;
+}

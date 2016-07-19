@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>开处方</title>
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/choose_drugs.css" />
+     <link rel="stylesheet" type="text/css" href="css/given_prescription.css" />
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="headerTop">
+        <div class="pd12 clearfix">
+            <a href="javascript:void(0)" class="lefeBtn fl" id="back_btn">开处方</a>
+            <a href="javascript:;" class="lefeRight fr" id="commit_btn">确定</a>          
+        </div>
+    </div>
+    <!-- 当前药店 -->
+    <div class="pd12 store">
+        <div>
+        	<input type="hidden" value="" id="drugStoreId" /><!--隐藏域，记录药店id -->
+            <span id="drugStoreName"></span><span class="small" id="select_drugStore_btn">当前药企/店<a href="javascript:;" class="locate" ></a></span>
+        </div>
+    </div>
+    <!-- 搜索 -->
+    <div class="sou_bo">
+        <div>
+            <input type="input" class="myInp" placeholder="输入药品首字母拼写或关键字查找"/>
+            <span class="deIcon"></span>
+        </div>
+        <div class="sou_bo_list">
+            <table class="drug_tw">
+                <tbody id="drug_table">
+                    <!--
+                    <tr>
+                        <td>四环素药品ggg</td>
+                        <td>四环素药品</td>
+                        <td>10mg*7粒/盒</td>
+                    </tr>
+                    <tr>
+                        <td>四环素药品搜索</td>
+                        <td>四环素药品四环fff</td>
+                        <td>10mg*7粒/盒</td>
+                    </tr>
+                    <tr>
+                        <td>四环素药品</td>
+                        <td>四环素药品四环</td>
+                        <td>10mg*7粒/盒</td>
+                    </tr>
+                    -->
+                </tbody>
+            </table>  
+        </div>
+    </div>
+    <!-- 药品部分 -->
+    <div id="drug_list">
+    	
+    	<!--
+		<div class="drug">
+		<input type="hidden" class="_drug_id" value=""/>
+		<input type="hidden" class="_drug_name" value=""/>
+		
+		<div class="drug_table">
+		    <div class="drugs_b_out">
+		        <div class="name">四磨汤口服液（四磨汤口服液）1</div>
+		        <div class="name_b">规格：10ml*10支/盒</div>
+		    </div>
+		</div>
+		<table class="drugs_table_con">
+		    <tbody>
+		        <tr>
+		            <td>
+		                <div class="heZi">
+		                    <div class="biaoZhu">用法：</div>
+		                    <div class="way clickWay">口服</div>
+		                </div>
+		            </td>
+		            <td>
+		                <div class="heZi">
+		                    <div class="biaoZhu">用量：</div>
+		                    <div class="way usageNumber">1天2次1次5片</div>
+		                </div>
+		            </td>
+		            <td>
+		                <div class="heZi">
+		                    <div class="biaoZhu">数量：</div>
+		                    <div class="way"><input type="text" value="2盒" /></div>
+		                </div>
+		            </td>
+		        </tr>
+		    </tbody>
+		</table>
+		<div class="info_list">
+		    <div class="list_left">是否使用过该药（必选）：</div>
+		    <div class="inp_box">
+		        <label class="lab_mar">
+		            <div class="rad_out">
+		                <span class="rad_incon check_on"></span>
+		                <input type="radio" name="radio1" class="rad_check">是
+		            </div>
+		        </label>
+		        <label class="lab_mar">
+		            <div class="rad_out">
+		                <span class="rad_incon"></span>
+		                <input type="radio" name="radio1" class="rad_check">否
+		                
+		            </div>
+		        </label>
+		    </div>
+		</div>  
+		<div class="deleteDrug"></div>      
+		</div>
+		-->
+    </div>
+    <!-- 诊断库 -->
+	<div>
+	    <div class="zhenDuanKU">
+	        <h2>临床诊断</h2><a href="javascript:;" id="zhenduanku_btn">诊断库</a>
+	    </div>
+	    <div class="textarea_bo">
+	        <textarea  id="diagnoseDetail" rows="5" placeholder="请在此输入诊断内容，最多100个字"></textarea>
+	        <div><span id="diagnoseDetail_words">0</span>/<span>100</span></div>
+	    </div>    
+	</div>
+
+
+
+<!-- 底部弹出框                    -->
+<div class="cover"></div>
+<div class="ul_b Instructions">
+    <div>请选择用法：</div>
+    <div class="info_list info_list_yn">
+        <label class="lab_mar">
+            <div class="rad_out">
+                <span class="rad_incon check_on first_rad_incon usage_option" val="口服"></span>口服
+            </div>
+        </label>
+        <label class="lab_mar">
+            <div class="rad_out">
+                <span class="rad_incon usage_option" val="外用"></span>外用
+            </div>
+        </label>
+        <label class="lab_mar">
+            <div class="rad_out">
+                <span class="rad_incon usage_option" val="注射"></span>注射
+            </div>
+        </label>
+        <label class="lab_mar">
+            <div class="rad_out">
+                <span class="rad_incon last_rad_incon usage_option" val="其他"></span>其他<input type="text" class="otherUsage" id="otherUsage"/>
+            </div>
+        </label>
+    </div>
+    <div class="btnTwo">
+        <a href="javascript:;" class="cancel" id="cancel_Instr">取消</a><a href="javascript:;" class="sur">确定</a>
+    </div>
+</div>
+<div class="cover_useAmount"></div>
+<div class="ul_b useAmount">
+    <div>请选择用量：</div>
+    <div>
+        <div class="    
+    frequency">频次：</div>
+        <div class="info_list info_list_yn">
+            <label class="lab_mar">
+                <div class="rad_out">
+                    <span class="rad_incon check_on dosage_option" val="1次/天"></span>1次/天
+                </div>
+            </label>
+            <label class="lab_mar">
+                <div class="rad_out">
+                    <span class="rad_incon dosage_option" val="2次/天"></span>2次/天   
+                </div>
+            </label>
+            <label class="lab_mar">
+                <div class="rad_out">
+                    <span class="rad_incon dosage_option" val="3次/天"></span>3次/天   
+                </div>
+            </label>
+            <label class="lab_mar">
+                <div class="rad_out">
+                    <span class="rad_incon dosage_option" val="4次/天"></span>4次/天
+                </div>
+            </label>
+            <label class="lab_mar">
+                <div class="rad_out">
+                    <span class="rad_incon last_rad_incon dosage_option" val="其他"></span>其他<input type="number" class="otherUsage" id="otherDosage"/>次/天
+                </div>
+            </label>
+        </div>        
+    </div>
+    <div>
+        <div class="frequency">每次用量：</div>
+        <div class="info_list info_list_yn">
+            <label class="lab_mar">
+                <input type="number" class="otherUsage" id="_frequency"/>
+            </label>
+            <div class="par">
+                <div class="otherUsage_right" id='frequency_unit'>单位</div>
+                <ul>
+                    <Li>粒</Li>
+                    <Li>颗</Li>
+                    <Li>片</Li>
+                    <Li>mg</Li>
+                    <Li>g</Li>
+                    <Li>ml</Li>
+                    <Li>袋</Li>
+                    <Li>瓶</Li>
+                    <Li>支</Li>
+                    <Li>滴</Li>
+                    <Li>喷</Li>
+                    <li>贴</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="btnTwo">
+        <a href="javascript:;" id="dosage_cancel_btn">取消</a><a href="javascript:;" id="dosage_sure_btn">确定</a>
+    </div>
+</div>
+
+<!-- js -->
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/RainbowBridge.js"></script>
+<script src="js/constants.js"></script>
+<script src="js/GB2260.js"></script>
+<script src="js/IDValidator.js"></script>
+<script src="js/APP.js"></script><!--注意这几个文件引入的顺序 -->
+<script src="js/domain.js" ></script>
+<script src="js/open_prescription_xiyao.js"></script>
+
+
+</script>
+
+</body>
+</html>

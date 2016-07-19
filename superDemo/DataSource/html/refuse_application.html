@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>拒绝申请</title>
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/refuse_application.css" />
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="headerTop">
+        <div class="pd12 clearfix">
+            <a href="javascript:;" class="lefeBtn fl" id="opt_title">拒绝申请</a><a href="javascript:;" class="lefeRight fr" id="commit_btn">提交</a>          
+        </div>
+    </div>
+    <!-- 拒绝内容 -->
+    <div class="refuseConten">
+        <textarea  rows="7" placeholder="请输入拒绝的理由，最多输入150个字" id="refuseReason"></textarea>
+        <div><span id="refuseReason_words">0</span>/<span>150</span></div>
+    </div>
+    <!-- js -->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/apply_prescription.js"></script>
+	<script src="js/RainbowBridge.js"></script>
+	<script src="js/constants.js"></script>
+	<script src="js/APP.js"></script><!--注意这几个文件引入的顺序 -->
+	<script src="js/refuse_application.js"></script>
+</body>
+</html>

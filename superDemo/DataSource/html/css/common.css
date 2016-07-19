@@ -1,0 +1,33 @@
+a{text-decoration: none;color:#000;}
+html{font-size: 625%;}
+body{font-size:0.14rem;font-family: "Microsoft Yahei"; background: #fff;}
+
+.clearfix:before,.clearfix:after{
+	display:table;
+	content:"";
+}
+.clearfix:after{
+	clear:both;
+}
+.clearfix{
+	*zoom:1;
+}
+.pd12{
+	padding-left: .1rem;
+	padding-right: .1rem;
+}
+/* .pdl12{padding-left: .12rem;}
+.pdr12{padding-right: .12rem;} */
+
+.mr58{
+	margin-top: 58px;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+*:not(input):not(textarea){-webkit-user-select: none;
+    
+    -webkit-touch-callout: none; }

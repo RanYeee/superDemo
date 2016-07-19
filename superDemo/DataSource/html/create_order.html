@@ -1,0 +1,583 @@
+<!-- 开处方订单界面-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>申请处方</title>
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/apply_prescription.css">
+    <link rel="stylesheet" type="text/css" href="css/prescription.css" />
+    <link rel="stylesheet" type="text/css" href="css/order_details.css" />
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="headerTop">
+		<div class="pd12 clearfix">
+			<a href="javascript:;" class="lefeBtn fl" id="opt_title"></a>
+			<a href="javascript:;" class="lefeRight fr" id="commit_btn">提交</a>			
+		</div>
+	</div>
+	<!-- 内容 -->
+	<div class="app_pre_con">
+		<div class="con01">
+			<div class="h2Out pd12">
+				<h2 class="apph2">订单信息</h2>
+			</div>
+			<div class="slet_p">
+				<div class="p_border pd12">
+					<p>时间：<span id="order_time_span"></span></p>
+					<div id="order_info_source">
+					<p>状态：<span></span></p>
+					<p>药店：<span></span></p>
+					<p>销售人员：<span></span></p>
+					</div>
+				</div>
+				<ul class="progressBar clearfix" id="order_progress">
+					<!-- 订单进程信息-->
+				</ul>
+			</div>	
+
+		</div>
+		<div class="con02">
+			<div class="h2Out02 pd12">
+				<h2 class="apph2">申请信息</h2>
+			</div>
+			<div class="pe_info pd12">
+				<p class="pe_info_p">病人信息</p>
+			</div>
+            <!-- 病人信息 -->
+			<div class="info_out pd12">
+				<div class="info_list">
+					<div class="list_left">姓名：</div>
+					<div class="inp_box inp_box_name">
+						<input type="hidden" id="patient_id" value="" /><!--隐藏域 记录病人的id-->
+						<input type="text" class="tex" placeholder="请在此处填写姓名" id="patient_name" name="patient_name"/>
+						<div class="cover_all"></div>
+                        <div class="drop_down_selection">
+                            <ul id="patient_list">
+                            	<!--
+                                <li>
+                                    <span class="span_neme">李月</span><span class="gender">女</span><span><i>9</i><em>个月</em></span>
+                                </li>
+                               -->
+                            </ul>
+                        </div>
+					</div>
+				</div>
+				<div class="info_list">
+					<div class="list_left">性别：</div>
+					<div class="inp_box">
+                        <label class="lab_marss lab_mar">
+                            <div class="rad_out rad_left">
+                                <span class="rad_incon check_on patient_sex_incon" id="patient_sex_1_incon"></span>
+                                <input type="radio" id="patient_sex_1" name="patient_sex" class="rad_check patient_sex" checked="checked" value="1"/>男
+                                
+                            </div>
+                        </label>
+                        <label class="lab_mar">
+                            <div class="rad_out">
+                                <span class="rad_incon patient_sex_incon" id="patient_sex_2_incon"></span>
+                                <input type="radio" id="patient_sex_2" name="patient_sex" class="rad_check patient_sex" value="2"/>女
+                                
+                            </div>
+                        </label>
+					</div>
+				</div>
+                <div class="info_list">
+                    <div class="list_left">婴儿（36个月以内）：</div>
+                    <div class="inp_box">
+                        <label class="lab_mar">
+                            <div class="rad_out rad_left">
+                                <span class="rad_incon check_on sui patient_yerq_incon" id="patient_yerq_1_incon"></span>
+                                <input type="radio" id="patient_yerq_1" name="patient_yerq" class="rad_check patient_yerq" checked="checked" value="0"/>否
+                                
+                            </div>
+                        </label>
+                        <label class="lab_mar">
+                            <div class="rad_out">
+                                <span class="rad_incon yue patient_yerq_incon" id="patient_yerq_2_incon"></span>
+                                <input type="radio" id="patient_yerq_2" name="patient_yerq" class="rad_check patient_yerq" value="1"/>是
+                                
+                            </div>
+                        </label>
+                    </div>
+                </div>
+				<div class="info_list">
+					<div class="list_left">年龄：</div>
+					<div class="inp_box">
+						<input type="number" class="tex nianLing" id="patient_age" /><div class="nianLing_text">岁</div>
+					</div>
+				</div>
+				<div class="info_list">
+					<div class="list_left noBg">身份证号码：</div>
+					<div class="inp_box">
+						<input type="number" class="tex" id="patient_idCardNo"/>
+					</div>
+				</div>
+				<div class="info_list">
+					<div class="list_left noBg">联系电话：</div>
+					<div class="inp_box">
+						<input type="tel" class="tex" id="patient_telphone"/>
+					</div>
+				</div>
+				<div class="info_list">
+					<div class="list_left">药物过敏史：</div>
+				</div>
+				<div class="info_list info_list_yn">
+                    <label class="lab_mar">
+                        <div class="rad_out">
+                            <span class="rad_incon check_on allergy_no patient_ywgms_incon" id="patient_ywgms_1_incon"></span>
+                            <input type="radio" id="patient_ywgms_1" name="patient_ywgms" class="rad_check patient_ywgms" checked="checked" value="0"/>否
+                            
+                        </div>
+                    </label><label class="lab_mar">
+                        <div class="rad_out">
+                            <span class="rad_incon allergy_yes patient_ywgms_incon" id="patient_ywgms_2_incon"></span>
+                            <input type="radio" id="patient_ywgms_2" name="patient_ywgms" class="rad_check patient_ywgms" value="1"/>是
+                            
+                        </div>
+                    </label>
+					<div class="div01 guomin" style="display: none;">
+						<input type="text" class="inp_yn" placeholder="请在此处填写药物过敏史" id="patient_ywgmsName" />
+					</div>	
+				</div>
+				<div class="info_list">
+					<div class="list_left">是否特殊人群：</div>
+				</div>
+				<div class="info_list info_list_yn">
+					<label class="lab_mar">
+                        <div class="rad_out">
+                            <span class="rad_incon check_on patient_tsrq_incon" id="patient_tsrq_1_incon"></span>
+                            <input type="radio" id="patient_tsrq_1" name="patient_tsrq" class="rad_check patient_tsrq"  checked="checked" value="0"/>否
+                        </div>
+                    </label>
+                    
+                    <label class="lab_mar">
+                        <div class="rad_out">
+                            <span class="rad_incon patient_tsrq_incon" id="patient_tsrq_2_incon"></span>
+                            <input type="radio" id="patient_tsrq_2" name="patient_tsrq" class="rad_check patient_tsrq" value="1"/>孕妇
+                            
+                        </div>
+                    </label>
+                    <label class="lab_mar">
+                        <div class="rad_out">
+                            <span class="rad_incon patient_tsrq_incon" id="patient_tsrq_3_incon"></span>
+                            <input type="radio" id="patient_tsrq_3" name="patient_tsrq" class="rad_check patient_tsrq" value="2"/>产妇
+                            
+                        </div>
+                    </label>
+                    <label class="lab_mar">
+                        <div class="rad_out">
+                            <span class="rad_incon patient_tsrq_incon" id="patient_tsrq_4_incon"></span>
+                            <input type="radio" id="patient_tsrq_4" name="patient_tsrq" class="rad_check patient_tsrq" value="3"/>哺乳期妇女
+                            
+                        </div>
+                    </label>
+				</div>
+				<div class="info_list">
+					<div class="list_left">是否有肝功能不全：</div>
+				</div>
+				<div class="info_list info_list_yn">
+					<label class="lab_mar">
+                        <div class="rad_out">
+                            <span class="rad_incon check_on patient_ggnbq_incon" id="patient_ggnbq_1_incon"></span>
+                            <input type="radio" id="patient_ggnbq_1" name="patient_ggnbq" class="rad_check patient_ggnbq" checked="checked" value="0"/>否
+                        </div>
+                    </label>
+                    <label class="lab_mar">
+                        <div class="rad_out">
+                            <span class="rad_incon patient_ggnbq_incon" id="patient_ggnbq_2_incon"></span>
+                            <input type="radio" id ="patient_ggnbq_2" name="patient_ggnbq" class="rad_check patient_ggnbq" value="1"/>是
+                            
+                        </div>
+                    </label>
+				</div>
+					<div class="info_list">
+					<div class="list_left">是否有肾功能不全：</div>
+				</div>
+				<div class="info_list info_list_yn">
+					<label class="lab_mar">
+                        <div class="rad_out">
+                            <span class="rad_incon check_on patient_sgnbq_incon" id="patient_sgnbq_1_incon"></span>
+                            <input type="radio" id="patient_sgnbq_1" name="patient_sgnbq" class="rad_check patient_sgnbq" checked="checked" value="0"/>否
+                        </div>
+                    </label>
+                    <label class="lab_mar">
+                        <div class="rad_out">
+                            <span class="rad_incon patient_sgnbq_incon" id="patient_sgnbq_2_incon"></span>
+                            <input type="radio" id="patient_sgnbq_2" name="patient_sgnbq" class="rad_check patient_sgnbq" value="1"/>是
+                            
+                        </div>
+                    </label>
+				</div>
+				<div class="info_list">
+					<div class="list_left">是否有高血压病史：</div>
+				</div>
+				<div class="info_list info_list_yn">
+					<label class="lab_mar">
+                        <div class="rad_out">
+                            <span class="rad_incon check_on hyper_no  patient_gxybs_incon" id="patient_gxybs_0_incon" val="-1"></span>未知
+                        </div>
+                    </label>
+					<label class="lab_mar">
+                        <div class="rad_out">
+                            <span class="rad_incon  hyper_no patient_gxybs_incon" id="patient_gxybs_1_incon" val="0"></span>否
+                        </div>
+                    </label>
+                    <label class="lab_mar">
+                        <div class="rad_out">
+                            <span class="rad_incon hyper patient_gxybs_incon" id="patient_gxybs_2_incon" val="1"></span>是
+                            <input type="hidden" id="patient_gxyLevel" /><!--隐藏域，记录选择的高血压类型 -->
+                        </div>
+                    </label>
+                    <div class="div01 div01_pr" id="patient_gxyLevel_area">
+                        （<span class="pr_text" id="patient_gxyLevel_tips"></span>）
+                    </div>
+				</div>
+				<div class="info_list">
+					<div class="list_left">是否有糖尿病史：</div>
+				</div>
+				<div class="info_list info_list_yn">
+					<label class="lab_mar">
+                        <div class="rad_out">
+                            <span class="rad_incon check_on diabe_no patient_tnbs_incon" id="patient_tnbs_0_incon" val="-1"></span>未知
+                        </div>
+                    </label>
+					<label class="lab_mar">
+                        <div class="rad_out">
+                            <span class="rad_incon  diabe_no patient_tnbs_incon" id="patient_tnbs_1_incon" val="0"></span>否
+                        </div>
+                    </label>
+                    <label class="lab_mar">
+                        <div class="rad_out">
+                            <span class="rad_incon h_b_p diabe patient_tnbs_incon" id="patient_tnbs_2_incon" val="1"></span>是
+                            <input type="hidden" id="patient_tnbType" /><!--隐藏域，记录选择的糖尿病类型 -->
+                        </div>
+                    </label>
+                    <div class="div01 div01_pr" id="patient_tnbType_area">
+                        （<span class="pr_text" id="patient_tnbType_tips"></span>）
+                    </div>
+				</div>
+				<div class="info_list">
+					<div class="list_left">是否有心脏病史：</div>
+				</div>
+				<div class="info_list info_list_yn">
+					<label class="lab_mar">
+                        <div class="rad_out">
+                            <span class="rad_incon check_on patient_xzbs_incon" id="patient_xzbs_1_incon"></span>
+                            <input type="radio" id="patient_xzbs_1" name="patient_xzbs" class="rad_check" checked="checked" value="0"/>否
+                        </div>
+                    </label>
+                    <label class="lab_mar">
+                        <div class="rad_out">
+                            <span class="rad_incon patient_xzbs_incon" id="patient_xzbs_2_incon"></span>
+                            <input type="radio" id="patient_xzbs_2"  name="patient_xzbs" class="rad_check" value="1"/>是
+                        </div>
+                    </label>
+				</div>
+				<div class="info_list">
+					<div class="list_left">是否有其它特殊疾病：</div>
+				</div>
+				<div class="info_list info_list_yn">
+					<label class="lab_mar">
+                        <div class="rad_out">
+                            <span class="rad_incon check_on specialDiseases_no patient_qttsjb_incon" id="patient_qttsjb_1_incon" ></span>
+                            <input type="radio" id="patient_qttsjb_1" name="patient_qttsjb" class="rad_check" checked="checked" value="0"/>否
+                        </div>
+                    </label>
+                    <label class="lab_mar">
+                        <div class="rad_out">
+                            <span class="rad_incon specialDiseases_yue patient_qttsjb_incon" id="patient_qttsjb_2_incon"></span>
+                            <input type="radio" id="patient_qttsjb_2" name="patient_qttsjb" class="rad_check" value="1"/>是
+                        </div>
+                    </label>
+					<div class="div01 specialDiseases" style="display: none;">
+						<input type="text" class="inp_yn" placeholder="请在此描述其它特殊疾病" id="patient_qttsjb_name" />
+					</div>	
+				</div>
+   			 	<!-- 增加的结构 -->
+			 	<div id="bllx_area"  style="display: none;"><!--病历类型区域 -->
+		            <div class="info_list">
+		                <div class="list_left ">病例类型：</div>
+		            </div>
+		            <div class="info_list info_list_yn">
+		                <label class="lab_mar">
+		                    <div class="rad_out">
+		                        <span class="rad_incon check_on  bllx_incon" id="bllx_zy_incon" val="1"></span>住院
+		                    </div>
+		                </label>
+		                <label class="lab_mar">
+		                    <div class="rad_out">
+		                        <span class="rad_incon  bllx_incon" id="bllx_mz_incon" val="2"></span>门诊                           
+		                    </div>
+		                </label>
+		            </div>
+		            <div class="bllx_pdb">
+			            <div class="info_list bllx_area_nobd">
+			                <div class="list_left noBg"><span id="blNo_name">住院号</span>：</div>
+			                <div class="inp_box">
+			                    <input type="number" class="tex" placeholder="请在此处填写住院号" id="blNo"/>
+			                </div>
+			            </div>
+			            <div class="info_list bllx_area_nobd" id="blDepartment_div" >
+			                <div class="list_left noBg">科&nbsp;&nbsp;&nbsp;&nbsp;室：</div>
+			                <div class="inp_box">
+			                    <input type="text" class="tex" placeholder="请在此处填写科室" id="blDepartment"/>
+			                </div>
+			            </div>
+			            <div class="info_list bllx_area_nobd" id="bedNo_div" >
+			                <div class="list_left noBg">床&nbsp;&nbsp;&nbsp;&nbsp;号：</div>
+			                <div class="inp_box">
+			                    <input type="number" class="tex" placeholder="请在此处填写科室"id="bedNo"/>
+			                </div>
+			            </div>	
+		            </div>
+		            
+		            <div id="getDrugWay_area">
+			            <div class="info_list">
+			                <div class="list_left ">取药方式：</div>
+			            </div>
+			            <div class="info_list info_list_yn">
+			                <label class="lab_mar">
+			                    <div class="rad_out">
+			                        <span class="rad_incon check_on  getDrugWay_incon" id="getDrugWay_ddzq" val="1"></span>到店自取
+			                    </div>
+			                </label>
+			                <label class="lab_mar">
+			                    <div class="rad_out">
+			                        <span class="rad_incon  getDrugWay_incon" id="getDrugWay_ps" val="2"></span>配送                        
+			                    </div>
+			                </label>
+			            </div>
+		            </div>
+	            </div><!--病历类型区域  end-->
+	            <!-- 增加的结构 end-->
+        		<!--配送地址 dtc模式 取药方式时是配送才会有配送地址-->
+				<div class="deliveryAddressModule pe_info03" id="dtc_ps_address_area" style="display: none;">
+					<!--<div class="comBg pd12">
+						<p class="complained">配送地址</p>
+					</div>-->
+					<div class="pd12 address_fill_in">
+						<div class="info_list bllx_area_nobd">
+		                    <div class="list_left noBg">所在地区：</div>
+		                    <div class="inp_box  inp_box_bdt address_btn" id="dtc_ps_address_btn">
+		                    	<div class="deliveryAddress" id="deliveryAddress"></div>
+		                    </div>
+	                	</div>
+	                	<div class="info_list bllx_area_nobd">
+		                    <div class="list_left noBg">详细地址：</div>
+		                    <div class="inp_box">
+		                        <input type="text" class="tex" placeholder="请在此处填写详细地址" id="deliveryDetailAddr"/>
+		                    </div>
+	                	</div>
+	                	<div class="info_list bllx_area_nobd">
+		                    <div class="list_left noBg">联&nbsp;&nbsp;系&nbsp;&nbsp;人：</div>
+		                    <div class="inp_box">
+		                        <input type="text" class="tex" placeholder="请在此处填写联系人" id="deliveryUserName"/>
+		                    </div>
+	                	</div>
+	                	<div class="info_list bllx_area_nobd">
+		                    <div class="list_left noBg">联系电话：</div>
+		                    <div class="inp_box">
+		                        <input type="number" class="tex" placeholder="请在此处填写联系电话" id="deliveryPhone"/>
+		                    </div>
+	                	</div>
+					</div>
+				</div>
+				<div class="pd12 pe_info_note">注：本人使用远程电子处方系统购买处方药，承诺提供的个人基本信息属实，如有虚假所引起的后果愿意自行承担。</div>
+			</div>
+	
+            <!-- 主诉模块 -->
+			<div class="pe_info03 ">
+				<div id="patient_mainSuit_area"><!--主诉模块 -->
+	                <div class="comBg pd12">
+	                    <p class="complained" id="patient_mainSuit_title">主诉</p>
+	                </div>
+					
+	                <div class="texare_out pd12">
+	                    <textarea name=""  rows="4" placeholder="请在此处填写主诉" id="patient_mainSuit" style="display: none;"></textarea>
+	                    <!--图片主诉模块-->
+	                    <div class="img_box_b">
+                			<div id="pics_area"><!-- 图片区域-->
+	                    		<div class="note" style="display: block;">注：您当前可添加5张照片</div>
+	                    		<!-- 图片 -->
+	                    		<div>
+			                        <ul class="img_box clearfix">
+			                            <div class="myImg_bg"><span>图片</span></div>
+			                            <div id="listImg">
+			                            	
+			                            </div>
+			                            <div id = "addImg">
+			                            	<li class="liImage"><a href="javascript:;"><img src="images/ic_add.png" alt="" id="add_pic_btn"/></a></li>
+			                            </div>
+			                            
+			                        </ul>
+	                    		</div>
+                    		</div><!-- 图片区域 end-->
+                    		<!-- 语音 -->
+		                    <div id="voice_area"><!-- 语音区域-->
+		                     	<div class="note" style="display: block;">注：您当前可添加5个语音消息</div>
+		                    	<div>
+			                        <ul class="img_box clearfix img_box_nobdb">
+			                            <div class="myImg_bg yuYin"><span>语音</span></div>
+			                            <div id='listAudio'>
+			                            	  
+			                            </div>
+			                            <div id='addAudio'>
+			                            <li class="liImage"><a href="javascript:;"><img src="images/ic_add.png" alt="" id="add_audio_btn"/></a></li>	
+			                            </div>
+			                            
+			                        </ul>
+		                    	</div>
+		                    </div><!-- 语音区域 end-->
+                		</div>
+	                </div>
+                </div><!--主诉模块  end-->
+                
+                                 
+			</div>
+			<div id="self_drugs_area"><!--自选药品 区域 -->
+				<input type="hidden" id="hasDrug" value="0" /><!--隐藏域  是否自带药品标志 -->
+	            <div class="comBg add_i clearfix pd12">
+	                <i  id="self_drugs_check" ></i><span>指定药品</span><a href="javascript:void(0)" id="select_drugs_btn" style="display: none;color: #6dd2e5;">选择药品</a>
+	            </div> 
+	            <!-- 药品部分 -->
+	            <div id="drug_list">
+	            	<!--
+		            <div class="drug">
+		                <div class="drug_table">
+		                    <div class="drugs_b_out">
+		                        <div class="name">四磨汤口服液（四磨汤口服液）1</div>
+		                        <div class="name_b">规格：10ml*10支/盒</div>
+		                    </div>
+		                </div>
+		                <table>
+		                    <tbody>
+		                        <tr>
+		                            <td>
+		                                <div class="heZi">
+		                                    <div class="biaoZhu">用法：</div>
+		                                    <div class="way">口服</div>
+		                                </div>
+		                            </td>
+		                            <td>
+		                                <div class="heZi">
+		                                    <div class="biaoZhu">用量：</div>
+		                                    <div class="way usageNumber">1天2次1次5片</div>
+		                                </div>
+		                            </td>
+		                            <td>
+		                                <div class="heZi">
+		                                    <div class="biaoZhu">数量：</div>
+		                                    <div class="way"><span>2盒</span></div>
+		                                </div>
+		                            </td>
+		                        </tr>
+		                    </tbody>
+		                </table>
+		                <div class="info_list">
+		                    <div class="list_left_drugs">是否使用过该药（必选）：</div>
+		                    <div class="inp_box">
+		                        <label class="lab_mar">
+		                            <div class="rad_out">
+		                                <span class="rad_incon check_on"></span>
+		                                <input type="radio" name="radio1" class="rad_check">是
+		                            </div>
+		                        </label>
+		                        <label class="lab_mar">
+		                            <div class="rad_out">
+		                                <span class="rad_incon"></span>
+		                                <input type="radio" name="radio1" class="rad_check">否
+		                                
+		                            </div>
+		                        </label>
+		                    </div>
+		                </div>       
+		            </div>
+		            -->
+				</div>
+				
+	            
+           </div><!--自选药品区域  end -->
+           
+           
+            <!-- 处方信息 -->
+            <div id="prescription_area">
+                <div class="h2Out02 yao_info_posit pd12">
+                    <h2 class="apph2">处方信息</h2><a href="javascript:;" class="contactPatient" id="open_presscription_btn">开处方</a>
+                </div>
+				<div class="prescribing_Info pd12" id="rescription_no_opened">
+	                <div>无</div>
+	            </div>
+                <div class="infoDes pd12" style="display: none;" id="rescription_opened">        
+                    <div>
+                        <a href="javascript:void(0)" id="view_prescription"></a>
+                    </div>
+                    <p class="infoDesText" id="view_prescription_title">点击查看处方笺</p>
+                </div>
+            </div>
+            <!-- 处方信息  end-->
+            <!--地址信息 -->
+            <div id="address_area">
+	            <div class="h2Out02 pd12">
+	                <h2 class="apph2">收货地址</h2><a href="javascript:;" class="contactPatient" id="select_address_btn">编辑地址</a>
+	            </div>
+	            <div class="prescribing_Receipt_Info pd12">
+	                <div>
+	                	<input type="hidden" id="address_id" value="" />
+	                    <div class="name" id="address_name"></div><div class="phone1" id="address_phone"></div>
+	                </div>
+	                <div class="adress" id="address_detail"></div>
+	            </div>
+            </div>
+            <!--地址信息  end-->
+            
+            
+		</div>
+	</div>
+
+<!-- 底部弹出框                    -->
+<div class="cover"></div>
+
+<!-- 请选择高血压分级 -->
+<div class="ul_b hypertension">
+    <div>请选择高血压分级<span class="shut_down">关闭</span></div>
+    <ul>
+        <Li v="1">一级高血压</Li>
+        <Li v="2">二级高血压</Li>
+        <Li v="3">三级高血压</Li>
+    </ul>
+</div>
+<!-- 糖尿病弹出框 -->
+<div class="ul_b diabetes">
+    <div>请选择糖尿病种类<span class="shut_down">关闭</span></div>
+    <ul>
+        <Li v="1">1型糖尿病</Li>
+        <Li v="2">2型糖尿病</Li>
+        <Li v="3">妊娠糖尿病</Li>
+        <Li v="4">继发性糖尿病</Li>
+        <Li v="5">其它特殊类型糖尿病</Li>
+
+    </ul>
+</div>
+
+    <!-- js -->
+      
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script>
+			$(document).bind('mobileinit', function() {
+				$.mobile.pushStateEnabled = false;
+			});
+	</script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/RainbowBridge.js"></script>
+    <script src="js/constants.js"></script>
+    <script src="js/GB2260.js"></script>
+    <script src="js/IDValidator.js"></script>
+    <script src="js/APP.js"></script><!--注意这几个文件引入的顺序 -->
+    <script src="js/domain.js"></script>
+    <script src="js/create_order.js"></script>
+</body>
+</html>

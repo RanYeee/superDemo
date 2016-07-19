@@ -1,0 +1,126 @@
+/* 
+* @Author: liangjie
+*/
+
+/********诊断库样式************/
+.zhenDuanKU{
+    width: 100%;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    background: #f4f4f4;
+    /*margin-top: .05rem;*/
+}
+.zhenDuanKU h2{
+    line-height: .3rem;
+    color: #65d0e4;
+    padding-left: .15rem;
+    font-size: .16rem;
+    padding-top: .05rem;
+    padding-bottom: .04rem;
+}
+.zhenDuanKU a{
+    display: block;
+    position: absolute;
+    right: .12rem;
+    top: .05rem;
+    padding: .05rem;
+    background: #65d0e4;
+    color: #fff;
+    border-radius: .04rem;
+}
+.textarea_bo{
+    padding: 0rem .1rem;
+    background: #fff;
+}
+textarea {
+    width: 100%;
+    border-radius: .04rem;
+    padding-left: .05rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: .05rem;
+    resize: none;
+    border: 1px solid #88dbea;
+    margin-top: .1rem;
+}
+.textarea_bo>div{
+    text-align: right;
+    color: #333;
+}
+/*********药品表格样式************/
+.dataForm{
+    width: 100%;
+}
+.dataForm table tr td{
+    width: 22%;
+    border: 1px solid #dadada;
+    font-size: .14rem;
+    height: .4rem;
+    text-align: center;
+    position: relative;
+
+}
+.dataForm table tr td .deleteDrug_au{
+  width: .22rem;
+  height: .22rem;
+  background: #333;
+  position: absolute;
+  right: .03rem;
+  top: .1rem;
+  background: url(../images/ic_delete_black.png) 0 0 no-repeat;
+  -webkit-background-size: .22rem .22rem;
+  background-size: .22rem .22rem;
+}
+.dataForm table tr td:nth-child(1){
+    border-left: none !important;
+    width: 34%;
+}
+.dataForm tr td:nth-child(4){
+    border-right: none !important;
+}
+.num{
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: center;
+}
+.bg_white{
+	background: #fff;
+}
+.jiShu,.zongJi{
+    width: 50%;
+    float: left;
+    line-height: .4rem;   
+}
+.jiShu{
+    display: -webkit-box;
+}
+.zongJi{
+    text-align: right;
+}
+.jiShu span:nth-child(1){
+    display: inline-block;
+    margin-left: .1rem;
+    line-height: .3rem;
+    height: 100%;
+}
+.jiShu div:nth-child(1){
+    -webkit-box-flex: 1;
+}
+.jiShu div input{
+    display: block;
+    color: #333;
+    width: 100%;
+    line-height: .4rem;
+/*    padding-top: .05rem;
+    padding-bottom: .05rem;*/
+    vertical-align: top;
+    padding-left: .1rem;
+    border: none;
+
+}
+.zongJi span:nth-child(2){
+    margin-right: .1rem;
+}

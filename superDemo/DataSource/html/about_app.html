@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>关于软件说明</title>
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/about_app.css" />
+	</head>
+
+	<body>
+		<!-- 头部 -->
+		<div class="head">
+			<div class="pd12 clearfix">
+				<a href="javascript:;" class="headBack fl">关于</a>
+			</div>
+		</div>
+		<!--内容-->
+		<div class="content">
+			<div class="logoImg">
+				<img src="images/sign.jpg" alt="" />
+			</div>
+			<h2>
+				<span id="versionInfo">电子处方</span>
+			</h2>
+			<div class="text">
+				<p>公司网址：<span class="site">www.kinglian.net</span></p>
+				<p>服务电话：<span>400-180-8006</span></p>
+			</div>
+		</div>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/RainbowBridge.js"></script>
+		<script src="js/constants.js"></script>
+		<script src="js/APP.js"></script>
+		<script>
+			$(document).ready(function() {
+				$(".headBack").click(function(){
+					APP.finishH5();
+				});
+				APP.getAppVersion(function(rspData){
+					if(rspData.result){
+						var isUser = rspData.result.type && rspData.result.type == 'user';
+						if(isUser){
+							$("img").attr('src', "images/sign_user.png"); 
+						}
+						var user = isUser ? "用户端" : "" ;
+						$("#versionInfo").html("远程电子处方" + user + " " + rspData.result.versionName);
+					}
+				})
+			});
+		</script>
+	</body>
+
+</html>

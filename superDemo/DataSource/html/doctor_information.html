@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-en">
+<head>
+	<meta charset="UTF-8">
+	<title>医生资料</title>
+	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/doctor.css">
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="headerTop">
+		<div class="pd12 clearfix">
+			<a href="javascript:;" class="lefeBtn fl" id="opt_title">医生信息</a> 		
+		</div>
+	</div>
+	<div class="doc_content">
+		<div class="bgPic">
+			<div class="headPortrait"><img src="images/touxiang.png" alt="" id="docPic"></div>
+			<div class="doctorName"><span class="name" id="docName"></span><span class="sex" id="docSex">&nbsp;</span></div>
+			<div class="duty"><span id="titleText">1212</span></div>
+			<div class="hospital">
+				<div>
+					<span id="hospitalName"></span><span id="deptName"></span>
+				</div>
+			</div>
+		</div>
+		<div class="info noborder">
+			<p class="intro">简介<span class="directionPic fr"></span></p>
+			<div class="details">
+				<p id="docDescription"></p>
+				<!--<p>哔哩哔哩巴拉贝哔哩哔哩巴拉巴、黎宝贝哔哩哔哩巴拉巴拉巴黎宝贝哔哩、哔哩巴拉巴拉巴拉巴黎宝贝哔哩哔哩巴拉，巴拉巴黎宝。</p>-->
+			</div>
+		</div>
+		<div class="info ">
+			<p class="master ">擅长<span class="directionPic fr"></span></p>
+			<div class="details">
+				<p id="expertArea"></p>
+			</div>
+		</div>
+	</div>
+	
+<!-- js -->	
+	<script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/RainbowBridge.js"></script>
+	<script src="js/constants.js"></script>
+	<script src="js/APP.js"></script><!--注意这几个文件引入的顺序 -->
+    <script src="js/doctor_information.js"></script>
+</body>
+</html>

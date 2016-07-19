@@ -1,0 +1,210 @@
+/*订单详情样式*/
+body{
+	background-color: #f2f3f5;
+}
+/*头部*/
+.head{
+	width: 100%;
+	height: .4rem;
+	background: #279ebc;
+	position: fixed;
+	top: 0;
+	z-index: 8;
+}
+.headBack{
+	font-size: .18rem;
+	line-height:.4rem;
+	color: #fff; 
+	padding-left: 0.2rem;
+	display: block;
+	background: url(../images/ic_back.png) left center no-repeat;
+	background-size: auto 40%;
+}
+.head a{
+	font-size: .18rem;
+	color: #fff;
+	display: block;
+	line-height: .4rem;
+    padding-left: 0.15rem;
+}
+/*主体*/
+.content{
+	margin-top: .4rem;
+}
+/*筛选日期*/
+.dayorder{
+	background-color: #65d0e4;
+	height: .5rem;
+}
+.daySelect{
+	font-size: .12rem;
+	color: #fff;
+	position: relative;
+}
+.dayIcons{
+	display: inline-block;
+	width: .25rem;
+	height: .25rem;
+	padding-right: .1rem;
+	background: url(../images/ic_down_white.png) right 16px no-repeat;
+	background-size: 10px;
+	position: absolute;
+	top: 10px;
+}
+.dayIcons img{
+	width: 100%;
+}
+.time {
+  text-align: center;
+  height: .5rem;
+  padding-left: .38rem;
+}
+.time span {
+  display: block;
+}
+
+.time_tongJi{
+	text-align: center;
+	height: .5rem;
+	padding-left: .38rem;
+}
+.time_tongJi span{
+	display: inline-block;
+}
+/*下拉框*/
+.rightDiv{
+	height: .5rem;
+	font-size: .14rem;
+}
+.rightLi{
+	display: inline-block;
+	height: .5rem;
+	line-height: .5rem;
+	color: #fff;
+	font-size: .14rem;
+	position: relative;
+	margin-left: .10rem;
+}
+.rightLi span{
+	display: inline-block;
+	text-align: right;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	max-width: .65rem;
+	padding-right: .12rem;
+	background: url(../images/ic_down_white.png) right 24px no-repeat;
+	background-size: 10px;
+	
+}
+.ordertypeSelect,.drugstoreSelect {
+	display: none;
+	position: absolute;
+	top: 40px;
+	right: 0;
+	z-index: 99999;
+	border: 1px solid #65d0e4;
+	border-radius: 2px;
+}
+.ordertypeSelect li,.drugstoreSelect li{
+	min-width: .5rem;
+	padding: 0 .05rem;
+	border-bottom: 1px solid #ccc;
+	background-color: #fff;
+	line-height:24px;
+	color: #666;
+	text-align: center;
+	white-space: nowrap;
+}
+.ordertypeSelect li:last-child,.drugstoreSelect li:last-child{
+	border-bottom: none;
+}
+/*销售员订单统计页面*/
+.submit{
+	border-top: 1px solid #c8c7cc;
+	height: .34rem;
+	line-height: .34rem;
+	background-color: #fff;
+	margin-top: .14rem;
+}
+.submit span{
+	font-size: .16rem;
+	color: #333;
+}
+/*表格*/
+.form{
+	background-color: #fff;
+}
+.form table td{
+	border: 1px solid #dadada; 
+	font-size: .14rem;
+	height: .36rem;
+}
+.form tr td:first-child{
+	padding-left: .12rem;
+	border-left: none !important;
+}
+.form tr td:nth-child(3){
+	padding-left: .1rem;
+}
+.form tr td:last-child{
+	border-right: none !important;
+}
+.form tr td:nth-child(odd){
+	width: 35%;
+}
+.form tr td:nth-child(even){
+	/*width: 12%;*/
+	text-align: center;
+}
+
+/*医师订单统计页面*/
+.content h3{
+	font-size: .16rem;
+	padding: 6px 12px;
+}
+
+/*医师订单数据统计页面*/
+/*表格*/
+.dataForm{
+	background-color: #fff;
+	text-align: center;
+}
+.dataForm table tr td{
+	border: 1px solid #dadada; 
+	font-size: .14rem;
+	width: 33%;
+	height: .36rem;
+}
+.dataForm tr td:last-child{
+	border-right: none !important;
+}
+.dataForm tr td:first-child{
+	border-left: none !important;
+}
+
+/*日期控件样式*/
+/*.time #dateStatistics01,.time #dateStatistics02{
+	display: block;
+	width: .7rem!important;
+	border: none;
+	color: #fff;
+	background: none;
+	width: auto;
+}
+.time .mid{
+	width: .7rem;
+	text-align: center;
+}*/
+.time_tongJi #dateStatistics01,.time_tongJi #dateStatistics02{
+	display: block;
+	width: .7rem!important;
+	border: none;
+	color: #fff;
+	background: none;
+	width: auto;
+}
+.time_tongJi .mid{
+	width: .7rem;
+	text-align: center;
+}

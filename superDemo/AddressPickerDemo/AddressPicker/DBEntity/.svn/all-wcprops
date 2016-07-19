@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/SmartMedical/!svn/ver/6600/IOS/ElectronicPrescribing/trunk/ElectronicPrescribing/ElectronicPrescribing/DBOpreation/DBEntity
+END
+AreaEntity.m
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/SmartMedical/!svn/ver/6552/IOS/ElectronicPrescribing/trunk/ElectronicPrescribing/ElectronicPrescribing/DBOpreation/DBEntity/AreaEntity.m
+END
+CityEntity.m
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/SmartMedical/!svn/ver/6552/IOS/ElectronicPrescribing/trunk/ElectronicPrescribing/ElectronicPrescribing/DBOpreation/DBEntity/CityEntity.m
+END
+SystemMessageEntity.m
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/SmartMedical/!svn/ver/6600/IOS/ElectronicPrescribing/trunk/ElectronicPrescribing/ElectronicPrescribing/DBOpreation/DBEntity/SystemMessageEntity.m
+END
+DiagnosisEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/SmartMedical/!svn/ver/6506/IOS/ElectronicPrescribing/trunk/ElectronicPrescribing/ElectronicPrescribing/DBOpreation/DBEntity/DiagnosisEntity.h
+END
+DiagnosisEntity.m
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/SmartMedical/!svn/ver/6506/IOS/ElectronicPrescribing/trunk/ElectronicPrescribing/ElectronicPrescribing/DBOpreation/DBEntity/DiagnosisEntity.m
+END
+ProvinceEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/SmartMedical/!svn/ver/6552/IOS/ElectronicPrescribing/trunk/ElectronicPrescribing/ElectronicPrescribing/DBOpreation/DBEntity/ProvinceEntity.h
+END
+AreaEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/SmartMedical/!svn/ver/6552/IOS/ElectronicPrescribing/trunk/ElectronicPrescribing/ElectronicPrescribing/DBOpreation/DBEntity/AreaEntity.h
+END
+CityEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/SmartMedical/!svn/ver/6552/IOS/ElectronicPrescribing/trunk/ElectronicPrescribing/ElectronicPrescribing/DBOpreation/DBEntity/CityEntity.h
+END
+SystemMessageEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/SmartMedical/!svn/ver/6600/IOS/ElectronicPrescribing/trunk/ElectronicPrescribing/ElectronicPrescribing/DBOpreation/DBEntity/SystemMessageEntity.h
+END
+ProvinceEntity.m
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/SmartMedical/!svn/ver/6552/IOS/ElectronicPrescribing/trunk/ElectronicPrescribing/ElectronicPrescribing/DBOpreation/DBEntity/ProvinceEntity.m
+END

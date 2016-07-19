@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>医生订单详情</title>
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/apply_prescription.css">
+    <link rel="stylesheet" type="text/css" href="css/order_details.css" />
+    <link rel="stylesheet" type="text/css" href="css/order_details_doctor.css" />
+</head>  
+<body>
+	<!-- 头部 -->
+	<div class="headerTop">
+		<div class="pd12 clearfix">
+			<a href="javascript:;" class="lefeBtn fl" id="opt_title" >订单详情</a>
+			<a href="javascript:;" class="lefeRight fr" style="display: none;" id="accept_btn">受理</a>		
+			<a href="javascript:;" class="lefeRight fr" style="display: none;" id="cancel_btn">取消订单</a>	
+			<a href="javascript:;" class="lefeRight fr" style="display: none;" id="refuse_apply_btn">拒绝申请</a>
+			<a href="javascript:;" class="lefeRight fr" style="display: none;" id="open_prescription_btn">开处方</a><!--开处方或修改处方的按钮 -->
+			<a href="javascript:;" class="lefeRight fr" style="display: none;" id="drugstore_checkin_btn">申请审方</a>
+			<a href="javascript:;" class="lefeRight fr" style="display: none;" id="doctor_commit_check_btn">申请审核</a><!--模式c订单，医师提交给药师审核 -->
+			<a href="javascript:;" class="lefeRight fr" style="display: none;" id="print_btn">打印</a><!--模式A订单/申请开处方，才能打印 -->
+			<a href="javascript:;" class="lefeRight fr" style="display: none;" id="anew_help_btn">申请协助</a><!--模式C订单 协助订单  协助终止之后重新申请协助 -->
+			<a href="javascript:;" class="lefeRight fr" style="display: none;" id="anew_commit_btn">重新申请</a><!--重新提交订单 -->
+			<a href="javascript:;" class="lefeRight fr" style="display: none;" id="confirm_receipt_btn">确认收货</a><!--用户端确认收货 -->
+		</div>
+	</div>
+	<!-- 内容 -->
+	<div class="app_pre_con">
+		<div class="con01">
+			<div class="h2Out pd12">
+				<h2 class="apph2">订单信息</h2>
+			</div>
+			<div class="slet_p">
+				<div class="p_border pd12">
+					<p class="order_num">订单号：<span id="orderNo"></span><span  class="logistics" id="view_logistics">查看物流</span>
+					<p>时间：<span id="order_time_span"></span></p>
+					<p>状态：<span id="status"></span></p>
+					<div id="order_info_source">
+						<p>药店：<span></span></p>
+						<p>销售人员：<span></span></p>
+					</div>
+				</div>
+				<!--订单进程信息 区域 -->
+				<div id="ddxx_area" >
+					<ul id="ddxxjc" class="progressBar clearfix">
+					</ul>
+	                <div id="ddxxText" class="progressTips pd12">
+	                </div>
+                </div>
+                <!--订单进程信息 区域  end-->
+			</div>	
+
+		</div>
+		<!-- 条形码 -->
+        <div id="barCode_area" style="display: none;">
+            <div class="h2Out02 yao_info_posit pd12">
+                <h2 class="apph2">条形码</h2>
+            </div> 
+            <div class="barcode">
+                <img alt=""  id="barCodeUrl"/>
+            </div>             
+        </div>
+		<div class="con02">
+			<div class="h2Out02 pd12">
+				<h2 class="apph2">申请信息</h2>
+				<a href="javascript:;" class="contactPatient" id="contactPatient_btn" style="display: none;">联系病人</a>
+			</div>
+			<div class="pe_info pd12">
+				<p class="pe_info_p">病人信息</p>
+			</div>
+            <!-- 病人信息 -->
+			<div class="info_out">
+				<div class="info_list">
+					<div class="list_left noBg">姓名：</div>
+					<div id="useName" class="inp_box">
+						
+					</div>
+				</div>
+				<div class="info_list">
+					<div class="list_left noBg">性别：</div>
+					<div id="genderDiv" class="inp_box">
+						
+					</div>
+				</div>
+				<div class="info_list">
+					<div class="list_left noBg">婴儿（36个月以内）：</div>
+					<div id="yerq" class="inp_box">
+						
+					</div>
+				</div>
+				<div class="info_list">
+					<div class="list_left noBg">年龄：</div>
+					<div id="ageDiv" class="inp_box">
+						
+					</div>
+				</div>
+				<div class="info_list">
+					<div class="list_left noBg">身份证号码：</div>
+					<div id="sfzhDiv" class="inp_box">
+						
+					</div>
+				</div>
+				<div class="info_list">
+					<div class="list_left noBg">联系电话：</div>
+					<div id="phoneDiv" class="inp_box">
+						
+					</div>
+				</div>
+                <div class="info_list">
+                    <div class="list_left noBg">药物过敏史：</div>
+                    <div id="ywgmsDiv" class="inp_box">
+                        
+                    </div>
+                </div>
+                <div class="info_list">
+                    <div class="list_left noBg">是否特殊人群：</div>
+                    <div id="tsrqDiv" class="inp_box">
+                        
+                    </div>
+                </div>
+                <div class="info_list">
+                    <div class="list_left noBg">是否有肝功能不全：</div>
+                    <div id="ggnDiv" class="inp_box">
+                        
+                    </div>
+                </div>
+                <div class="info_list">
+                    <div class="list_left noBg">是否有肾功能不全：</div>
+                    <div id="sgnDiv" class="inp_box">
+                        
+                    </div>
+                </div>
+				<div class="info_list">
+                    <div class="list_left noBg">是否有高血压病史：</div>
+                    <div id="gxybsDiv" class="inp_box">
+                        
+                    </div>
+                </div>
+                <div class="info_list">
+                    <div class="list_left noBg">是否有糖尿病史：</div>
+                    <div id="tnbsDiv" class="inp_box">
+                        
+                    </div>
+                </div>
+                <div class="info_list">
+                    <div class="list_left noBg">是否有心脏病史：</div>
+                    <div id="xzbsDiv" class="inp_box">
+                        
+                    </div>
+                </div>
+                <div class="info_list">
+                    <div class="list_left noBg">是否有其它特殊疾病：</div>
+                    <div id="tsjbDiv" class="inp_box">
+                
+                    </div>
+                </div>
+                <div id="bllx_area">
+	                <div class="info_list">
+	                    <div class="list_left noBg">病历类型：</div>
+	                    <div id="bllxDiv" class="inp_box">
+	                    	
+	                    </div>
+	                </div>
+	                <div class="pd15">
+		                <div class="info_list">
+		                    <div class="list_left noBg"><span id="blNo_name">住院号</span>：</div>
+		                    <div id="blNo" class="inp_box">
+		                    </div>
+		                </div>
+		                <div class="info_list" id="blDepartment_div">
+		                    <div class="list_left noBg">科室：</div>
+		                    <div id="blDepartment" class="inp_box">
+		                    </div>
+		                </div>
+		                <div class="info_list" id="bedNo_div">
+		                    <div class="list_left noBg">床号：</div>
+		                    <div id="bedNo" class="inp_box">
+		                    </div>
+		                </div>	
+	                </div>
+	                
+	                <div class="info_list" id="getDrugWay_area">
+	                    <div class="list_left noBg">取药方式：</div>
+	                    <div id="getDrugWay" class="inp_box">
+	                    </div>
+	                </div>
+	                <div class="pd15 pd15_bdb" id="dtc_ps_address_area">
+		                <div class="info_list">
+		                    <div class="list_left noBg">配送地址：</div>
+	                    	<div id="deliver_addr" class="inp_box">
+	                    	</div>
+		                </div>
+		                <div class="info_list">
+	                    	<div class="list_left noBg">联系人：</div>
+	                    	<div id="deliver_userName" class="inp_box"></div>
+		                </div>
+		               	<div class="info_list">
+	                    	<div class="list_left noBg">联系电话：</div>
+	                    	<div id="deliver_phone" class="inp_box">
+	                    	</div>
+		                </div>	
+	                </div>
+                </div>
+                <div class="pd12 pe_info_note">
+                    <div class="note">注：病人自述史必须属实，如有不实，由病人自行承担一切责任</div>
+                </div>            
+				
+			</div>
+            <!-- 主诉模块 -->
+			<div class="pe_info03 ">
+                <div class="comBg pd12">
+                    <p class="complained">主诉</p>
+                </div>
+				
+                <div class="texare_out pd12">
+                    <div id="zsDiv" class="descriptionDisease"></div>
+                    <div class="img_box_b">
+                        <div class="note">注：您当前可添加5张照片、5个语音消息。</div>
+                        <!-- 图片 -->
+                        <div>
+                            <ul id="picUL" class="img_box clearfix">
+                                <div class="myImg_bg"><span>图片</span></div>
+                            </ul>
+                        </div>
+                        <!-- 语音 -->
+                        <div id="ycyyDIV">
+                            <ul id="voiceUL" class="img_box clearfix img_box_nobdb">
+                                <div class="myImg_bg yuYin"><span>语音</span></div>
+                            </ul>
+                        </div>      
+                    </div>
+                                 
+			     </div>
+            </div>
+            <!-- 自带药品 -->
+            <div id="zdyp_area">
+                <div class="pd12 pe_info_drug">
+                    <h2 class="drugH2">自带药品</h2>
+                </div>
+                <div id="drugLists" class="drugDes pd12">
+                </div>                
+            </div>
+            <!-- 处方信息 -->
+            <div id="view_prescription_area">
+                <div class="h2Out02 pd12">
+                    <h2 class="apph2">处方信息</h2>
+                    <a href="javascript:;" class="contactPatient" id="contactDoctor_btn" style="display: none;">联系医师</a>
+                    <a href="javascript:;" class="contactPatient" id="contactMedicineMan_btn" style="display: none;">联系药师</a>
+                    <a href="javascript:;" class="contactPatient" id="view_drugs_btn" style="display: none;">查看药品</a>
+                </div>
+
+                <div class="infoDes pd12" id="has_prescription" style="display: none;">
+                    <div>
+                        <a href="javascript:;" id="view_prescription"></a>
+                    </div>
+                    <p class="infoDesText" id="view_prescription_title">点击查看处方笺</p>
+                      <span id="doctorRefuse_span">
+	                                            拒绝理由：<span id="doctorRefuse"></span>
+                      </span>
+                </div> 
+               
+                <div class="infoDes pd12" id="has_no_prescription" style="display: none;">
+                	<br>
+                    <span>处方未就绪</span>
+                    <br>
+                </div>   
+            </div>
+            <!-- 协助开处方信息 申请协助模式需要看到 -->
+            <div id="helpDocInfo">
+                <div class="h2Out02 pd12">
+                    <h2 class="apph2">协助开处方信息</h2>
+                </div> 
+                <div id="helpDiv" class="doctors_info pd12">
+                    
+                </div>              
+            </div>
+            <!-- 医生信息 dtc模式需要看到 -->
+            <div id="doctor_info_area">
+                <div class="h2Out02 pd12">
+                    <h2 class="apph2">医生信息</h2>
+                </div> 
+                <div class="doctors_info pd12">
+                    <div>
+                        <p>姓名：<span id="doctorName"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="javascript:;" style="color: blue;" id="view_doctorinfo">查看医生信息</a></span></p>
+                        <p>联系电话：<span id="doctorPhone"></span><a  class="phone" id="doctorPhone_incon"></a></p>
+                    </div>
+                </div>              
+            </div>
+            <!-- 收货信息，只有模式C的订单显示 -->
+            <div id="receiver_info_area">
+                <div class="h2Out02 pd12">
+                    <h2 class="apph2">收货信息</h2>
+                </div> 
+                <div class="doctors_info pd12">
+                    <div>
+                        <p>收货人：<span id="receiverName"></span></p>
+                        <p>联系电话：<span id="receiverPhone"></span></p>
+                        <p>收货地址：<span id="receiverAddress"></span></p>
+                    </div>
+                </div>              
+            </div>
+            <!-- 备注 -->
+            <div id="useDrugAttention_area">
+                <div class="h2Out02 yao_info_posit pd12">
+                    <h2 class="apph2">备注</h2>
+                </div>
+
+                <div class="pd12 remark">
+                    <h3>用法用量及注意事项：</h3>
+                    <div id="useDrugAttention">
+                    </div>
+                </div>                
+            </div>
+            
+
+ 
+			
+		</div>
+	</div>
+
+<!-- 底部弹出框                    -->
+<div class="cover"></div>
+<div class="ul_b">
+    <div>选择高血压分级</div>
+    <ul>
+        <Li>一级高血压</Li>
+        <Li>二级高血压</Li>
+        <Li>三级高血压</Li>
+    </ul>
+</div>
+
+<!-- 弹出警示框 -->
+<div class="dialog">
+    <div class="diaTop">提示</div>
+    <p>是否将该订单信息重新提交？</p>
+    <div class="btn">
+        <a href="javascript:;" class="
+cancelBtn">取消</a><a href="javascript:;" class="determineBtn">确定</a>
+    </div>
+</div>
+
+<!-- js -->
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/apply_prescription.js"></script>
+<script src="js/RainbowBridge.js"></script>
+<script src="js/constants.js"></script>
+<script src="js/APP.js"></script><!--注意这几个文件引入的顺序 -->
+<script src="js/order_details.js"></script>
+<script type="text/javascript">
+    
+$(document).ready(function(){
+    // 点击自带药品
+    $(".pe_info_drug").click(function() {
+        if(g == 1){
+            $(".drugDes").css("display","block");
+            $(".drugH2").addClass('changeBg');
+            g = 0;
+        }else if(g == 0){
+            $(".drugDes").css("display","none");
+            $(".drugH2").removeClass('changeBg');
+            g = 1;
+        } 
+    });
+
+    // 点击重新提交
+    var po_top = $(".dialog").height();
+    $(".dialog").css("margin-top",-po_top/2);
+
+    /*$(".lefeRight").click(function() {
+        $(".cover").css("display","block");
+        $(".dialog").css("display","block");
+    });*/
+
+    // 点击遮罩层
+    $(".cover").click(function() {
+        $(".dialog").css("display","none");
+    });
+    // 点击取消或者确定
+    $(".btn a").click(function() {
+        $(".dialog").css("display","none");
+        $(".cover").css("display","none");
+    });
+})
+
+
+</script>    
+
+</body>
+</html>

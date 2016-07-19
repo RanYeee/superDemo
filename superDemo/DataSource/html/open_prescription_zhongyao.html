@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>开处方</title>
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/choose_drugs.css" />
+     <link rel="stylesheet" type="text/css" href="css/qiang_sen_given_prescription.css" />
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="headerTop">
+        <div class="pd12 clearfix">
+            <a href="javascript:void(0)" class="lefeBtn fl" id="back_btn">开处方</a>
+            <a href="javascript:;" class="lefeRight fr" id="commit_btn">确定</a>          
+        </div>
+    </div>
+    <!-- 搜索 -->
+    <div class="sou_bo">
+        <div>
+            <input type="input" class="myInp" placeholder="输入药品首字母拼写或关键字查找"/>
+            <span class="deIcon"></span>
+        </div>
+        <div class="sou_bo_list">
+            <table class="drug_tw">
+                <tbody id="drug_table">
+                    <!--
+                    <tr>
+                        <td>四环素药品ggg</td>
+                        <td>四环素药品</td>
+                        <td>10mg*7粒/盒</td>
+                    </tr>
+                    <tr>
+                        <td>四环素药品搜索</td>
+                        <td>四环素药品四环fff</td>
+                        <td>10mg*7粒/盒</td>
+                    </tr>
+                    <tr>
+                        <td>四环素药品</td>
+                        <td>四环素药品四环</td>
+                        <td>10mg*7粒/盒</td>
+                    </tr>
+                    -->
+                </tbody>
+            </table>  
+        </div>
+    </div>
+    <!-- 药品部分 -->
+    <div >
+       <!-- 药品部分 -->
+	    <div class="dataForm" >
+	    	
+	        <table width="100%" class="drugs">
+	            <tbody id="drug_list">
+	            	<!--
+	                <tr>
+	                    <td>通用药品名称01</td>
+	                    <td><input type="text" value="1" class="num"/></td>
+	                    <td>mg</td>
+	                    <td><span>1.25</span><div class="deleteDrug_au"></div></td>
+	                </tr>
+	               -->
+	               
+	            </tbody>
+	        </table>
+	        <div class="clearfix bg_white">
+	            <div class="jiShu"><span>剂数：</span><div><input type="number" id="drugCount" value=""/></div></div>
+	            <div class="zongJi">总计：<span></span><span id="totalMoney"></span></div>
+	        </div>
+	    </div>
+		
+    </div>
+
+	<!-- 诊断库 -->
+	<div>
+	    <div class="zhenDuanKU">
+	        <h2>临床诊断</h2><a href="javascript:;" id="zhenduanku_btn">诊断库</a>
+	    </div>
+	    <div class="textarea_bo">
+	        <textarea  id="diagnoseDetail" rows="5" placeholder="请在此输入诊断内容，最多100个字"></textarea>
+	        <div><span id="diagnoseDetail_words">0</span>/<span>100</span></div>
+	    </div>    
+	</div>
+	<!-- 用药注意事项 -->
+	<div>
+	    <div class="zhenDuanKU">
+	        <h2>用药注意事项</h2>
+	    </div>
+	    <div class="textarea_bo">
+	        <textarea  id="useDrugAttention" rows="5" placeholder="请在此输入注意事项内容，最多100个字"></textarea>
+	        <div><span id="useDrugAttention_words">0</span>/<span>100</span></div>
+	    </div>    
+	</div>
+
+<!-- js -->
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/RainbowBridge.js"></script>
+<script src="js/constants.js"></script>
+<script src="js/APP.js"></script><!--注意这几个文件引入的顺序 -->
+<script src="js/domain.js"></script>
+<script src="js/open_prescription_zhongyao.js"></script>
+
+</script>
+
+</body>
+</html>

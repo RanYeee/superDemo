@@ -1,0 +1,41 @@
+/* 
+* @Author: liangjie
+*/
+@charset "utf-8";
+/* CSS Document */
+.h2Out02 {
+  position: relative;
+}
+.contactPatient {
+  position: absolute;
+  right: .1rem;
+  top: .03rem;
+  border: 1px solid #999;
+  border-radius: .04rem;
+  padding: .05rem .1rem;
+  padding-left: .3rem;
+  font-size: .12rem;
+  background: url(../images/ic_chat_yellow.png) .05rem center no-repeat;
+  -webkit-background-size: .2rem .2rem;
+  background-size: .2rem .2rem;
+}
+.prescribing_Info{
+    min-height: .5rem;
+    padding-top: .1rem;
+    font-size: .12rem;
+}
+.prescribing_Receipt_Info{
+    min-height: .8rem;
+    padding-top: .1rem;
+    font-size: .12rem;
+}
+.prescribing_Receipt_Info div{
+    height: .24rem;
+    line-height: .24rem;
+}
+.name{
+    float: left;
+}
+.phone{
+    float: right;
+}

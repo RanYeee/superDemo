@@ -1,0 +1,57 @@
+/* 
+* @Author: liangjie
+*/
+
+@charset "utf-8";
+/* CSS Document */
+
+.zhenDuanKU{
+    width: 100%;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    background: #f4f4f4;
+    margin-top: .05rem;
+}
+.zhenDuanKU h2{
+	height: .36rem;
+    line-height: .36rem;
+    color: #65d0e4;
+    padding-left: .15rem;
+    font-size: .16rem;
+}
+.zhenDuanKU a{
+    display: block;
+    position: absolute;
+    right: .12rem;
+    top: .04rem;
+    padding: 0rem .06rem;
+    height: .28rem;
+    line-height: .28rem;
+    background: #65d0e4;
+    color: #fff;
+    border-radius: .04rem;
+}
+.textarea_bo{
+    padding: 0rem .1rem;
+    background: #fff;
+}
+textarea {
+  width: 100%;
+  border-radius: .04rem;
+  padding-left: .05rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: .05rem;
+  resize: none;
+  border: 1px solid #88dbea;
+  margin-top: .1rem;
+}
+.textarea_bo>div{
+    text-align: right;
+    color: #333;
+}
+.sou_bo{
+  margin-top: 0rem;
+}

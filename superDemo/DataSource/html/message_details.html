@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>消息详情</title>
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/apply_prescription.css">
+    <link rel="stylesheet" type="text/css" href="css/message_details.css" />
+</head>  
+<body>
+	<!-- 头部 -->
+	<div class="headerTop">
+		<div class="pd12 clearfix">
+			<a href="javascript:;" class="lefeBtn fl" id="opt_title">消息详情</a>
+			<!-- <a href="javascript:;" class="lefeRight fr">提交</a> -->			
+		</div>
+	</div>
+	<!-- 内容 -->
+	<div class="app_pre_con">
+		<div class="con01">
+			<div class="pd12">
+				<div class="mes_detal_top">
+                    <a href="javascript:;" class="color_bdb" id="orderNo_btn">订单号：<span id="orderNo"></span></a>  
+                    <div class="orderTime" id="mesgTime"></div>        
+                </div>
+                <div class="mes_detal_top mes_detal_top_lh">
+                    病人：<span id="patient_name"></span>,<span id="patient_sex"></span><span id="telphone_s">，<span  id="telphone"></span></span>,于<span id="createTime"></span>申请的处方，<span class="mes_color" id="msgContent"></span>，详情请查看订单。
+                </div>
+			</div>
+
+		</div>
+		<div class="con02">
+
+            <!-- 主诉模块 -->
+            <div class="pe_info03 ">
+                <div class="comBg pd12">
+                    <p class="complained" id="mainSuit_title">主诉</p>
+                </div>
+                
+                <div class="texare_out pd12">
+                    <div class="descriptionDisease" id="mainSuit"></div>
+                    <div class="img_box_b">
+<!--                         <div class="note">注：您当前可添加5张照片、5个语音消息。</div> -->
+                        <!-- 图片 -->
+                        <div>
+                            <ul class="img_box clearfix">
+                                <div class="myImg_bg"><span>图片</span></div>
+                                <div id="listImg">
+	                               
+                                </div>
+                            </ul>
+                        </div>  
+                        <!-- 语音 -->
+                        <div id="voice_area">
+                            <ul class="img_box clearfix img_box_nobdb">
+                                <div class="myImg_bg yuYin"><span>语音</span></div>
+                                <div id="listAudio">
+                                </div>
+                            </ul>
+                        </div>   
+                </div>                     
+            </div>
+			
+		</div>
+	</div>
+
+
+
+    <!-- js -->
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/RainbowBridge.js"></script>
+	<script src="js/constants.js"></script>
+	<script src="js/APP.js"></script><!--注意这几个文件引入的顺序 -->
+	<script src="js/message_details.js"></script>
+
+</body>
+</html>

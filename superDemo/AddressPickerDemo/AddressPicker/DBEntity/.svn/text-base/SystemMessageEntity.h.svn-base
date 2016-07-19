@@ -1,0 +1,31 @@
+//
+//  SystemMessageEntity.h
+//  ElectronicPrescribing
+//
+//  Created by Ducky on 16/5/9.
+//  Copyright © 2016年 Rany. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface SystemMessageEntity : NSObject
+
+@property int _id;
+
+@property (nonatomic,strong) NSString * userId;
+
+@property int type;
+
+@property (nonatomic,strong) NSString * title;
+
+@property (nonatomic,strong) NSString * content;
+
+@property int status;
+
+@property NSInteger date;
+
+@property (nonatomic,strong) NSString * tagId;
+
+@property (nonatomic,strong) NSString *packet_id;
+
+@end

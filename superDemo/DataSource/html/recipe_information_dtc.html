@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>处方信息</title>
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/recipeInfo.css">
+
+	</head>
+
+	<body>
+		<!-- 头部 -->
+		<div class="headerTop">
+			<div class="pd12 clearfix">
+				<a href="javascript:;" class="lefeBtn fl">处方详情</a>
+			</div>
+		</div>
+		<!-- 内容 -->
+		<div class="recipe_content">
+			<div class="patientInfo clearfix">
+				<span class="patSpan"><span id="blNoName">门诊/住院号</span>：<span id="blNo" class="menzhenhao"></span></span>
+				<span class="patSpan">科室：<span id="blKs" class="keshi"></span></span>
+				<span class="patSpan">床号：<span id="blBed" class="chuanghao"></span></span>
+				<span class="patSpan">姓名：<span id="blName" class="name"></span></span>
+				<span class="patSpan">性别：<span id="blSex" class="gender"></span></span>
+				<span class="patSpan">年龄：<span id="blAge" class="ago"></span></span>
+				<span class="patSpan">临床诊断：<span id="blZDinfo" class="linchuang"></span></span>
+			</div>
+			<!--<div class="drugInfo">
+				<span class="drugSpan">名称：<span class="mingcheng">氨酚伪麻美芬片/氨麻苯美片（白加黑）</span></span>
+				<span class="drugSpan">规格：<span class="guige">0.27G*10片*12板/盒</span></span>
+				<span class="drugSpan">用法：<span class="yongfa">口服</span></span>
+				<span class="drugSpan">用量：<span class="yongliang">每次3片，每天3次</span></span>
+				<span class="drugSpan">总量：<span class="zongliang">27片</span></span>
+			</div>-->
+		</div>
+		<div class="icon">
+			<a href="javascript:;">
+				<div class="contact"></div>
+			</a>
+			<a href="javascript:;">
+				<div class="other"></div>
+			</a>
+		</div>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/RainbowBridge.js"></script>
+		<script src="js/constants.js"></script>
+		<script src="js/APP.js"></script>
+		<!--注意这几个文件引入的顺序 -->
+		<script src="js/recipe_information.js"></script>
+	</body>
+
+</html>

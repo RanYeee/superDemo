@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>className</key>
+		<string>MyTableViewController</string>
+		<key>dec</key>
+		<string>cell的展开视图（复杂的demo）</string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>H5WebViewController</string>
+		<key>dec</key>
+		<string>H5视图</string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>MyVideoController</string>
+		<key>dec</key>
+		<string>视频视图</string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>WKWebController</string>
+		<key>dec</key>
+		<string>WKWebController</string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>UIWebController</string>
+		<key>dec</key>
+		<string>UIWebController</string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>AddressSelectorController</string>
+		<key>dec</key>
+		<string>地址选择器</string>
+	</dict>
+</array>
+</plist>

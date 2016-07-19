@@ -1,0 +1,200 @@
+/* 
+* @Author: liangejie
+*/
+
+@charset "utf-8";
+/* CSS Document */
+
+
+/*订单详情样式*/
+
+/*病情描述*/
+.descriptionDisease{
+    padding: .1rem 0rem;
+    border-bottom: 1px solid #efefef;
+    word-break: break-all;
+}
+.pe_info03 .note{
+    display: none;
+}
+.progressTips{
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+    font-size: .14rem;
+}
+.progressTips>div:nth-child(1){
+    color: #ff6b69;
+}
+.progressTips>div:nth-child(2){
+	line-height: .22rem;
+}
+
+.drugH2{
+    color: #6dd2e5;
+}
+.drugDes{
+    display: none;
+}
+.drugDes>div{
+    padding-top: .05rem;
+    padding-bottom: .05rem;
+}
+.drugDes>div .color{
+    color: #ff6b69;
+}
+.drugDes>div>h3{
+    line-height: .22rem;
+    font-size: .16rem;
+}
+.drugDes>div>p{
+    font-weight: normal;
+    line-height: .22rem;
+    padding-left: .15rem;
+}
+.pe_info_drug .drugH2{
+    color: #6dd2e5;
+    background: url(../images/ic_up_blue.png) right center no-repeat;
+    -webkit-background-size: .09rem .14rem;
+    background-size: .09rem .14rem;
+}
+.pe_info_drug .drugH2.changeBg{
+    background: url(../images/ic_up.png) right center no-repeat;
+    -webkit-background-size: .15rem .1rem;
+    background-size: .15rem .1rem;
+}
+
+/**********重新提交订单样式**************/
+.dialog{
+    width: 2.6rem;
+    position: fixed;
+    left: 50%;
+    margin-left: -1.3rem;
+    top: 50%;
+    background: #fff;
+    border-radius: .04rem;
+    z-index: 100;
+    display: none;
+}
+.diaTop{
+    line-height: .4rem;
+    border-bottom: 1px solid #269ebc;
+    padding-left: .1rem;
+    color: #269ebc;
+    font-size: .18rem;
+}
+.dialog p{
+    padding-left: .1rem;
+    padding-top: .05rem;
+    padding-bottom: .2rem;
+    font-size: .16rem;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+    color: #333;
+}
+
+.cancelBtn,.determineBtn{
+    display: inline-block;
+    width: 50%;
+    height: .35rem;
+    line-height: .35rem;
+    text-align: center;
+    font-size: .14rem;
+    color: #333;
+}
+.cancelBtn{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-right: 1px solid #ddd;
+}
+
+/*********** 药店员申请审方订单详情处方信息、医生信息样式 ********************/
+.infoDes div{
+    text-align: center;
+    margin-top: .1rem;
+}
+.infoDes div a{
+    display: inline-block;
+    width: .4rem;
+    height: .45rem;
+    background: url(../images/ic_book.png) 0 0 no-repeat;
+    -webkit-background-size: .4rem .45rem;
+    background-size: .4rem .45rem;
+}
+.infoDesText{
+    text-align: center;
+    padding-bottom: .2rem;
+}
+.doctors_info>div{
+    margin-top: .08rem;
+    margin-bottom: .08rem;
+}
+.doctors_info>div>p{
+    line-height: .24rem;
+    font-size: .14rem;
+    word-break: break-all;
+}
+
+/*********** 药师订单详情 ********************/
+.drug_none{
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+    text-align: center;
+}
+.yao_info_posit{
+    position: relative;
+}
+.contactPatient {
+    position: absolute;
+    right: .1rem;
+    top: .03rem;
+    border: 1px solid #999;
+    border-radius: .04rem;
+    padding: .05rem .1rem;
+    padding-left: .3rem;
+    font-size: .12rem;
+    background: url(../images/ic_chat_yellow.png) .05rem center no-repeat;
+    -webkit-background-size: .2rem .2rem;
+    background-size: .2rem .2rem;
+}
+.pe_info_drug02 {
+    height: .35rem;
+    line-height: .35rem;
+    border-bottom: 1px solid ##f0f1f3;
+    background: #f4f4f4;
+    font-size: .14rem;
+    font-weight: bold;
+    color: #82d7e6;
+}
+.pe_info_drug02 .drugH2 {
+    color: #6dd2e5;
+}
+
+.remark{
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+}
+.remark h3{
+    font-size: .16rem;
+    font-weight: bold;
+    color: #333;
+}
+.remark ul{
+    padding-top: .05rem;
+}
+.remark ul li{
+    padding-top: .02rem;
+    padding-bottom: .02rem;
+}
+.phone{
+    display: inline-block;
+    width: .16rem;
+    height: .19rem;
+    padding: 0 .05rem;
+    background: url(../images/phone.png) center no-repeat;
+    -webkit-background-size: .16rem .19rem;
+    background-size: .16rem .19rem;
+    margin-left: .1rem;
+    margin-top: .03rem;
+    vertical-align: top;
+}

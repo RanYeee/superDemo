@@ -1,0 +1,54 @@
+/* 
+* @Author: liangjie
+*/
+@charset "utf-8";
+/* CSS Document */
+
+/*拒绝申请样式*/
+
+/*头部*/
+.headerTop {
+  width: 100%;
+  height: .4rem;
+  background: #279ebc;
+  position: fixed;
+  top: 0;
+  z-index: 8;
+}
+.headerTop a.lefeBtn {
+  background: url(../images/ic_back.png) left center no-repeat;
+  background-size: auto 40%;
+}
+.headerTop a {
+  font-size: .16rem;
+  color: #fff;
+  display: block;
+  line-height: .4rem;
+  padding-left: 0.2rem;
+}
+.fr {
+  float: right;
+}
+.fl {
+  float: left;
+}
+.refuseConten{
+    padding: .1rem .15rem;
+    margin-top: .4rem;
+}
+.refuseConten textarea {
+  width: 100%;
+  border-radius: .04rem;
+  padding-left: .05rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: .05rem;
+  resize: none;
+  border: 1px solid #88dbea;
+  margin-top: .1rem;
+}
+.refuseConten>div {
+  text-align: right;
+  color: #333;
+}

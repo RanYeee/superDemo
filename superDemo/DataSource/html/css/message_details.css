@@ -1,0 +1,30 @@
+/* 
+* @Author: liangjie
+*/
+
+.color_bdb{
+    color: #1a1afa;
+    border-bottom: 1px solid #1a1afa;
+}
+.mes_detal_top{
+    padding-top: .05rem;
+    padding-bottom: .05rem;
+}
+.mes_detal_top_lh{
+    line-height: .22rem;
+    font-size: .14rem;
+}
+.mes_color{
+    color: #ff6b69;
+}
+.descriptionDisease {
+  padding: .1rem 0rem;
+  border-bottom: 1px solid #efefef;
+  font-size: .14rem;
+  word-break: break-all;
+}
+.orderTime{
+  float: right;
+  font-size: .14rem;
+  color: #666;
+}

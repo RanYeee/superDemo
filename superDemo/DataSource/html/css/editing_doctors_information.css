@@ -1,0 +1,144 @@
+/*
+* @Author: liangjie
+*/
+
+html,body{
+	background: #f2f3f5;
+}
+
+/* 头部样式 */
+.headerTop{
+	width: 100%;
+	height: .4rem;
+	background: #279ebc;
+  	position: fixed;
+  	top: 0;
+  	z-index: 8;
+}
+.headerTop a{
+	font-size: .18rem;
+	color: #fff;
+	display: block;
+	line-height: .4rem;
+    padding-left: 0.15rem;
+}
+.headerTop a.lefeBtn{
+    background: url(../images/ic_back.png) left center no-repeat;
+    background-size: auto 40%;
+}
+
+/*内容样式*/
+.edtDocInfo,.doctorProfile{
+	background: #fff;
+}
+.weui_cell {
+    padding: 10px 15px;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 1px solid #f2f2f2;
+}
+.weui_cell_primary {
+text-align: left;
+}
+.p_left{
+    display: block;
+    -webkit-margin-before: .05rem;
+    -webkit-margin-after: .05rem;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-size: .16rem;
+}
+.weui_cell_ft {
+    text-align: right;
+    font-size: .14rem;
+    color: #999;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding-left: .2rem;
+    position: relative;
+}
+.weui_cell_ft span,.weui_cell_ft .headSculpture{
+	float: right;
+	text-align: left;
+}
+.weui_cell_ft .headSculpture{
+    display: inline-block;
+    width: .45rem;
+    height: .45rem;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.weui_cell_ft .headSculpture img{
+    width: 100%;
+}
+.weui_cell_ft_icon{
+	padding-right: .08rem;
+}
+.weui_cell_ft_icon:after {
+    content: " ";
+    display: inline-block;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    height: 12px;
+    width: 12px;
+    border-width: 1px 1px 0 0;
+    border-color: #C8C8CD;
+    border-style: solid;
+    position: relative;
+    top: -2px;
+    top: -1px;
+    margin-left: .3em;
+    position: absolute;
+    top: 42%;
+    right: -2px;
+}
+.weui_cell_ft_icon span{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.edtDocInfo{
+	margin-top: .4rem;	
+}
+.doctorProfile{
+	margin-top: .1rem;
+}
+
+/*编辑医生简介*/
+.texare_out{
+    margin-top: .4rem;
+}
+.head_center{
+    text-align: center;
+    line-height: .4rem;
+    font-size: .18rem;
+    color: #fff;
+}
+.texare_out textarea {
+  width: 100%;
+  border-radius: .04rem;
+  padding-left: .05rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: .05rem;
+  resize: none;
+  border: 1px solid #88dbea;
+  margin-top: .1rem;
+  font-size: .14rem;
+}
+.tax_right{
+    text-align: right;
+    font-size: .12rem;
+}

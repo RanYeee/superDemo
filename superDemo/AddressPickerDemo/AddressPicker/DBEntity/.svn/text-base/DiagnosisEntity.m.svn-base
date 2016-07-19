@@ -1,0 +1,14 @@
+//
+//  DiagnosisEntity.m
+//  ElectronicPrescribing
+//
+//  Created by Ducky on 16/4/28.
+//  Copyright © 2016年 Rany. All rights reserved.
+//
+
+#import "DiagnosisEntity.h"
+
+@implementation DiagnosisEntity
+
+
+@end

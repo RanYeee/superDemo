@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-en">
+<head>
+	<meta charset="UTF-8">
+	<title>订单统计</title>
+	 <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/order_statistic.css">
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="head">
+		<div class="pd12 clearfix">
+			<a  class="headBack fl" id="opt_title">业务数据统计</a>
+		</div>
+	</div>
+	<!-- 主体部分 -->
+	<div class="content clearfix">
+		<!-- 筛选部分 -->
+		<div class="dayorder pd12">
+			<ul>
+				<li class="daySelect fl">
+					<span class="dayIcons" id="date_choose"><img src="images/ic_date_blue.png" alt=""></span>
+					<div class="time">
+						<span class="startTime" id="startDate"></span>
+						<span>至</span>
+						<span class="endTime" id="endDate"></span>
+					</div>
+				</li>
+				<!-- 下拉框 -->
+				<div class="rightDiv fr">	
+				<li class="rightLi">
+					<span style="max-width: .85rem;" val="0" id="orderType"></span>
+					<ul class="ordertypeSelect" id="orderTypeList">
+						<!--<li val='1'>申请开处方</li>
+						<li val='2'>申请审处方</li>
+						<li val='6'>到院处方</li>-->
+					</ul>
+				</li>
+				</div>
+			</ul>
+		</div>
+		<!-- 表格 -->
+		<div class="all">
+			<!-- 药店销售员 业务统计数据展现区域-->
+			<div class="form clearfix" id="salesman">	
+				<table width="100%;" id="data_table">
+				</table>
+			</div>
+			<!-- 药店销售员 业务统计数据展现区域 end-->
+		</div>
+
+	</div>
+	<!-- js -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/RainbowBridge.js"></script>
+	<script src="js/constants.js"></script>
+	<script src="js/APP.js"></script><!--注意这几个文件引入的顺序 -->
+	<script src="js/business_data_statistic_salesman.js"></script>
+</body>
+</html>

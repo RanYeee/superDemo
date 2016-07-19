@@ -1,0 +1,359 @@
+/* 
+* @Author: liangjie 
+*/
+@charset "utf-8";
+/* CSS Document */
+
+
+/*头部栏*/
+body{
+	background: #eee;
+}
+.headerTop{
+    width: 100%;
+    height: .4rem;
+    background: #279ebc;
+    position: fixed;
+    top: 0;
+    z-index: 8;
+}
+.headerTop a{
+    font-size: .18rem;
+    color: #fff;
+    display: block;
+    line-height: .4rem;
+    padding-left: 0.2rem;
+}
+.headerTop a.lefeBtn{
+    background: url(../images/ic_back.png) left center no-repeat;
+    background-size: auto 40%;
+}
+
+/*药品搜索*/
+.sou_bo{
+    width: 100%;
+    height: .5rem;
+    background: #65d0e4;
+    margin-top: .4rem;
+    position: relative;
+}
+.sou_bo>div{
+    text-align: center;
+    display: run-in;
+}
+.sou_bo .myInp{
+    width: 95%;
+    height: .32rem;
+    border-radius: .04rem;
+    background: #fff;
+    border: none;
+    padding-left: .3rem;
+    margin-top: .1rem;
+    font-size: .16rem;
+    background: #fff url(../images/ic_sarch_nor.png) .1rem center no-repeat;
+    -webkit-background-size: .16rem .16rem;
+    background-size: .16rem .16rem;
+    padding-right: .05rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+.deIcon{
+    position: absolute;
+   display: block;
+   width: .16rem;
+   height: .16rem;
+   background: url(../images/ic_delete_black.png) left center no-repeat;
+   background-size: 16px;
+   position: absolute;
+   top: 50%;
+   margin-top: -6px;
+   right: 5%;
+   display: none;
+}
+/*内容*/
+.drug{
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+}
+.deleteDrug{
+    width: .22rem;
+    height: .22rem;
+    background: #333;
+    position: absolute;
+    right: .05rem;
+    top: 5%;
+    background: url(../images/ic_delete_black.png) 0 0 no-repeat;
+    -webkit-background-size: .22rem .22rem;
+    background-size: .22rem .22rem;
+}
+.drug_table{
+    width: 100%;
+}
+.drugs_b_out{
+    border-top: 1px solid #ddd;
+    margin-top: .04rem;
+    padding: .05rem;
+}
+.name{
+    font-size: .16rem;
+    padding-right: .22rem;
+}
+.name_b{
+    font-size: .12rem;
+    color: #ff6b69;
+}
+.drugs_table_con{
+    width: 100%;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.drugs_table_con td,.drug_tw td{
+    height: .35rem;
+    padding-left: .05rem;
+    font-size: .16rem;
+}
+.drugs_table_con td:nth-child(1),.drugs_table_con td:nth-child(2),.drug_tw td:nth-child(1),.drug_tw td:nth-child(2){
+    border-right: 1px solid #ddd;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.drugs_table_con td:nth-child(1),.drugs_table_con td:nth-child(3){
+    width: 28%;
+}
+.drugs_table_con td .heZi{
+    display: -webkit-box;
+}
+.drugs_table_con td .biaoZhu{
+    padding-top: .03rem;
+    color: #65d0e4;
+    line-height: 100%;
+}
+.drugs_table_con td .heZi .way{
+    display: block;
+    -webkit-box-flex: 1;
+    text-align: center;
+}
+.way input{
+    width: 100%;
+    border: none;
+    text-align: center;
+    background: none;
+}
+.info_list {
+  line-height: .3rem;
+/*  border-bottom: 1px solid #ddd;*/
+  font-size: .14rem;
+  display: -webkit-box;
+}
+.inp_box {
+  -webkit-box-flex: 1;
+}
+.lab_mar {
+  margin-right: .1rem;
+}
+.rad_out {
+  display: inline-block;
+}
+.rad_incon {
+  display: inline-block;
+  width: .16rem;
+  height: .16rem;
+  background: url(../images/ic_choise_circle_no-.png) 0 center no-repeat;
+  -webkit-background-size: .16rem .16rem;
+  background-size: .16rem .16rem;
+  /* margin-top: .04rem; */
+  float: left;
+  margin-top: .07rem;
+}
+.rad_incon.check_on {
+  background: url(../images/ic_choise_circle_yes-.png) 0 center no-repeat;
+  -webkit-background-size: .16rem .16rem;
+  background-size: .16rem .16rem;
+}
+.rad_out .rad_check {
+  position: absolute;
+  left: -9999em;
+  /*text-indent: -9999px;*/
+}
+.lab_mar{
+    margin-left: .1rem;
+}
+.list_left{
+    padding-left: .05rem;
+}
+.otherUsage,.otherUsage_right{
+    width: .65rem;
+    margin-left: .05rem;
+    border: 1px solid #ddd;
+    border-radius: .02rem;
+    padding-left: .05rem;
+    line-height: .22rem;
+}
+.otherUsage_right{
+    border: none;
+    text-align: center;
+    background: url(../images/triangleBg.png) right bottom no-repeat;
+}
+/*弹出框*/
+.cover{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background: rgba(0,0,0,0.6);;
+    z-index: 998;
+    display: none;
+}
+.cover_useAmount{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background: rgba(0,0,0,0.6);;
+    z-index: 999;
+    display: none;
+}
+.ul_b{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    bottom: 0rem;
+    background: #fff;
+    /*padding: .05rem;*/
+}
+.ul_b>div:nth-child(1){
+    background: #fff;
+    color: #333;
+    font-size: .16rem;
+    margin-top: .05rem;
+    padding-left: .05rem;
+    font-weight: bold;
+}
+.frequency{
+    float: left;
+    padding-left: .05rem;
+    font-size: .14rem;
+    padding-top: .05rem;
+}
+.btnTwo{
+    text-align: center;
+    border-top: 1px solid #ddd;
+    margin-top: .1rem;
+}
+.btnTwo a{
+    display: inline-block;
+    padding: .05rem .1rem;
+    margin: .1rem;
+    border: 1px solid #ddd;
+    border-radius: .04rem;
+    background: #65d0e4;
+    color: #fff;
+}
+
+.par{
+    position: relative;
+}
+.par>ul{
+    position: absolute;
+    bottom: .2rem;
+    right: 0rem;
+    display: none; 
+    -webkit-box-shadow: 6px 6px 6px rgba(9, 9, 9, 0.2);
+    box-shadow: 6px 6px 6px rgba(9, 9, 9, 0.2);
+}
+.par>ul.active{
+    display: block;
+}
+.par>ul li{
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+    width: .65rem;
+    line-height: .26rem;
+    text-align: center;
+
+}
+/*.sou_bo{
+    position: relative;
+}*/
+.sou_bo_list{
+    width: 100%;
+    position: absolute;
+    top: .5rem;
+    background: #fff;
+    z-index: 20;
+    left: 0rem;
+    margin: 0 auto;
+    display: none;
+}
+.drug_tw{
+    width: 100%;
+    border: none;
+}
+.drug_tw tr td{
+    border-bottom: 1px solid #ddd;
+}
+.store{
+    background: #f4f4f4;  
+    border-bottom: 1px solid #dddddd; 
+    margin-top: .4rem; 
+}
+.store>div{
+    position: relative;
+    padding-top: .08rem;
+    padding-bottom: .08rem;
+    font-size: .16rem;
+}
+.store>div>span:nth-child(1){
+    color: #3ccae4;
+    /*font-weight: bold;*/
+}
+.small{
+    font-size: .12rem;
+    margin-left: .05rem;
+    color: #999;
+}
+.locate{
+    display: block;
+    position: absolute;
+    right: -0.06rem;
+    top: 0rem;
+    width: .2rem;
+    height: 100%;
+    padding: 0rem .08rem;
+    background: url(../images/miss.png) center no-repeat;
+    -webkit-background-size: .2rem .2rem;
+    background-size: .2rem .2rem;
+}
+/*******************药品信息详情样式*****************/
+.htmlBg{
+	background: #f7f7f7;
+}
+.drugInfoCon{
+	/*border-top: 1px solid #ddd;*/
+	margin-top: .4rem;
+}
+.drugInfoCon ul li{
+	background: #fff;
+	margin-bottom: .05rem;
+	padding-top: .1rem;
+	padding-bottom: .1rem;
+	border-top: 1px solid #ededed;
+	border-bottom: 1px solid #ededed;
+}
+.drugInfoCon ul li h2{
+	font-size: .16rem;
+	word-break: break-all;
+	padding: .04rem 0rem;
+}
+.drugInfo p{
+	margin-top: .05rem;
+}
+.drugInfo p span{
+	margin: 0rem .1rem;
+	font-size: .14rem;
+	color: #666;
+}

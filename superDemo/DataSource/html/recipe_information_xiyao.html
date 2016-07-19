@@ -1,0 +1,118 @@
+<!-- --作者：546396033@qq.com
+	时间：2016-05-25
+	描述：西药处方签
+-->
+<!DOCTYPE html>
+<html lang="zh-en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>处方笺</title>
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/recipe.css">
+	</head>
+
+	<body>
+		<!-- 头部 -->
+		<div class="head">
+			<div class="pd12 clearfix">
+				<a href="javascript:;" class="headBack fl">处方笺</a>
+			</div>
+		</div>
+		<!-- 主体 -->
+		<div class="content pd12">
+			<!-- 处方笺头部 -->
+			<div class="recipeTop clearfix">
+				<p class="no"></p>
+				<h2 class="clinicName"></h2>
+				<h3>处方笺</h3>
+				<div class="ulOut">
+					<ul class="clearfix">
+						<li class="liWidthLo">
+							<div id="blNoName" class="lil">门诊/住院号</div>
+							<div id="blNo" class="lir"></div>
+						</li>
+						<li class="liWidth">
+							<div class="lil">科室</div>
+							<div id="blKs" class="lir"></div>
+						</li>
+						<li class="liWidth">
+							<div class="lil">床号</div>
+							<div id="blBed" class="lir"></div>
+						</li>
+						<li>
+							<div class="lil">姓名</div>
+							<div id="blName" class="lir"></div>
+						</li>
+						<li>
+							<div class="lil">性别</div>
+							<div id="blSex" class="lir"></div>
+						</li>
+						<li>
+							<div class="lil">年龄</div>
+							<div id="blAge" class="lir"></div>
+						</li>
+						<li class="liLastWidth">
+							<div class="lil">临床诊断</div>
+							<div id="blZDinfo" class="lir"></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- rp -->
+			<div class="Rp">
+				<h3>Rp.</h3>
+				<div class="Rpinfos">
+					<ul>
+					</ul>
+
+				</div>
+			</div>
+			<!-- 署名 -->
+			<div class="sign">
+				<ul class="recip_ul clearfix">
+					<li>
+						<div><span>医师</span></div>
+						<div class="imgOut">
+							<div id="docImg" class="myImg"></div>
+						</div>
+					</li>
+					<li>
+						<div><span>调配</span></div>
+						<div></div>
+					</li>
+					<li>
+						<div><span>药师</span></div>
+						<div class="imgOut">
+						<div id="phrImg" class="myImg"></div>
+						</div>
+					</li>
+					<li>
+						<div><span>复核人</span></div>
+						<div><span></span></div>
+					</li>
+				</ul>
+				<p class="endtime">2015年5月20日</p>
+				<h4 class="tips">如病人未在此处方单上签名，此处方单无效</h4>
+			</div>
+			<!-- 浮动图标 -->
+			<div class="icon">
+				<a href="javascript:;">
+					<div class="contact"></div>
+				</a>
+				<a href="javascript:;">
+					<div class="other"></div>
+				</a>
+			</div>
+		</div>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/RainbowBridge.js"></script>
+		<script src="js/constants.js"></script>
+		<script src="js/APP.js"></script>
+		<!--注意这几个文件引入的顺序 -->
+		<script src="js/recipe_information.js"></script>
+	</body>
+
+</html>

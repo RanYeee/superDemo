@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html class="htmlBg">
+	<head>
+		<meta charset="UTF-8">
+	    <title>药品信息详情</title>
+	    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+	    <link rel="stylesheet" href="css/reset.css"/>
+	    <link rel="stylesheet" href="css/common.css">
+	    <link rel="stylesheet" type="text/css" href="css/choose_drugs.css" />
+	</head>
+	<body>
+		 <!-- 头部 -->
+	    <div class="headerTop">
+	        <div class="pd12 clearfix">
+	            <a href="javascript:void(0)" class="lefeBtn fl" id="opt_title"  >药品信息</a>         
+	        </div>
+	    </div>
+	    <div class="drugInfoCon">
+	    	<ul id="drug_list">
+	    		<!--<li class="pd12">
+	    			<div class="drugInfo">
+	    				<h2>1.阿斯匹克药片药片药片阿斯匹克药片药片药片片药片药片片药片药片片药片药片片药片药片</h2>
+	    				<p>
+	    					<span>(0.1g*6丸)*12丸</span><span>口服</span>
+	    				</p>
+	    				<p>
+	    					<span>每次0.2g</span><span>每日一次</span>
+	    				</p>
+	    			</div>
+	    		</li>-->
+	    	</ul>
+	    </div>
+	    <script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/apply_prescription.js"></script>
+		<script src="js/RainbowBridge.js"></script>
+		<script src="js/constants.js"></script>
+		<script src="js/APP.js"></script><!--注意这几个文件引入的顺序 -->
+		<script type="text/javascript">
+			$(document).ready(function(){
+				//必须先初初始化APP的基本信息
+				APP.init(function() {
+					var dataJsonStr = APP.getLocationParameter('data', '{"orderNo":"85be1160706141850975","orderType":"6","druginfo":[]}');
+					console.log('get parameter->data:' + dataJsonStr);
+					var dataJson = APP.str2Json(dataJsonStr);
+					//获取药品列表
+					var drugList=dataJson.druginfo;
+					var orderType=dataJson.orderType;
+					var html='';
+					if(drugList&&drugList.length>0){
+						for(var i=0;i<drugList.length;i++){
+							var drug=drugList[i];
+							html+='';
+							html+='<li class="pd12">';
+				    		html+='	<div class="drugInfo">';
+				    		html+='		<h2>'+(i+1)+'.'+drug.drugName+'('+drug.universalName+')</h2>';
+				    		html+='		<p>';
+				    		html+='			<span>'+drug.norms+'</span>';
+				    		html+='		</p>';
+				    		if(orderType==OrderType.TYPE_DRUGSTORE_ASSIST || orderType==OrderType.TYPE_DTC){
+				    			//西药
+				    			html+='		<p>';
+				    			html+='			<span>'+drug.usage+'</span><span>'+drug.dosage+'</span>';
+				    			html+='		</p>';
+				    		}else if(orderType==OrderType.TYPE_OUTPATIENT || orderType==OrderType.TYPE_OUTPATIENT_ASSIST){
+				    			var countUnit='';
+				    			if(drug.countUnit || drug.countUnit!=null){
+				    				countUnit=drug.countUnit ;
+				    			}
+				    			//中药
+				    			html+='		<p>';
+				    			if(countUnit){
+				    				html+='			<span>'+countUnit+'</span>';
+				    			}
+				    			html+='<span>'+drug.price+'</span>';
+				    			html+='		</p>';
+				    		}
+				    		
+				    		
+				    		html+='	</div>';
+				    		html+='</li>';
+						}
+					}
+					$('#drug_list').html(html);
+					/**
+					 * "返回按钮"点击事件
+					 */
+					$('#opt_title').bind('click', function() {
+						APP.finishH5();
+					});
+					//--------------------------------------------------------------------------
+				});
+			});
+		</script>
+	</body>
+</html>

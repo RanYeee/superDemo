@@ -1,0 +1,335 @@
+/*处方笺样式*/
+
+html{
+	/*background: #f2f3f5;*/
+}
+body{
+	/*background-color: #f2f3f5;*/
+}
+/*头部*/
+.head{
+	width: 100%;
+	height: .4rem;
+	background: #279ebc;
+	position: fixed;
+	top: 0;
+	z-index: 9999;
+}
+.headBack{
+	font-size: .18rem;
+	line-height:.4rem;
+	color: #fff; 
+	padding-left: 0.2rem;
+	display: block;
+	background: url(../images/ic_back.png) left center no-repeat;
+	background-size: auto 40%;
+}
+.handle{
+	font-size: .16rem;
+	line-height: .4rem;
+	color: #fff;
+	margin-left: .05rem;
+}
+/*主体部分*/
+.content{
+	margin-top: .4rem;
+}
+/*处方笺头部*/
+.recipeTop{
+	padding: .1rem 0;
+	/*border-bottom: 1px solid #3e3e3e;*/
+}
+/*编号*/
+.no{
+	position: relative;
+	font-size: .14rem;
+}
+.no span{
+	color: #65d0e4;
+	font-size: .16rem;
+	position: absolute;
+	top: 0px;
+	right: 16px;
+}
+/*门诊名称*/
+.clinicName{
+	text-align: center;
+	font-size: .18rem;
+	color: #3e3e3e;
+	padding: .03rem 0;
+	position: relative;
+}
+/*章*/
+.clinicName span{
+	display: block;
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	top: -.05rem;
+	right: 25%;
+	background: url(../images/red_description.png);
+	background-size: .8rem;
+}
+.recipeTop h3{
+	text-align: center;
+	font-size: .18rem;
+	color: #000;
+	font-weight: bold;
+	padding-bottom: .03rem;
+}
+
+/*处方笺内容头部*/
+.ulOut ul li {
+  min-width: 33.33%;
+  /*height: .21rem;*/
+  float: left;
+  padding: 5px 0px;
+  display: -webkit-box;
+}
+.ulOut span {
+  display: inline-block;
+}
+.ulOut ul li .lil {
+  margin-right: .05rem;
+  text-align: left;
+  font-size: .14rem;
+}
+.ulOut .lir {
+  border-bottom: 1px solid #ddd;
+  -webkit-box-flex: 1;
+  text-align: center;
+  margin-right: .05rem;
+  font-size: .14rem;
+}
+.ulOut ul .liWidth{
+	min-width: 22%;
+  	height: .21rem;
+	
+}
+.ulOut ul .liWidthLo{
+	min-width: 56%;
+	height: .21rem;
+}
+.ulOut ul .liLastWidth{
+	width: 100%;
+}
+.ulOut ul .liLastWidth .lir{
+	text-align: left;
+}
+
+.rightDiv{
+	width: 60%;
+	text-align: right;
+}
+.rightDiv li{
+	width: 40%;
+	margin-left: 5px;
+}
+.tac{
+	text-align: center;
+}
+.date{
+	float: right;
+	width: 50%;
+	text-align: right;
+}
+.date span{
+	width: 20%;
+	text-align: center;
+}
+/*rp部分*/
+.Rp{
+	min-height: 2rem;
+	border-top: 2px solid #333;
+	border-bottom: 2px solid #333;
+	padding-top: .15rem;
+	padding-bottom: .15rem;
+}
+.rp_con{
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #333;
+}
+.Rp h3{
+	font-size: .18rem;
+	font-weight: bold;
+}
+/*rp内容部分*/
+.Rpinfos{
+	font-size: .14rem;
+}
+.Rpinfos ul li{
+	/*background: #ededed;*/
+	margin-top: .05rem;
+	/*border-bottom: 1px solid #dddddd;*/
+}
+.Rpinfos ul li .drugDescription span{
+	margin: 0rem .08rem;
+	color: #666;
+}
+
+.sign{
+	margin-top: .1rem;
+}
+.tips{
+	padding: .02rem .05rem;
+	color: #333;
+	margin-bottom: .1rem;
+	font-size: .12rem;
+}
+/*具体药单内容*/
+.Rp h4{
+	font-weight: bold;
+	font-size: .16rem;
+	padding:.05rem 0 0.05rem 0;
+}
+.Rp h4 #rpCount{
+	font-weight: normal;
+	margin-right: .06rem;
+}
+.rp th{
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	padding: 5px 0;
+	text-align: center;
+	font-size: .14rem;
+	font-weight: bold;
+}
+.rp td{
+	text-align: center;
+	padding: 5px 0;
+	line-height: .16rem;
+	font-size: .14rem;
+}
+.rp th:first-child,.rp td:first-child{
+	text-align: left;
+}
+.zy_yongfa{
+	margin-top: .2rem;
+	font-size: .14rem;
+}
+
+/*署名部分*/
+
+.recip_ul{
+	font-size: .14rem;
+}
+.recip_ul li{
+	width: 50%;
+	float: left;
+	height: .45rem;
+	display: -webkit-box;
+	display: box;
+}
+.recip_ul li>div:nth-child(1){
+	margin-right: .05rem;
+	position: relative;
+	width: .35rem;
+	height: .45rem;
+}
+.recip_ul li:last-child>div:nth-child(1){
+	width: .45rem;
+}
+.recip_ul li>div:nth-child(1) span{
+	position: absolute;
+	text-align: center;
+	bottom: .05rem;
+}
+.recip_ul li>div:nth-child(2){
+	-webkit-box-flex: 1;
+	border-bottom: 1px solid #ddd;
+	margin-right: .05rem;
+	text-align: center;
+	line-height: .45rem;
+}
+.endtime{
+	text-align: right;
+	padding: .1rem;
+	font-size: .12rem;
+}
+/*浮动图标部分*/
+.icon{
+	position: fixed;
+	bottom: 20%;
+	right: 10px;
+}
+.contact,.other{
+	z-index: 666;
+	width: .35rem;
+	height: .35rem;
+	background-color: #ccc;
+	margin-bottom: .1rem;
+}
+.contact{
+	background: url(../images/ic_chat.png);
+	background-size: .35rem;
+}
+.other{
+	background: url(../images/ic_order.png);
+	background-size: .35rem;
+}
+.imgOut{
+	position: relative;
+	height: .4rem;
+}
+.myImg{
+	position: absolute;
+	width: .42rem;
+	height: .42rem;
+	left: 35%;
+	bottom: 0px;
+	overflow: hidden;
+}
+.myImg img{
+	width: 100%;
+}
+
+/************* 处方信息图片页面样式 ******************************/
+.reciperImghtml{
+	height: 100%;
+	overflow: hidden;
+}
+/* 内容样式 */
+img{
+	border: none;
+}
+.content{
+	margin-top: .4rem;
+}
+.bigPic{
+	width: 100%;
+}
+.imageDiv{
+	display: none;
+	width: 100%;
+	overflow-y: scroll;
+}
+.imageDiv img{
+	width: 100%;
+}
+.smallPic{
+	position: fixed;
+	width: 100%;
+	background-color: #000;
+	padding: 0 5px;
+	box-sizing:border-box;
+	bottom: 0;
+}
+.smallPic ul li{
+	float: left;
+	width: 20%;
+	padding: 15px 2px;
+	box-sizing:border-box;
+}
+.smallPic ul li a{
+	display: block;
+	width: 100%;
+	height: 60px;
+	overflow: hidden;
+}
+.smallPic img{
+	width: 100%;
+	vertical-align:middle;
+	border-radius: 3px;
+	box-sizing:border-box;
+	border: 1px solid #000;
+}

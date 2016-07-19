@@ -1,0 +1,117 @@
+
+body{
+	background-color: #f2f3f5;
+}
+/*头部*/
+.head{
+	width: 100%;
+	height: .4rem;
+	background: #269ebc;
+	position: fixed;
+	top: 0;
+	z-index: 9999;
+}
+.header_height{
+	height: .48rem;
+}
+.headBack{
+	font-size: .16rem;
+	line-height:.4rem;
+	color: #fff; 
+	padding-left: 0.2rem;
+	margin-right: .05rem;
+	display: block;
+	background: url(../images/ic_back.png) left center no-repeat;
+	background-size: auto 40%;
+}
+.headH{
+	font-size: .18rem;
+	line-height: .4rem;
+	color: #fff;
+	text-align: center;
+	padding: 0 .65rem;
+}
+
+.content{
+	margin-top: .4rem;
+}
+.search{
+	width: 100%;
+	height: .5rem;
+	background-color: #65d0e4;
+	text-align: center;
+	line-height: .5rem;
+	margin-bottom: .07rem;
+	position: relative;
+}
+.search span{
+	display: inline-block;
+	width: .16rem;
+	height: .16rem;
+	background: url(../images/ic_sarch_nor.png) left center no-repeat;
+	background-size: .16rem;
+	position: absolute;
+	top: .17rem;
+	margin-left: .1rem;
+}
+.search input{
+	height: .32rem;
+	border: none;
+	outline: none;
+	width: 95%;
+	/*padding: .08rem .08rem .08rem .3rem ;*/
+	padding-left: .3rem;
+	font-size: .14rem;
+	background: #fff url(../images/ic_sarch_nor.png) .1rem center no-repeat;
+	-webkit-background-size: .16rem .16rem;
+	background-size: .16rem .16rem;
+	border-radius: 4px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+.library table{
+	width: 100%;
+	background-color: #fff;
+	color: #3e3e3e;
+}
+.library table tr>th{
+	text-align: center;
+	color: #65d0e4;
+	height: .38rem;
+	font-size: .14rem;
+}
+.library table tr>th:nth-child(2){
+	border-left: 1px solid #e8e8e8;
+	border-right: 1px solid #e8e8e8;
+}
+.library table tr td{
+	border: 1px solid #e8e8e8;
+	height: .38rem;
+	font-size: .14rem;
+}
+tr>td:first-child{
+	width: 14%;
+	text-align: center;
+	border-left: none !important;
+}
+tr>td:nth-child(2){
+	padding: 0 .1rem;
+}
+tr>td:last-child{
+	width: 60%;
+	padding: 0 .1rem;
+	border-right: none !important;
+}
+.swiper-slide{
+	line-height: .34rem;
+	text-align: center;
+	background-color: #d6ecf2;
+	color: #3e3e3e;
+}
+.active{
+	background-color: #65d0e4;
+	color: #fefefe;
+}

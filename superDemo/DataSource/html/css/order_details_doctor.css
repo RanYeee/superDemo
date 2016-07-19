@@ -1,0 +1,49 @@
+/* 
+* @Author: liangjie
+*/
+
+@charset "utf-8";
+/* CSS Document */
+
+/*医生版订单详情*/
+.h2Out02{
+    position: relative;
+}
+.contactPatient{
+    position: absolute;
+    right: .08rem;
+    top: .03rem;
+    border: 1px solid #999;
+    border-radius: .04rem;
+    height: .26rem;
+    line-height: .26rem;
+    padding: 0rem .06rem;
+    padding-left: .28rem;
+    background: url(../images/ic_chat_yellow.png) .05rem center no-repeat;
+    -webkit-background-size: .2rem .2rem;
+    background-size: .2rem .2rem;
+}
+#view_drugs{
+	right: 1rem;
+}
+
+/*医生订单详情04*/
+.infoDes div{
+    text-align: center;
+    margin-top: .1rem;
+}
+.infoDes div a{
+    display: inline-block;
+    width: .5rem;
+    height: .55rem;
+    background: url(../images/ic_book.png) 0 0 no-repeat;
+    -webkit-background-size: .5rem .55rem;
+    background-size: .5rem .55rem;
+}
+.infoDesText{
+    text-align: center;
+    padding-bottom: .2rem;
+    font-size: .14rem;
+}
+
+

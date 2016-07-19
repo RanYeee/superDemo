@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15A2301" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="fay-oE-frk" customClass="ComPickerView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="270"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTY-Vf-y1b">
+                    <rect key="frame" x="8" y="8" width="67" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="关闭"/>
+                    <connections>
+                        <action selector="closeOnclickAction:" destination="fay-oE-frk" eventType="touchUpInside" id="hcc-cC-m6I"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HdT-R9-TCP">
+                    <rect key="frame" x="245" y="8" width="67" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="完成"/>
+                    <connections>
+                        <action selector="confirmOnclickAction:" destination="fay-oE-frk" eventType="touchUpInside" id="TYa-n3-uZ8"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vij-Rz-gbJ">
+                    <rect key="frame" x="0.0" y="41" width="320" height="2"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="1u8-sH-BsQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9bQ-h7-ddg">
+                    <rect key="frame" x="0.0" y="51" width="320" height="216"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="224" id="OCO-vL-bzp"/>
+                        <constraint firstAttribute="width" constant="320" id="Wut-s9-1U1"/>
+                    </constraints>
+                </pickerView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Vij-Rz-gbJ" firstAttribute="top" secondItem="gTY-Vf-y1b" secondAttribute="bottom" constant="10" id="CpA-mY-kwE"/>
+                <constraint firstAttribute="trailing" secondItem="9bQ-h7-ddg" secondAttribute="trailing" id="K4D-zj-bAm"/>
+                <constraint firstItem="9bQ-h7-ddg" firstAttribute="leading" secondItem="fay-oE-frk" secondAttribute="leading" id="KSy-Lv-zWJ"/>
+                <constraint firstAttribute="bottom" secondItem="9bQ-h7-ddg" secondAttribute="bottom" id="Pct-KV-ERB"/>
+                <constraint firstAttribute="trailing" secondItem="Vij-Rz-gbJ" secondAttribute="trailing" id="ajR-GU-9AK"/>
+                <constraint firstItem="HdT-R9-TCP" firstAttribute="top" secondItem="fay-oE-frk" secondAttribute="top" constant="10" id="bF5-SP-996"/>
+                <constraint firstAttribute="trailing" secondItem="HdT-R9-TCP" secondAttribute="trailing" constant="15" id="bNh-sS-R7s"/>
+                <constraint firstItem="Vij-Rz-gbJ" firstAttribute="leading" secondItem="fay-oE-frk" secondAttribute="leading" id="dx6-F2-RYZ"/>
+                <constraint firstItem="gTY-Vf-y1b" firstAttribute="top" secondItem="fay-oE-frk" secondAttribute="top" constant="10" id="quM-NX-eyi"/>
+                <constraint firstItem="Vij-Rz-gbJ" firstAttribute="top" secondItem="HdT-R9-TCP" secondAttribute="bottom" constant="10" id="uCX-AG-LaL"/>
+                <constraint firstItem="9bQ-h7-ddg" firstAttribute="top" secondItem="Vij-Rz-gbJ" secondAttribute="bottom" constant="5" id="v5w-7C-YeE"/>
+                <constraint firstItem="gTY-Vf-y1b" firstAttribute="leading" secondItem="fay-oE-frk" secondAttribute="leading" constant="15" id="zF2-h0-Bkq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="closeBtn" destination="gTY-Vf-y1b" id="knx-S7-eEe"/>
+                <outlet property="confirmBtn" destination="HdT-R9-TCP" id="4Cq-U5-hOD"/>
+                <outlet property="mPickerView" destination="9bQ-h7-ddg" id="V41-ty-5y1"/>
+            </connections>
+            <point key="canvasLocation" x="210" y="169"/>
+        </view>
+    </objects>
+</document>

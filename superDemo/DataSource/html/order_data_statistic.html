@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-en">
+<head>
+	<meta charset="UTF-8">
+	<title>订单统计</title>
+	 <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/order_statistic.css">
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="head">
+		<div class="pd12 clearfix">
+			<a id="opt_title" href="javascript:;" class="headBack fl">订单数据统计</a>
+			<a href="javascript:;" class="lefeRight fr" id="view_details">查看明细</a>			
+		</div>
+	</div>
+	<!-- 主体部分 -->
+	<div class="content clearfix">
+		<!-- 筛选部分 -->
+		<div class="dayorder pd12">
+			<ul>
+				<li class="daySelect fl">
+					<span class="dayIcons"><img src="images/ic_date_blue.png" alt="" id="date_choose"></span>
+					<div class="time">
+						<span class="startTime" id="startDate">2014-5-20</span>
+						<span>至</span>
+						<span class="endTime" id="endDate">2015-5-20</span>
+					</div>
+				</li>
+				<!-- 下拉框 -->
+				<div class="rightDiv fr">	
+				<li class="rightLi" id="order_menu">
+					<span val="" id="orderType" >全部</span><!--最终选择的订单类型的结果 -->
+					<ul class="drugstoreSelect" >
+						<!--
+						<li val="">全部</li>
+						<li val="1">申请开处方</li>
+						<li val="2">申请审处方</li>
+						<li val="6" id="order_menu_6">到院处方</li>
+						-->
+					</ul>
+					
+				</li>
+				<!--
+				<li class="rightLi" id="hospitalIn_menu">
+					<span val="" id="hospitalIn">全部</span>
+					<ul class="ordertypeSelect">
+						<li val="">全部</li>
+						<li val="2">院内处方</li>
+						<li val="1">院外处方</li>
+					</ul>
+				</li>
+				-->
+				</div>
+			</ul>
+		</div>
+		<!-- 表格部分 -->
+		<div class="dataForm">
+			<table width="100%" id="dataList">
+				<!--
+				<tr>
+					<td>统计对象</td>
+					<td>订单类型</td>
+					<td>成交金额</td>
+				</tr>
+				<tr>
+					<td>张一峰</td>
+					<td>12</td>
+					<td>10000.00</td>
+				</tr>
+				-->
+			</table>
+		</div>
+		
+	</div>
+	
+	  <!-- js -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/RainbowBridge.js"></script>
+	<script src="js/constants.js"></script>
+	<script src="js/APP.js"></script><!--注意这几个文件引入的顺序 -->
+	<script src="js/order_data_statistic.js"></script>
+</body>
+</html>

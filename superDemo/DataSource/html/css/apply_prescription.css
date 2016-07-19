@@ -1,0 +1,639 @@
+/*
+* @Author: liangjie
+* @Last Modified by:   Marte
+*/
+@charset "utf-8";
+/* CSS Document */
+
+body{font-size:0.14rem;}
+/*头部栏*/
+.headerTop{
+	width: 100%;
+	height: .4rem;
+	background: #279ebc;
+  	position: fixed;
+  	/*position: absolute;*/
+  	top: 0rem;
+  	left: 0rem;
+  	z-index: 888;
+}
+.headerTop a{
+	font-size: .18rem;
+	color: #fff;
+	display: block;
+	line-height: .4rem;
+    padding-left: 0.15rem;
+}
+.headerTop a.lefeBtn{
+    background: url(../images/ic_back.png) left center no-repeat;
+    background-size: auto 40%;
+}
+/*内容*/
+.app_pre_con{
+	margin-top: .4rem;
+}
+.con01{
+	border-bottom: 2px solid #fff;
+}
+.h2Out,.h2Out02{
+	background: #c1ecf4;
+}
+.apph2,.pe_info p,.pe_info03 p{
+	height: .35rem;
+	line-height: .35rem;
+	color: #333;
+	font-weight: bold;
+	font-size: .16rem;
+
+}
+.apph2{
+	background:  url(../images/ic_up_blue.png) right center no-repeat;
+	-webkit-background-size: .09rem .14rem;
+	background-size: .09rem .14rem;
+}
+.h2Out02 .apph2{
+	background: none;
+	
+}
+.barcode{
+	/*height: .6rem;*/
+	padding: .1rem;
+}
+.barcode img{
+	/*height: 100%;*/
+	display: block;
+	margin: 0 auto;
+}
+.p_border{
+	width: 100%;
+/*	border-bottom: 1px solid #ddd;*/
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-top: .05rem;
+}
+.p_border p{
+	line-height: .2rem;
+	margin-bottom: .1rem;
+	font-size: .14rem;
+}
+
+.slet_p{
+	display: none;
+}
+
+/*病人信息*/
+.pe_info,.pe_info_drug{
+	height: .35rem;
+	line-height: .35rem;
+	border-bottom: 1px solid ##f0f1f3;
+	background: #f4f4f4;
+	font-size: .14rem;
+	font-weight: bold;
+	color: #82d7e6;
+}
+.pe_info .pe_info_p{
+	color: #6dd2e5;
+	background:  url(../images/ic_up.png) right center no-repeat;
+	-webkit-background-size: .15rem .1rem;
+	background-size: .15rem .1rem;
+}
+.info_list{
+	line-height: .3rem;
+	border-top: 1px solid #efefef;
+	font-size: .14rem;
+	padding-top: .02rem;
+	padding-bottom: .02rem;
+}
+.info_list{
+	display: -webkit-box;
+	display: box;
+}
+.list_left{
+	padding-right: .05rem;
+	padding-left: .14rem;
+	background: url(../images/ic_heart.png) 0 center no-repeat;
+	-webkit-background-size: .10rem .09rem;
+	background-size: .10rem .09rem;
+}
+.noBg{
+	background: none;
+}
+.inp_box{
+	-webkit-box-flex: 1;
+	box-flex: 1;
+	position: relative;
+}
+.drop_down_selection{
+	position: absolute;
+	width: 100%;
+	top: 30px;
+	left: 0px;
+	z-index: 89;
+	-webkit-box-shadow: 4px 4px 4px rgba(9, 9, 9, 0.2);
+    box-shadow: 4px 4px 4px rgba(9, 9, 9, 0.2);
+    border: 1px solid #efefef;
+    display: none;
+}
+.drop_down_selection span{
+	margin-left: .1rem;
+	margin-right: .1rem;
+}
+.drop_down_selection ul{
+	/*background: #fff;*/
+	/*background: #ededed;*/
+	background: #f5f5f5;
+}
+.drop_down_selection ul li{
+	border-bottom: 1px solid #ddd;
+	font-size: .12rem;
+}
+.span_neme{
+	font-size: .14rem;
+}
+.drop_down_selection ul li span i{
+	font-style: normal;
+}
+.inp_box .tex{
+	width: 100%;
+	padding-left: .05rem;
+	height: .28rem;
+	border: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.cover_all{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 80;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.inp_box .nianLing{
+	width: .6rem;
+	text-align: center;
+}
+.inp_box .nianLing_text{
+	display: inline-block;
+	margin-left: .1rem;
+}
+.info_list_yn{
+	padding-left: .12rem;
+	display: -webkit-box;
+	border: none;
+	color: #555;
+}
+.info_list_yn>div{
+	-webkit-box-flex: 1;
+	/*display: none;*/
+}
+.info_list_yn>div>input{
+	width: 90%;
+	border: 1px solid #ddd;
+	border-radius: .04rem;
+	height: .25rem;
+	line-height: .25rem;
+	padding-left: .05rem;
+}
+.div_xueya{
+	position: relative;
+}
+.info_list_yn>div .inp_xueya{
+	width: 50%;
+}
+.{
+	position: absolute;
+	right: 0px;
+}
+.tex_right{
+	position: absolute;
+	left: 50%;
+	top: 0rem;
+	padding-left: .1rem;
+}
+
+.rad_out{
+	display: block;
+	float: left;
+}
+.rad_left{
+	margin-right: .1rem;
+}
+.rad_out .rad_check {
+	position: absolute;
+  	left: -9999em;
+}
+.rad_incon,.rad_incon02{
+	display: inline-block;
+	width: .16rem;
+	height: .16rem;
+	background: url(../images/ic_choise_circle_no-.png) 0 center no-repeat;
+	-webkit-background-size: .16rem .16rem;
+	background-size: .16rem .16rem;
+	/*margin-top: .04rem;*/
+	float: left;
+	margin-top: .07rem;
+}
+.rad_incon.check_on,.rad_incon02.check_on{
+	background: url(../images/ic_choise_circle_yes-.png) 0 center no-repeat;
+	-webkit-background-size: .16rem .16rem;
+	background-size: .16rem .16rem;
+}
+.lab_mar{
+	margin-right: .1rem;
+	display: block;
+	line-height: .3rem;
+}
+.texare_out textarea{
+	width: 100%;
+	border-radius: .04rem;
+	padding-left: .05rem;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-top: .05rem;
+	resize: none;
+	border: 1px solid #88dbea;
+	margin-top: .1rem;
+}
+.note{
+	color: ;
+}
+.pe_info03 .complained{
+	color: #71d2e5;
+	background-image: none;
+}
+.img_box_b{
+	margin-top: .1rem;
+	padding-bottom: .1rem;
+}
+.img_box{
+	margin-top: .1rem;
+	padding-bottom: .1rem;
+	border-bottom: 1px solid #eee;
+}
+.img_box_nobdb{
+	border-bottom: none;
+}
+#voice_area .note{
+	margin-top: .1rem;
+}
+.sign_out{
+	padding: .15rem 0rem;
+}
+.signName{
+	font-size: .16rem;
+}
+.note,.pe_info_note{
+	font-weight: normal;
+	color: #ff6b69;
+	font-size: .14rem;
+}
+.pe_info_note{
+	padding-top: .1rem;
+	padding-bottom: .1rem;
+}
+.sign_out .note{     
+	margin-top: .05rem;
+}
+.myImg_bg{
+	width: .55rem;
+	height: .55rem;
+	float: left;
+	background: url(../images/ic_photo.png) left center no-repeat;
+	-webkit-background-size: .2rem .2rem;
+	background-size: .2rem .2rem;
+	position: relative;
+	margin-right: .05rem;
+}
+.yuYin{
+	background: url(../images/ic_talk.png) left center no-repeat;
+	-webkit-background-size: .2rem .2rem;
+	background-size: .2rem .2rem;
+}
+.myImg_bg span{
+	position: absolute;
+	top: .2rem;
+	right: .05rem;
+	color: #65d0e4;
+	font-size: .12rem;
+}
+.liImage{
+	float: left;
+	margin: .03rem;
+	position: relative;
+
+}
+.liImage>a{
+	display: block;
+	width: .5rem;
+	height: .5rem;
+	overflow: hidden;
+	border-radius: 4px;
+}
+.liImage>a img{
+	display: block;
+
+}
+.liImage>a.voice_bg{
+	background: url(../images/voice.png) center no-repeat;
+	-webkit-background-size: .5rem .5rem;
+	background-size: .5rem .5rem;
+}
+.miao{
+	position: absolute;
+	bottom: .02rem;
+	left: .1rem;
+}
+.liImage>a>img{
+	width: 100%;
+}
+.comBg{
+	background: #f4f4f4;
+	border-top: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+}
+.add_i{
+	color: #6dd2e5;
+	font-size: .16rem;
+	padding-top: .05rem;
+	padding-bottom: .05rem;
+}
+.add_i i{
+	display: inline-block;
+	width: .2rem;
+	height: .2rem;
+	margin-top: .02rem;
+	background: url(../images/ic_choose_no.png) 0 0 no-repeat;
+	-webkit-background-size: .2rem .2rem;
+	background-size: .2rem .2rem;
+	float: left;
+}
+.add_i i.check_i{
+	background: url(../images/ic_choose_yes.png) 0 0 no-repeat;
+	-webkit-background-size: .2rem .2rem;
+	background-size: .2rem .2rem;
+}
+.add_i span{
+	float: left;
+	margin-top: .02rem;
+	margin-left: .05rem;
+}
+.add_i a{
+	float: right;
+	color: #1a1afa;
+	border-bottom: 1px solid #1a1afa;
+	font-size: .14rem;
+	margin-top: .02rem;
+}
+/*.drugDes{
+	padding-top: .15rem;
+	padding-bottom: .15rem;
+}*/
+.drugDes>span{
+	margin: 0rem .05rem;
+}
+.progressBar{
+	padding: .1rem 0rem;
+	border-top: 1px solid #ddd;
+}
+.progressBar li{
+	display: inline-block;
+	width: 16.6%;
+	text-align: center;
+	vertical-align: top;
+	position: relative;
+}
+.progressBar li .incons{
+	display: inline-block;
+	width: .2rem;
+	height: .2rem;
+	background: url(../images/step_circle_black.png) center no-repeat;
+	-webkit-background-size: .2rem .2rem;
+	background-size: .2rem .2rem;
+	position: relative;
+	z-index: 7;
+}
+.progressBar li .incons_on{
+	background: url(../images/ic_wor.png) center no-repeat;
+	-webkit-background-size: .2rem .2rem;
+	background-size: .2rem .2rem;
+
+}
+.progressBar li .span02{
+	display: inline-block;
+	width: .4rem;
+	color: #65d0e4;
+	color: #333;
+	font-size: .14rem;
+}
+.progressBar li .line{
+	width: 75%;
+	height: 2px;
+	background: #a1a1a1;
+	position: absolute;
+	top: .1rem;
+	left: -38%;
+	z-index: 1;
+}
+.progressBar li .line_on{
+		background: #65d0e4;
+}
+/*弹出框*/
+.cover{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	background: rgba(0,0,0,0.6);;
+	z-index: 9;
+	display: none;
+}
+.toClass{
+	display: block;
+}
+.ul_b{
+	width: 100%;
+	position: fixed;
+	bottom: -10000px;
+	z-index: 99;
+}
+.ul_b>div,.ul_b ul li{
+	width: 100%;
+	height: .3rem;
+	line-height: .3rem;
+	text-align: center;
+}
+.ul_b>div{
+	background: #269ebc;
+	color: #fff;
+	font-size: .14rem;
+	position: relative;
+}	
+.shut_down{
+	position: absolute;
+	color: #fff;
+	top: 0px;
+	right: 5px;
+	padding: 0px 5px;
+}
+.ul_b ul li{
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+}
+
+/*制定药品部分*/
+/*内容*/
+.drug{
+    border-bottom: 1px solid #ddd;
+    margin-bottom: .04rem;
+}
+.drug_table{
+    width: 100%;
+    background: #fff;
+}
+.drugs_b_out{
+    border-top: 1px solid #ddd;
+    padding: .05rem;
+}
+.name{
+    font-size: .16rem;
+}
+.name_b{
+    font-size: .14rem;
+    color: #ff6b69;
+}
+table{
+    width: 100%;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+table td{
+    height: .35rem;
+    padding-left: .05rem;
+    font-size: .16rem;
+}
+table td:nth-child(1),table td:nth-child(2){
+    border-right: 1px solid #ddd;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+table td:nth-child(1),table td:nth-child(3){
+    width: 28%;
+}
+table td .heZi{
+    display: -webkit-box;
+}
+table td .biaoZhu{
+    color: #65d0e4;
+    line-height: 100%;
+    padding-top: .03rem;
+}
+table td .heZi .way{
+    display: block;
+    -webkit-box-flex: 1;
+    text-align: center;
+}
+.list_left_drugs{
+    padding-left: .05rem;
+}
+.infoDes{
+	/* padding-bottom: .1rem; */
+}
+.infoDes>div:nth-child(1){
+	padding-top: .05rem;
+}
+.info_list_yn .hospitalSelect{
+    -webkit-box-flex: 0;
+    /*-webkit-box-flex: 1;*/
+}
+.info_list_yn .hospitalSelect>span{
+	display: block;
+	float: left;
+}
+.info_list_yn .hospitalSelect>label{
+	float: left;
+}
+.info_list_write{
+	/*display: none;*/
+}
+.a_hide{
+	display: none;
+}
+/*进度条滑动*/
+.swiper-slide{
+	width: 16.6%;
+	text-align: center;
+}
+/***********配送地址*******************/
+.address_fill_in{
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.deliveryAddress{
+	position: relative;
+	height: .3rem;
+}
+.deliveryAddress:after{
+	content: " ";
+	display: inline-block;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	height: 8px;
+	width: 8px;
+	border-width: 1px 1px 0 0;
+	border-color: #C8C8CD;
+	border-style: solid;
+	position: relative;
+	top: -1px;
+	margin-left: .3em;
+	position: absolute;
+	top: 35%;
+	right: 5px;
+}
+.bllx_area_nobd{
+	border: none;
+}
+.bllx_area_nobd .inp_box{
+	border-bottom: 1px solid #efefef;
+}
+.bllx_pdb{
+	padding-bottom: .05rem;
+}
+.inp_box_bdt{
+	border-top: 1px solid #efefef;
+}
+.pd15 .info_list{
+	/*margin-left: .1rem;
+	margin-right: .1rem;*/
+	border: none;
+}
+.pd15_bdb{
+	border-bottom: 1px solid #efefef;
+}
+.order_num{
+	position: relative;
+}
+.logistics{
+	/*float: right;*/
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	/*border: 1px solid #333;*/
+	/*border-radius: .04rem;*/
+	/*font-size: .12rem;*/
+	/*height: .22rem;
+	line-height: .22rem;*/
+	padding-left: .05rem;
+	padding-right: .05rem;
+	/*color: blue;*/
+	color: #65d0e4;
+	/*background: #5cc1d5;*/
+}
+

@@ -1,0 +1,21 @@
+//
+//  DiagnosisEntity.h
+//  ElectronicPrescribing
+//
+//  Created by Ducky on 16/4/28.
+//  Copyright © 2016年 Rany. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface DiagnosisEntity : NSObject
+
+@property(nonatomic,strong) NSString * diagnosisId;
+
+@property(nonatomic,strong) NSString * diagnosisCode;
+
+@property(nonatomic,strong) NSString * diagnosisName;
+
+@property(nonatomic,strong) NSString * diagnosisInitial;
+
+@end

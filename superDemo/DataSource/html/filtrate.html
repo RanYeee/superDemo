@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>筛选</title>
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/search.css">
+	</head>
+
+	<body>
+		<div class="head">
+			<div class="clearfix pd12">
+				<a class="headBack fl">取消</a>
+				<h2 class="headH">筛选</h2>
+			</div>
+		</div>
+		<div class="content clearfix mrb36">
+			<div class="border"></div>
+			<div class="date pd12 clearfix">
+				<span class="time">时间
+				<span class="fr">
+					<span class="starttime">2014-5-20</span> 至 <span class="endtime">2015-5-20</span>
+				</span>
+				</span>
+			</div>
+			<div class="status pd12">
+				<div>类型</div>
+				<ul id="typePanel">
+				</ul>
+			</div>
+			<div class="status pd12">
+				<div class="">状态</div>
+				<div class="tips">先选类型，才能筛选状态</div>
+				<ul id="statePanel">
+				</ul>
+			</div>
+			<div id="closeRoot" class="status pd12">
+				<div class="">关闭原因</div>
+				<ul id="closePanel">
+					<li class="statusAll active">全部</li>
+					<li>订单超时</li>
+					<li>取消订单</li>
+					<li>医师拒绝申请</li>
+				</ul>
+			</div>
+			<div class="reset"><span id="resetFilter">重置</span></div>
+		</div>
+		<div class="foot"><a href="javascript:;" id="okFilter">完成</a></div>
+		
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/RainbowBridge.js"></script>
+		<script src="js/constants.js"></script>
+		<script src="js/APP.js"></script>
+		<script src="js/filtrate.js"></script>
+	</body>
+
+</html>

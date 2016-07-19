@@ -1,0 +1,101 @@
+/* 
+* @Author: liangjie
+*/
+@charset "utf-8";
+/* CSS Document */
+
+/*头部栏*/
+.headerTop{
+    width: 100%;
+    height: .4rem;
+    background: #279ebc;
+    position: fixed;
+    top: 0;
+    z-index: 8;
+}
+.headerTop a{
+    font-size: .18rem;
+    color: #fff;
+    display: block;
+    line-height: .4rem;
+    padding-left: 0.2rem;
+}
+.headerTop a.lefeBtn{
+    background: url(../images/ic_back.png) left center no-repeat;
+    background-size: auto 40%;
+}
+.con_top{
+    display: -webkit-box;
+    margin-top: .4rem;
+}
+.con_top>div{
+    -webkit-box-flex: 1;
+    line-height: .4rem;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: .16rem;
+    color: #333;
+}
+.con_top>div:nth-child(1){
+    border-right: 1px solid #ddd;
+}
+.pharmacy_list ul li{
+    line-height: .35rem;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+.pharmacy_list ul li a{
+    font-size: .14rem;
+}
+.con_top .store_active{
+    background: #88dbea;
+    color: #fff;
+    border-color: #88dbea;
+}
+.map{
+    text-align: center;
+    display: none;
+}
+/*.headerTop>div{
+    position: relative;
+}*/
+.rightLi{
+    float: right;
+    height: .4rem;
+    line-height: .4rem;
+    color: #fff;
+    font-size: .14rem;
+    position: relative;
+    margin-left: .10rem;
+}
+.rightLi span {
+    display: inline-block;
+    text-align: right;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-right: .15rem;
+    background: url(../images/ic_down_white.png) right .17rem no-repeat;
+    background-size: 10px;
+    margin-right: .05rem;
+}
+.storeTypeSelect{
+    position: absolute;
+    top: .35rem;
+    right: 0;
+    color: #666;
+    z-index: 99999;
+    border: 1px solid #65d0e4;
+    border-radius: 2px;
+    display: none;
+}
+.storeTypeSelect li{
+    min-width: .5rem;
+    padding: 0 .1rem;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    line-height: 24px;
+    color: #666;
+    text-align: center;
+    white-space: nowrap;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>hello world</title>
+	</head>
+
+	<body>
+		<input id="show" type="button" value="处理结果" onclick="testDialog()" />
+		<script type="text/javascript" src="js/RainbowBridge.js" ></script>
+		<script>
+			function getUrlQuery(paramskey, defvalue) {
+				var reg = new RegExp("(^|&)" + paramskey + "=([^&]*)(&|$)");
+				var q = decodeURI(window.location.search);
+				var r = q.substr(1).match(reg);
+				if (r != null) return unescape(r[2]);
+				return defvalue;
+			};
+			var encodejson = getUrlQuery("data", "{}");
+			var json = eval("(" + decodeURI(encodejson) + ")");
+			var descStr = json.name + json.id;
+			document.getElementById("show").value = descStr;
+			var d = {
+				desc: descStr
+			};
+			<!--var dstr = JSON.stringify(d);-->
+			<!--console.log(dstr);-->
+			var p = {
+				name: "index2.html",
+				jsonData: d
+			}
+			function testDialog() {
+				RainbowBridge.callMethod('SysModular', 'finishH5WithData', p, function() {});
+			}
+		</script>
+	</body>
+
+</html>
