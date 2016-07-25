@@ -273,4 +273,27 @@ static int localAndServerGap = 0;
     return [dateStr isEqualToString:nowStr];
 }
 
+
+
++(NSString*)getPastORFutureDateWithYear:(int)year month:(int)month day:(int)day
+ {
+     NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+     NSDateComponents *comps = nil;
+     comps = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay fromDate:[NSDate date]];
+     NSDateComponents *adcomps = [[NSDateComponents alloc] init];
+     [adcomps setYear:year];
+     [adcomps setMonth:month];
+     [adcomps setDay:day];
+     NSDate *newdate = [calendar dateByAddingComponents:adcomps toDate:[NSDate date] options:0];
+     NSDateFormatter *formatter =  [[NSDateFormatter alloc] init];
+     [formatter setDateFormat:@"yyyy-MM-dd"];
+     NSTimeZone* timeZone = [NSTimeZone timeZoneWithName:@"Asia/beijing"];
+     [formatter setTimeZone:timeZone];
+     NSString *dateFromData = [formatter stringFromDate:newdate];
+
+     return dateFromData;
+
+ }
+
+
 @end

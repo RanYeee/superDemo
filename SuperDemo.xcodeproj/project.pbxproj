@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		29103E8B1CE5AD2C00804559 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29103E8A1CE5AD2C00804559 /* WebKit.framework */; };
+		29119C061D46026D00468A51 /* DrawQRCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29119C041D46026D00468A51 /* DrawQRCodeController.m */; };
+		29119C071D46026D00468A51 /* DrawQRCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29119C041D46026D00468A51 /* DrawQRCodeController.m */; };
+		29119C081D46026D00468A51 /* DrawQRCodeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29119C051D46026D00468A51 /* DrawQRCodeController.xib */; };
+		29119C091D46026D00468A51 /* DrawQRCodeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29119C051D46026D00468A51 /* DrawQRCodeController.xib */; };
+		29119C0B1D4602CB00468A51 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29119C0A1D4602CB00468A51 /* CoreImage.framework */; };
+		29119C0C1D4602D400468A51 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29119C0A1D4602CB00468A51 /* CoreImage.framework */; };
+		29119C101D46036000468A51 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 29119C0F1D46036000468A51 /* Util.m */; };
+		29119C111D46036000468A51 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 29119C0F1D46036000468A51 /* Util.m */; };
 		296BDBA81CDB2C64005AD41A /* html in Resources */ = {isa = PBXBuildFile; fileRef = 296BDBA71CDB2C64005AD41A /* html */; };
 		296BDBAC1CDB2C9F005AD41A /* H5WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 296BDBAB1CDB2C9F005AD41A /* H5WebViewController.m */; };
 		296BDBAF1CDB2D6A005AD41A /* KLWebViewHelps.m in Sources */ = {isa = PBXBuildFile; fileRef = 296BDBAE1CDB2D6A005AD41A /* KLWebViewHelps.m */; };
@@ -427,6 +435,12 @@
 
 /* Begin PBXFileReference section */
 		29103E8A1CE5AD2C00804559 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		29119C031D46026D00468A51 /* DrawQRCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawQRCodeController.h; sourceTree = "<group>"; };
+		29119C041D46026D00468A51 /* DrawQRCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawQRCodeController.m; sourceTree = "<group>"; };
+		29119C051D46026D00468A51 /* DrawQRCodeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawQRCodeController.xib; sourceTree = "<group>"; };
+		29119C0A1D4602CB00468A51 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		29119C0E1D46036000468A51 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		29119C0F1D46036000468A51 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
 		296BDBA71CDB2C64005AD41A /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html; sourceTree = "<group>"; };
 		296BDBAA1CDB2C9F005AD41A /* H5WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H5WebViewController.h; sourceTree = "<group>"; };
 		296BDBAB1CDB2C9F005AD41A /* H5WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = H5WebViewController.m; sourceTree = "<group>"; };
@@ -857,6 +871,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29119C0C1D4602D400468A51 /* CoreImage.framework in Frameworks */,
 				29C5EFBC1D3DFACF00949CB4 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -879,6 +894,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29119C0B1D4602CB00468A51 /* CoreImage.framework in Frameworks */,
 				29C5EFBB1D3DFAC400949CB4 /* libsqlite3.tbd in Frameworks */,
 				29D670971CF5D4180008C196 /* QuartzCore.framework in Frameworks */,
 				29D670951CF5D40F0008C196 /* CoreVideo.framework in Frameworks */,
@@ -905,6 +921,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29119BFB1D46011200468A51 /* DrawQRCode */ = {
+			isa = PBXGroup;
+			children = (
+				29119C031D46026D00468A51 /* DrawQRCodeController.h */,
+				29119C041D46026D00468A51 /* DrawQRCodeController.m */,
+				29119C051D46026D00468A51 /* DrawQRCodeController.xib */,
+			);
+			name = DrawQRCode;
+			path = superDemo/DrawQRCode;
+			sourceTree = SOURCE_ROOT;
+		};
+		29119C0D1D46034500468A51 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				29119C0E1D46036000468A51 /* Util.h */,
+				29119C0F1D46036000468A51 /* Util.m */,
+			);
+			name = Utils;
+			path = superDemo/Utils;
+			sourceTree = SOURCE_ROOT;
+		};
 		296BDBA61CDB2C59005AD41A /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
@@ -1656,6 +1693,7 @@
 		8834B5DB1CB7512B00428D18 = {
 			isa = PBXGroup;
 			children = (
+				29119C0A1D4602CB00468A51 /* CoreImage.framework */,
 				29C5EFBA1D3DFAC400949CB4 /* libsqlite3.tbd */,
 				29D670961CF5D4180008C196 /* QuartzCore.framework */,
 				29D670941CF5D40F0008C196 /* CoreVideo.framework */,
@@ -1688,6 +1726,8 @@
 		8834B5E61CB7512C00428D18 /* SuperDemo */ = {
 			isa = PBXGroup;
 			children = (
+				29119C0D1D46034500468A51 /* Utils */,
+				29119BFB1D46011200468A51 /* DrawQRCode */,
 				29FF67251D363E640021B7D7 /* Categories */,
 				29FF64E11D363D910021B7D7 /* ThirdTools */,
 				29FF61CF1D2DFD790021B7D7 /* ToolKit */,
@@ -1961,6 +2001,7 @@
 				29C5EFD71D3DFAEA00949CB4 /* ComPickerView.xib in Resources */,
 				296BDBF31CDC3D89005AD41A /* html in Resources */,
 				29C5EFD91D3DFAEA00949CB4 /* smartmedical.db in Resources */,
+				29119C091D46026D00468A51 /* DrawQRCodeController.xib in Resources */,
 				296BDBC91CDC36F1005AD41A /* LaunchScreen.storyboard in Resources */,
 				29FF66E21D363D910021B7D7 /* MWPhotoBrowser.bundle in Resources */,
 				29FF66C81D363D910021B7D7 /* MJRefresh.bundle in Resources */,
@@ -2006,6 +2047,7 @@
 				29C5EFD81D3DFAEA00949CB4 /* smartmedical.db in Resources */,
 				8834B64D1CB752D400428D18 /* TwoItemView.xib in Resources */,
 				29C5EFE41D3DFAEA00949CB4 /* AddressSelectorController.xib in Resources */,
+				29119C081D46026D00468A51 /* DrawQRCodeController.xib in Resources */,
 				29FF666F1D363D910021B7D7 /* IQKeyboardManager.bundle in Resources */,
 				8834B6491CB752D400428D18 /* ThreeItemCellTableViewCell.xib in Resources */,
 				29FF66E11D363D910021B7D7 /* MWPhotoBrowser.bundle in Resources */,
@@ -2110,6 +2152,7 @@
 				29FF67531D363E640021B7D7 /* UIButton+Prescription.m in Sources */,
 				29FF67161D363D910021B7D7 /* UIImage+WebP.m in Sources */,
 				29FF66AC1D363D910021B7D7 /* MJRefreshAutoFooter.m in Sources */,
+				29119C071D46026D00468A51 /* DrawQRCodeController.m in Sources */,
 				29FF66A61D363D910021B7D7 /* NSObject+MJCoding.m in Sources */,
 				29C5EFDB1D3DFAEA00949CB4 /* AreaEntity.m in Sources */,
 				29FF667A1D363D910021B7D7 /* MASConstraintMaker.m in Sources */,
@@ -2123,6 +2166,7 @@
 				29FF663E1D363D910021B7D7 /* AGIPCPreviewController.m in Sources */,
 				29FF670C1D363D910021B7D7 /* SDWebImageManager.m in Sources */,
 				29FF66CE1D363D910021B7D7 /* UIScrollView+MJRefresh.m in Sources */,
+				29119C111D46036000468A51 /* Util.m in Sources */,
 				29FF67491D363E640021B7D7 /* NSDictionary+JSON.m in Sources */,
 				29FF664C1D363D910021B7D7 /* DACircularProgressView.m in Sources */,
 				29FF66521D363D910021B7D7 /* HPTextViewInternal.m in Sources */,
@@ -2225,6 +2269,7 @@
 				29FF66C11D363D910021B7D7 /* MJRefreshGifHeader.m in Sources */,
 				29FF66351D363D910021B7D7 /* AGIPCAlbumsController.m in Sources */,
 				29FF66951D363D910021B7D7 /* MJArgument.m in Sources */,
+				29119C101D46036000468A51 /* Util.m in Sources */,
 				29FF66611D363D910021B7D7 /* IQKeyboardReturnKeyHandler.m in Sources */,
 				29FF67441D363E640021B7D7 /* CALayer+Addition.m in Sources */,
 				8834B6481CB752D400428D18 /* ThreeItemCellTableViewCell.m in Sources */,
@@ -2291,6 +2336,7 @@
 				29FF66E51D363D910021B7D7 /* PSTCollectionView.m in Sources */,
 				29FF66DB1D363D910021B7D7 /* MWTapDetectingImageView.m in Sources */,
 				29FF665B1D363D910021B7D7 /* IQUIViewController+Additions.m in Sources */,
+				29119C061D46026D00468A51 /* DrawQRCodeController.m in Sources */,
 				8834B64C1CB752D400428D18 /* TwoItemView.m in Sources */,
 				29FF66F71D363D910021B7D7 /* PSTGridLayoutItem.m in Sources */,
 				29FF667F1D363D910021B7D7 /* MASViewConstraint.m in Sources */,

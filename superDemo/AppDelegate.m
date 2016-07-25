@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "KLFileManager.h"
+#import "NSDate+DDAddition.h"
 
 @interface AppDelegate ()
 
@@ -26,6 +27,9 @@
         
     }
 
+    NSString *str = [NSDate getPastORFutureDateWithYear:0 month:-1 day:0];
+    
+    NSLog(@"date>>> %@",str);
     return YES;
 }
 

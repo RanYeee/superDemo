@@ -38,5 +38,11 @@
 		<key>dec</key>
 		<string>地址选择器</string>
 	</dict>
+	<dict>
+		<key>className</key>
+		<string>DrawQRCodeController</string>
+		<key>dec</key>
+		<string>生成二维码</string>
+	</dict>
 </array>
 </plist>
