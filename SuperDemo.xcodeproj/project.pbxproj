@@ -33,6 +33,10 @@
 		296BDBF41CDC3DA0005AD41A /* UIColor+HRExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 296BDBB11CDB31A5005AD41A /* UIColor+HRExtension.m */; };
 		296BDBF71CDC4261005AD41A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 296BDBC21CDC36F1005AD41A /* Main.storyboard */; };
 		296BDBF91CDC7CA9005AD41A /* KLSugarFormCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8834B62D1CB752D400428D18 /* KLSugarFormCell.m */; };
+		2974C43D1D51DFAE00248E81 /* FadeWordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2974C43C1D51DFAE00248E81 /* FadeWordView.m */; };
+		2974C43E1D51DFAE00248E81 /* FadeWordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2974C43C1D51DFAE00248E81 /* FadeWordView.m */; };
+		2974C4411D51DFE300248E81 /* FadeWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2974C4401D51DFE300248E81 /* FadeWordViewController.m */; };
+		2974C4421D51DFE300248E81 /* FadeWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2974C4401D51DFE300248E81 /* FadeWordViewController.m */; };
 		29C5EFB01D3DFAAA00949CB4 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C5EFA61D3DFAAA00949CB4 /* FMDatabase.m */; };
 		29C5EFB11D3DFAAA00949CB4 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C5EFA61D3DFAAA00949CB4 /* FMDatabase.m */; };
 		29C5EFB21D3DFAAA00949CB4 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C5EFA81D3DFAAA00949CB4 /* FMDatabaseAdditions.m */; };
@@ -464,6 +468,10 @@
 		296BDBDA1CDC36F1005AD41A /* childDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = childDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		296BDBDE1CDC36F1005AD41A /* childDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = childDemoUITests.m; sourceTree = "<group>"; };
 		296BDBE01CDC36F1005AD41A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2974C43B1D51DFAE00248E81 /* FadeWordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FadeWordView.h; sourceTree = "<group>"; };
+		2974C43C1D51DFAE00248E81 /* FadeWordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FadeWordView.m; sourceTree = "<group>"; };
+		2974C43F1D51DFE300248E81 /* FadeWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FadeWordViewController.h; sourceTree = "<group>"; };
+		2974C4401D51DFE300248E81 /* FadeWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FadeWordViewController.m; sourceTree = "<group>"; };
 		29C5EFA51D3DFAAA00949CB4 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		29C5EFA61D3DFAAA00949CB4 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
 		29C5EFA71D3DFAAA00949CB4 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
@@ -1007,6 +1015,26 @@
 				296BDBE01CDC36F1005AD41A /* Info.plist */,
 			);
 			path = childDemoUITests;
+			sourceTree = "<group>";
+		};
+		2974C4381D51DF2700248E81 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				2974C43A1D51DF6200248E81 /* FadeWords */,
+			);
+			name = Animation;
+			path = superDemo/Animation;
+			sourceTree = SOURCE_ROOT;
+		};
+		2974C43A1D51DF6200248E81 /* FadeWords */ = {
+			isa = PBXGroup;
+			children = (
+				2974C43B1D51DFAE00248E81 /* FadeWordView.h */,
+				2974C43C1D51DFAE00248E81 /* FadeWordView.m */,
+				2974C43F1D51DFE300248E81 /* FadeWordViewController.h */,
+				2974C4401D51DFE300248E81 /* FadeWordViewController.m */,
+			);
+			path = FadeWords;
 			sourceTree = "<group>";
 		};
 		29C5EFA41D3DFAAA00949CB4 /* FMDB-2.5v */ = {
@@ -1726,6 +1754,7 @@
 		8834B5E61CB7512C00428D18 /* SuperDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2974C4381D51DF2700248E81 /* Animation */,
 				29119C0D1D46034500468A51 /* Utils */,
 				29119BFB1D46011200468A51 /* DrawQRCode */,
 				29FF67251D363E640021B7D7 /* Categories */,
@@ -2129,6 +2158,7 @@
 				29FF66A01D363D910021B7D7 /* MJMethod.m in Sources */,
 				29D6709B1CF5D5190008C196 /* MyVideoController.m in Sources */,
 				296BDBF21CDC3D5D005AD41A /* KLWebViewHelps.m in Sources */,
+				2974C4421D51DFE300248E81 /* FadeWordViewController.m in Sources */,
 				29FF67221D363D910021B7D7 /* UIView+WZLBadge.m in Sources */,
 				29FF664A1D363D910021B7D7 /* UIViewController+CWPopup.m in Sources */,
 				29FF67571D363E640021B7D7 /* UIImage+AssetImage.m in Sources */,
@@ -2183,6 +2213,7 @@
 				29FF66E41D363D910021B7D7 /* NSIndexPath+PSTCollectionViewAdditions.m in Sources */,
 				29FF66F21D363D910021B7D7 /* PSTCollectionViewLayout.m in Sources */,
 				29FF66881D363D910021B7D7 /* ViewController+MASAdditions.m in Sources */,
+				2974C43E1D51DFAE00248E81 /* FadeWordView.m in Sources */,
 				29FF675F1D363E640021B7D7 /* UIView+SHCZExt.m in Sources */,
 				29FF662A1D363D910021B7D7 /* AFURLResponseSerialization.m in Sources */,
 				29FF66821D363D910021B7D7 /* NSArray+MASAdditions.m in Sources */,
@@ -2286,6 +2317,7 @@
 				29FF66311D363D910021B7D7 /* AGImagePickerController.m in Sources */,
 				29FF668B1D363D910021B7D7 /* MBProgressHUD.m in Sources */,
 				29FF66591D363D910021B7D7 /* IQUIView+Hierarchy.m in Sources */,
+				2974C43D1D51DFAE00248E81 /* FadeWordView.m in Sources */,
 				29FF66ED1D363D910021B7D7 /* PSTCollectionViewFlowLayout.m in Sources */,
 				29FF66411D363D910021B7D7 /* AGPreviewScrollView.m in Sources */,
 				8834B6471CB752D400428D18 /* MyTableViewController.m in Sources */,
@@ -2438,6 +2470,7 @@
 				29FF66E71D363D910021B7D7 /* PSTCollectionViewCell.m in Sources */,
 				296BDBB21CDB31A5005AD41A /* UIColor+HRExtension.m in Sources */,
 				29FF66AF1D363D910021B7D7 /* MJRefreshComponent.m in Sources */,
+				2974C4411D51DFE300248E81 /* FadeWordViewController.m in Sources */,
 				29FF66B11D363D910021B7D7 /* MJRefreshFooter.m in Sources */,
 				29FF67111D363D910021B7D7 /* UIImage+GIF.m in Sources */,
 				29FF66B71D363D910021B7D7 /* MJRefreshAutoNormalFooter.m in Sources */,

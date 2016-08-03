@@ -44,5 +44,18 @@
 		<key>dec</key>
 		<string>生成二维码</string>
 	</dict>
+	<dict>
+		<key>classArray</key>
+		<array>
+			<dict>
+				<key>className</key>
+				<string>FadeWordViewController</string>
+				<key>dec</key>
+				<string>横向渐变消失的控件</string>
+			</dict>
+		</array>
+		<key>dec</key>
+		<string>动画</string>
+	</dict>
 </array>
 </plist>

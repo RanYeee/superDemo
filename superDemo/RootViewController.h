@@ -10,4 +10,6 @@
 
 @interface RootViewController : UIViewController
 
+@property (nonatomic ,copy) NSArray *controllerArray;
+
 @end
