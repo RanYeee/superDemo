@@ -42,6 +42,7 @@
 #define debugError()
 #endif
 
+#define MyLog(x)    NSLog(@" %@",x)
 
 //G－C－D
 #define BACK(block) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block)

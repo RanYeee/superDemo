@@ -8,8 +8,11 @@
 
 #import "FadeWordViewController.h"
 #import "FadeWordView.h"
+#import "BezierView.h"
 
 @interface FadeWordViewController ()
+
+@property (nonatomic ,copy) NSMutableArray *mutiArray;
 
 @end
 
@@ -21,14 +24,21 @@
     
     self.title = @"FadeWordView";
     
-    FadeWordView *fadeView = [[FadeWordView alloc]initWithFrame:self.view.bounds];
+    FadeWordView *fadeView = [[FadeWordView alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
     
-    fadeView.text = @"Hello World";
+    fadeView.center = self.view.center;
     
-    [self.view addSubview:fadeView];
+    fadeView.text = @"Loading...";
     
-    [fadeView fadeToRightWithDuration:3.0f isAnimation:YES];
+//    [self.view addSubview:fadeView];
     
+    [fadeView fadeToRightWithDuration:1.5f isAnimation:YES];
+    
+    BezierView *bezier = [[BezierView alloc]init];
+    bezier.frame = self.view.bounds;
+    [self.view addSubview:bezier];
+
+
 }
 
 

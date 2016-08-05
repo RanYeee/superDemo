@@ -12,6 +12,8 @@
 
 @property (nonatomic,strong) UILabel *label;
 
+@property (nonatomic,strong) UILabel *bgLabel;
+
 @property (nonatomic,strong) UIView *mask;
 
 @end
@@ -24,32 +26,47 @@
     self = [super initWithFrame:frame];
     
     if (self) {
-//        self.backgroundColor = [UIColor greenColor];
         
-        [self createLabel:self.bounds];
+        self.backgroundColor = [UIColor clearColor];
         
-        [self createMask:self.bounds];
+        [self createBgView:frame];
+        
+        [self createLabel:frame];
+        
+        [self createMask:frame];
     }
     
     return self;
 }
 
+- (void)createBgView:(CGRect)frame
+{
+    
+    UIView *bgView = [[UIView alloc]initWithFrame:frame];
+    
+    bgView.backgroundColor = [UIColor colorWithRed:0.5294 green:0.7608 blue:0.7569 alpha:1.0];
+    
+    bgView.alpha = 0.7f;
+    
+    bgView.layer.cornerRadius = frame.size.width/4;
+    
+    [self addSubview:bgView];
+    
+}
 
 - (void)createLabel:(CGRect)frame {
     
-    UILabel *bgLabel = [[UILabel alloc]initWithFrame:frame];
+    self.bgLabel = [[UILabel alloc]initWithFrame:frame];
     
-    bgLabel.text = @"Hello World";
-    bgLabel.font = [UIFont systemFontOfSize:30.f];
-    bgLabel.textAlignment = NSTextAlignmentCenter;
-    bgLabel.textColor     = [UIColor greenColor];
-    [self addSubview:bgLabel];
+    self.bgLabel.font = [UIFont boldSystemFontOfSize:15.f];
+    self.bgLabel.textAlignment = NSTextAlignmentCenter;
+    self.bgLabel.textColor     = [UIColor colorWithRed:0.9804 green:0.9804 blue:0.9804 alpha:1.0];
+    [self addSubview:self.bgLabel];
     
     self.label               = [[UILabel alloc] initWithFrame:frame];
-    self.label.font          = [UIFont systemFontOfSize:30.f];
+    self.label.font          = [UIFont boldSystemFontOfSize:15.f];
     self.label.textAlignment = NSTextAlignmentCenter;
-    self.label.textColor     = [UIColor redColor];
-    
+    self.label.textColor     = [UIColor colorWithRed:0.6 green:0.6 blue:0.6 alpha:1.0];
     [self addSubview:self.label];
 }
 
@@ -65,14 +82,14 @@
                              (__bridge id)[UIColor blackColor].CGColor,
                              (__bridge id)[UIColor clearColor].CGColor];
     
-    gradientLayer.locations = @[@(0.01),@(0.1),@(0.9),@(0.99)];
+    gradientLayer.locations = @[@(0.01),@(0.25),@(0.7),@(0.99)];
     
     gradientLayer.startPoint = CGPointMake(0, 0);
     
     gradientLayer.endPoint = CGPointMake(1, 0);
     
     self.mask = [[UIView alloc]initWithFrame:frame];
-    
+
     [self.mask.layer addSublayer:gradientLayer];
     
     self.label.maskView = self.mask;
@@ -84,13 +101,30 @@
     
     if (isAnimation) {
         
+  
         [UIView animateWithDuration:duration animations:^{
             
             CGRect frame    = self.mask.frame;
             
-            frame.origin.x += frame.size.width;
+            frame.origin.x += frame.size.width*0.7;
             
             self.mask.frame = frame;
+            
+        } completion:^(BOOL finished) {
+            
+          [UIView animateWithDuration:duration animations:^{
+              
+              CGRect frame    = self.mask.frame;
+              
+              frame.origin.x -= frame.size.width*0.7;
+              
+              self.mask.frame = frame;
+              
+          } completion:^(BOOL finished) {
+              
+              [self fadeToRightWithDuration:duration isAnimation:isAnimation];
+              
+          }];
             
         }];
         
@@ -117,5 +151,7 @@
     _text = text;
     
     self.label.text = text;
+    
+    self.bgLabel.text = text;
 }
 @end

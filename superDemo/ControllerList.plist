@@ -53,6 +53,12 @@
 				<key>dec</key>
 				<string>横向渐变消失的控件</string>
 			</dict>
+			<dict>
+				<key>className</key>
+				<string>BezierViewController</string>
+				<key>dec</key>
+				<string>贝塞尔曲线动画</string>
+			</dict>
 		</array>
 		<key>dec</key>
 		<string>动画</string>

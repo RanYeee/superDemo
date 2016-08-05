@@ -37,6 +37,12 @@
 		2974C43E1D51DFAE00248E81 /* FadeWordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2974C43C1D51DFAE00248E81 /* FadeWordView.m */; };
 		2974C4411D51DFE300248E81 /* FadeWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2974C4401D51DFE300248E81 /* FadeWordViewController.m */; };
 		2974C4421D51DFE300248E81 /* FadeWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2974C4401D51DFE300248E81 /* FadeWordViewController.m */; };
+		2974C4461D531FF000248E81 /* BezierView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2974C4451D531FF000248E81 /* BezierView.m */; };
+		2974C4471D531FF000248E81 /* BezierView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2974C4451D531FF000248E81 /* BezierView.m */; };
+		2974C44A1D532A0200248E81 /* BezierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2974C4491D532A0200248E81 /* BezierViewController.m */; };
+		2974C44B1D532A0200248E81 /* BezierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2974C4491D532A0200248E81 /* BezierViewController.m */; };
+		2974C4531D54824500248E81 /* RNProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2974C4521D54824500248E81 /* RNProgressHUD.m */; };
+		2974C4541D54824500248E81 /* RNProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2974C4521D54824500248E81 /* RNProgressHUD.m */; };
 		29C5EFB01D3DFAAA00949CB4 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C5EFA61D3DFAAA00949CB4 /* FMDatabase.m */; };
 		29C5EFB11D3DFAAA00949CB4 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C5EFA61D3DFAAA00949CB4 /* FMDatabase.m */; };
 		29C5EFB21D3DFAAA00949CB4 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C5EFA81D3DFAAA00949CB4 /* FMDatabaseAdditions.m */; };
@@ -472,6 +478,12 @@
 		2974C43C1D51DFAE00248E81 /* FadeWordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FadeWordView.m; sourceTree = "<group>"; };
 		2974C43F1D51DFE300248E81 /* FadeWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FadeWordViewController.h; sourceTree = "<group>"; };
 		2974C4401D51DFE300248E81 /* FadeWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FadeWordViewController.m; sourceTree = "<group>"; };
+		2974C4441D531FF000248E81 /* BezierView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierView.h; sourceTree = "<group>"; };
+		2974C4451D531FF000248E81 /* BezierView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierView.m; sourceTree = "<group>"; };
+		2974C4481D532A0200248E81 /* BezierViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierViewController.h; sourceTree = "<group>"; };
+		2974C4491D532A0200248E81 /* BezierViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierViewController.m; sourceTree = "<group>"; };
+		2974C4511D54824500248E81 /* RNProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNProgressHUD.h; sourceTree = "<group>"; };
+		2974C4521D54824500248E81 /* RNProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNProgressHUD.m; sourceTree = "<group>"; };
 		29C5EFA51D3DFAAA00949CB4 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		29C5EFA61D3DFAAA00949CB4 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
 		29C5EFA71D3DFAAA00949CB4 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
@@ -1020,6 +1032,7 @@
 		2974C4381D51DF2700248E81 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				2974C4431D531FDB00248E81 /* Bezier */,
 				2974C43A1D51DF6200248E81 /* FadeWords */,
 			);
 			name = Animation;
@@ -1035,6 +1048,19 @@
 				2974C4401D51DFE300248E81 /* FadeWordViewController.m */,
 			);
 			path = FadeWords;
+			sourceTree = "<group>";
+		};
+		2974C4431D531FDB00248E81 /* Bezier */ = {
+			isa = PBXGroup;
+			children = (
+				2974C4441D531FF000248E81 /* BezierView.h */,
+				2974C4451D531FF000248E81 /* BezierView.m */,
+				2974C4481D532A0200248E81 /* BezierViewController.h */,
+				2974C4491D532A0200248E81 /* BezierViewController.m */,
+				2974C4511D54824500248E81 /* RNProgressHUD.h */,
+				2974C4521D54824500248E81 /* RNProgressHUD.m */,
+			);
+			path = Bezier;
 			sourceTree = "<group>";
 		};
 		29C5EFA41D3DFAAA00949CB4 /* FMDB-2.5v */ = {
@@ -2121,6 +2147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29FF66741D363D910021B7D7 /* LTAlertView.m in Sources */,
+				2974C4541D54824500248E81 /* RNProgressHUD.m in Sources */,
 				29FF66541D363D910021B7D7 /* IQNSArray+Sort.m in Sources */,
 				29FF66861D363D910021B7D7 /* View+MASAdditions.m in Sources */,
 				29FF66DA1D363D910021B7D7 /* MWPhotoBrowser.m in Sources */,
@@ -2245,6 +2272,7 @@
 				29FF662E1D363D910021B7D7 /* AGImagePickerController+Helper.m in Sources */,
 				29FF67081D363D910021B7D7 /* SDWebImageDownloader.m in Sources */,
 				29FF66681D363D910021B7D7 /* IQPreviousNextView.m in Sources */,
+				2974C44B1D532A0200248E81 /* BezierViewController.m in Sources */,
 				29FF66EA1D363D910021B7D7 /* PSTCollectionViewController.m in Sources */,
 				29FF663A1D363D910021B7D7 /* AGIPCGridCell.m in Sources */,
 				29FF67611D363E640021B7D7 /* UIView+SimpleAnimation.m in Sources */,
@@ -2255,6 +2283,7 @@
 				29FF66481D363D910021B7D7 /* BIDObjectToNsDictionary.m in Sources */,
 				29FF674D1D363E640021B7D7 /* NSObject+reflectValue.m in Sources */,
 				29FF66281D363D910021B7D7 /* AFURLRequestSerialization.m in Sources */,
+				2974C4471D531FF000248E81 /* BezierView.m in Sources */,
 				29FF66F61D363D910021B7D7 /* PSTGridLayoutInfo.m in Sources */,
 				29FF667C1D363D910021B7D7 /* MASLayoutConstraint.m in Sources */,
 				29FF67101D363D910021B7D7 /* UIButton+WebCache.m in Sources */,
@@ -2393,6 +2422,7 @@
 				29FF66391D363D910021B7D7 /* AGIPCGridCell.m in Sources */,
 				29FF66211D363D910021B7D7 /* AFNetworkReachabilityManager.m in Sources */,
 				29FF66BB1D363D910021B7D7 /* MJRefreshBackGifFooter.m in Sources */,
+				2974C44A1D532A0200248E81 /* BezierViewController.m in Sources */,
 				29FF664D1D363D910021B7D7 /* Foundation+Log.m in Sources */,
 				29FF66971D363D910021B7D7 /* MJConst.m in Sources */,
 				8834B63F1CB752D400428D18 /* FormView.m in Sources */,
@@ -2442,11 +2472,13 @@
 				29FF67171D363D910021B7D7 /* UIImageView+HighlightedWebCache.m in Sources */,
 				29FF66551D363D910021B7D7 /* IQUIScrollView+Additions.m in Sources */,
 				29FF61CB1D2DF1C40021B7D7 /* WKWebController.m in Sources */,
+				2974C4461D531FF000248E81 /* BezierView.m in Sources */,
 				29C5EFE01D3DFAEA00949CB4 /* KLAddressPickerView.m in Sources */,
 				29FF66A71D363D910021B7D7 /* NSObject+MJKeyValue.m in Sources */,
 				29C5EFD41D3DFAEA00949CB4 /* ComPickerView.m in Sources */,
 				29FF670F1D363D910021B7D7 /* UIButton+WebCache.m in Sources */,
 				29FF669F1D363D910021B7D7 /* MJMethod.m in Sources */,
+				2974C4531D54824500248E81 /* RNProgressHUD.m in Sources */,
 				29FF67191D363D910021B7D7 /* UIImageView+WebCache.m in Sources */,
 				29FF61D21D2DFD980021B7D7 /* KLFileManager.m in Sources */,
 				29FF66231D363D910021B7D7 /* AFSecurityPolicy.m in Sources */,
