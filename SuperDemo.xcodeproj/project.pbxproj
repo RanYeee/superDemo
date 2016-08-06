@@ -16,6 +16,8 @@
 		29119C0C1D4602D400468A51 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29119C0A1D4602CB00468A51 /* CoreImage.framework */; };
 		29119C101D46036000468A51 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 29119C0F1D46036000468A51 /* Util.m */; };
 		29119C111D46036000468A51 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 29119C0F1D46036000468A51 /* Util.m */; };
+		294365481D55DB2200E71085 /* RNSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 294365471D55DB2200E71085 /* RNSlideViewController.m */; };
+		294365491D55DB2200E71085 /* RNSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 294365471D55DB2200E71085 /* RNSlideViewController.m */; };
 		296BDBA81CDB2C64005AD41A /* html in Resources */ = {isa = PBXBuildFile; fileRef = 296BDBA71CDB2C64005AD41A /* html */; };
 		296BDBAC1CDB2C9F005AD41A /* H5WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 296BDBAB1CDB2C9F005AD41A /* H5WebViewController.m */; };
 		296BDBAF1CDB2D6A005AD41A /* KLWebViewHelps.m in Sources */ = {isa = PBXBuildFile; fileRef = 296BDBAE1CDB2D6A005AD41A /* KLWebViewHelps.m */; };
@@ -451,6 +453,8 @@
 		29119C0A1D4602CB00468A51 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		29119C0E1D46036000468A51 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
 		29119C0F1D46036000468A51 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		294365461D55DB2200E71085 /* RNSlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNSlideViewController.h; sourceTree = "<group>"; };
+		294365471D55DB2200E71085 /* RNSlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNSlideViewController.m; sourceTree = "<group>"; };
 		296BDBA71CDB2C64005AD41A /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html; sourceTree = "<group>"; };
 		296BDBAA1CDB2C9F005AD41A /* H5WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H5WebViewController.h; sourceTree = "<group>"; };
 		296BDBAB1CDB2C9F005AD41A /* H5WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = H5WebViewController.m; sourceTree = "<group>"; };
@@ -960,6 +964,16 @@
 			);
 			name = Utils;
 			path = superDemo/Utils;
+			sourceTree = SOURCE_ROOT;
+		};
+		294365451D55D9DB00E71085 /* 模仿rio首页控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				294365461D55DB2200E71085 /* RNSlideViewController.h */,
+				294365471D55DB2200E71085 /* RNSlideViewController.m */,
+			);
+			name = "模仿rio首页控制器";
+			path = "superDemo/模仿rio首页控制器";
 			sourceTree = SOURCE_ROOT;
 		};
 		296BDBA61CDB2C59005AD41A /* DataSource */ = {
@@ -1780,6 +1794,7 @@
 		8834B5E61CB7512C00428D18 /* SuperDemo */ = {
 			isa = PBXGroup;
 			children = (
+				294365451D55D9DB00E71085 /* 模仿rio首页控制器 */,
 				2974C4381D51DF2700248E81 /* Animation */,
 				29119C0D1D46034500468A51 /* Utils */,
 				29119BFB1D46011200468A51 /* DrawQRCode */,
@@ -2212,6 +2227,7 @@
 				29119C071D46026D00468A51 /* DrawQRCodeController.m in Sources */,
 				29FF66A61D363D910021B7D7 /* NSObject+MJCoding.m in Sources */,
 				29C5EFDB1D3DFAEA00949CB4 /* AreaEntity.m in Sources */,
+				294365491D55DB2200E71085 /* RNSlideViewController.m in Sources */,
 				29FF667A1D363D910021B7D7 /* MASConstraintMaker.m in Sources */,
 				29FF67141D363D910021B7D7 /* UIImage+MultiFormat.m in Sources */,
 				29FF66C21D363D910021B7D7 /* MJRefreshGifHeader.m in Sources */,
@@ -2506,6 +2522,7 @@
 				29FF66B11D363D910021B7D7 /* MJRefreshFooter.m in Sources */,
 				29FF67111D363D910021B7D7 /* UIImage+GIF.m in Sources */,
 				29FF66B71D363D910021B7D7 /* MJRefreshAutoNormalFooter.m in Sources */,
+				294365481D55DB2200E71085 /* RNSlideViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

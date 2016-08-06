@@ -63,7 +63,7 @@
         
         _shapeLayer.strokeStart = 0;
         
-        _shapeLayer.lineWidth = 2.0f;
+        _shapeLayer.lineWidth = 6.0f;
         
         _shapeLayer.fillColor = [UIColor clearColor].CGColor;
         
