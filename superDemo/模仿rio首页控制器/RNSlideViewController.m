@@ -10,7 +10,16 @@
 
 @interface RNSlideViewController ()<UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate>
 
+{
+    
+    CGFloat _oldOffset;
+    
+
+}
+
 @property (nonatomic,strong) UITableView *tableView;
+
+@property (nonatomic,strong) UIView *topView;
 
 @end
 
@@ -18,14 +27,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    UIView *topView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 200)];
     
-    topView.backgroundColor = [UIColor colorWithRed:0.3725 green:0.702 blue:0.2039 alpha:1.0];
-    
-    [self.view addSubview:topView];
+    self.view.backgroundColor = [UIColor whiteColor];
 
-    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 200, SCREEN_WIDTH, SCREEN_HEIGHT-200) style:UITableViewStyleGrouped];
+    self.topView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 200)];
+    
+    self.topView.backgroundColor = [UIColor colorWithRed:0.3725 green:0.702 blue:0.2039 alpha:1.0];
+    
+    [self.view addSubview:self.topView];
+
+    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 150, SCREEN_WIDTH, SCREEN_HEIGHT-150) style:UITableViewStyleGrouped];
     
     self.tableView.delegate = self;
     
@@ -33,7 +44,7 @@
     
     
     
-    [self.view addSubview:self.tableView];
+    [self.view insertSubview:self.tableView belowSubview:self.topView];
 
 }
 
@@ -59,7 +70,7 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return 10;
+    return 50;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -81,7 +92,7 @@
 {
     
   
-    return 0.01;
+    return 30;
 }
 
 
@@ -101,16 +112,82 @@
     
 }
 
+//开始拖拽视图
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+
+{
+    
+    
+    
+}
+
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     
-        NSLog(@"%f",scrollView.contentOffset.y);
+    CGFloat currentY = scrollView.contentOffset.y;
     
-    if (scrollView.contentOffset.y >=100) {
+    CGRect topViewFrame = self.topView.frame;
+    
+    CGRect tableFrame = self.tableView.frame;
+    
+    
+    NSLog(@"%f",currentY);
+    
+
+    if (currentY > _oldOffset && currentY > 0) {//如果当前位移大于缓存位移，说明scrollView向上滑动
         
-        [self.tableView setContentOffset:CGPointMake(0, 100)];
+        
+        NSLog(@"up");
+        
+        topViewFrame.size.height -= 2;
+        
+//        tableFrame.origin.y -= 1;
+        
+        
+    }else{
+        
+        if (currentY > 0) {
+            
+            NSLog(@"down");
+            topViewFrame.size.height += 2;
+            
+//            tableFrame.origin.y += 1;
+            
+        }
+        
+
     }
     
+    if ( topViewFrame.size.height<100) {
+        
+        return;
+    }
+    
+    [self.tableView setFrame:tableFrame];
+    
+    [self.topView setFrame:topViewFrame];
+    
+    _oldOffset = scrollView.contentOffset.y;//将当前位移变成缓存位移
+    
 }
+
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    
+
+}
+
+// 完成拖拽(滚动停止时调用此方法，手指离开屏幕前)
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+
+{
+    
+    
+    
+}
+
+
 
 @end
