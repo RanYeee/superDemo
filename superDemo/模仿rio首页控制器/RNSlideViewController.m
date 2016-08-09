@@ -5,8 +5,12 @@
 //  Created by Rany on 16/8/6.
 //  Copyright © 2016年 Rany. All rights reserved.
 //
-
+#define kNavigationBarHeight 64
+#define kTopVieHeight 250
 #import "RNSlideViewController.h"
+#import "SVPullToRefresh.h"
+#import "RNTopView.h"
+
 
 @interface RNSlideViewController ()<UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate>
 
@@ -19,7 +23,7 @@
 
 @property (nonatomic,strong) UITableView *tableView;
 
-@property (nonatomic,strong) UIView *topView;
+@property (nonatomic,strong) RNTopView *topView;
 
 @end
 
@@ -30,22 +34,36 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
 
-    self.topView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 200)];
-    
-    self.topView.backgroundColor = [UIColor colorWithRed:0.3725 green:0.702 blue:0.2039 alpha:1.0];
-    
     [self.view addSubview:self.topView];
 
-    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 150, SCREEN_WIDTH, SCREEN_HEIGHT-150) style:UITableViewStyleGrouped];
+    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, kNavigationBarHeight, SCREEN_WIDTH, SCREEN_HEIGHT-kNavigationBarHeight) style:UITableViewStylePlain];
+    
+    self.tableView.contentInset = UIEdgeInsetsMake(kTopVieHeight - kNavigationBarHeight, 0, 0, 0);
     
     self.tableView.delegate = self;
     
     self.tableView.dataSource = self;
     
-    
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
     [self.view insertSubview:self.tableView belowSubview:self.topView];
 
+}
+
+- (RNTopView *)topView
+{
+    if (!_topView) {
+        
+        _topView = [[RNTopView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, kTopVieHeight)];
+        
+        [_topView setItems:@[@"ONE",@"TOW",@"THREE",@"FOUR",@"FIVE",@"SIX",@"Seven",@"eight",@"nine"]];
+        
+        [_topView setIconImage:[UIImage imageNamed:@"AppIcon60x60"]];
+        
+
+    }
+    
+    return _topView;
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -53,12 +71,9 @@
     [super viewWillAppear:animated];
     
     self.navigationController.navigationBar.hidden = YES;
-}
-
--(void)viewWillDisappear:(BOOL)animated
-{
     
-    self.navigationController.navigationBar.hidden = NO;
+    [self.topView reloadWithScrollView:self.tableView];
+
 }
 
 #pragma mark - tabelView delegate & dataSource
@@ -70,7 +85,7 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return 50;
+    return 20;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -83,16 +98,30 @@
         
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellID];
 
+       
     }
+    
+    
+    //奇偶数行cell颜色显示不同
+    if (indexPath.row %2 ==0) {
+        
+        cell.backgroundColor = [UIColor colorWithHexString:@"f7fafb"];
+    }
+    else{
+        
+        cell.backgroundColor = [UIColor whiteColor];
+    }
+
     
     return cell;
 }
 
--(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-  
-    return 30;
+    return 80;
 }
 
 
@@ -112,81 +141,12 @@
     
 }
 
-//开始拖拽视图
-
-- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
-
-{
-    
-    
-    
-}
-
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    
-    CGFloat currentY = scrollView.contentOffset.y;
-    
-    CGRect topViewFrame = self.topView.frame;
-    
-    CGRect tableFrame = self.tableView.frame;
-    
-    
-    NSLog(@"%f",currentY);
-    
-
-    if (currentY > _oldOffset && currentY > 0) {//如果当前位移大于缓存位移，说明scrollView向上滑动
-        
-        
-        NSLog(@"up");
-        
-        topViewFrame.size.height -= 2;
-        
-//        tableFrame.origin.y -= 1;
-        
-        
-    }else{
-        
-        if (currentY > 0) {
-            
-            NSLog(@"down");
-            topViewFrame.size.height += 2;
-            
-//            tableFrame.origin.y += 1;
-            
-        }
-        
-
-    }
-    
-    if ( topViewFrame.size.height<100) {
-        
-        return;
-    }
-    
-    [self.tableView setFrame:tableFrame];
-    
-    [self.topView setFrame:topViewFrame];
-    
-    _oldOffset = scrollView.contentOffset.y;//将当前位移变成缓存位移
-    
+    [self.topView reloadWithScrollView:scrollView];
 }
 
--(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
-{
-    
 
-}
-
-// 完成拖拽(滚动停止时调用此方法，手指离开屏幕前)
-
-- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
-
-{
-    
-    
-    
-}
 
 
 
