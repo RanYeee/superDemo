@@ -7,12 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MDTabBar.h"
 
 @interface RNTopView : UIView
 
 @property (nonatomic ,strong) UIImage *iconImage;
 
 @property (nonatomic ,copy) NSArray *items;
+
+@property (nonatomic,strong) MDTabBar *mdTabbar;
+
 
 - (void)reloadWithScrollView:(UIScrollView *)scrollView;
 

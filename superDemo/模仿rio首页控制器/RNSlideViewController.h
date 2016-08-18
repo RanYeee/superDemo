@@ -7,7 +7,27 @@
 //
 
 #import <UIKit/UIKit.h>
+@class RNSlideViewController;
+
+@protocol RNSlideViewControllerDelegate <NSObject>
+
+- (UIViewController *)tabBarViewController:
+(RNSlideViewController *)viewController
+                     viewControllerAtIndex:(NSUInteger)index;
+
+@optional
+- (void)tabBarViewController:(RNSlideViewController *)viewController
+              didMoveToIndex:(NSUInteger)index;
+@end
 
 @interface RNSlideViewController : UIViewController
+
+@property (nonatomic ,copy) NSArray *items ;
+
+@property(nonatomic) NSUInteger selectedIndex;
+
+@property(nonatomic, weak) id<RNSlideViewControllerDelegate> delegate;
+
+- (void)reloadWithScrollView:(UIScrollView *)scrollView;
 
 @end

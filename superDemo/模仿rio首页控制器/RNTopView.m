@@ -7,7 +7,6 @@
 //
 
 #import "RNTopView.h"
-#import "MDTabBar.h"
 
 #define kSelfWidth  self.bounds.size.width
 #define kSelfHeight self.bounds.size.height
@@ -17,7 +16,7 @@ static CGFloat const kHeaderWidth = 104; // 头像宽度
 static CGFloat const kHeaderHeight = 120; // 头像高度
 
 static CGFloat const kHeaderMinWidth = 40; // 头像在顶部时的宽度
-@interface RNTopView() <MDTabBarDelegate>
+@interface RNTopView()
 
 @property (nonatomic,strong) UIImageView *iconImageView;
 
@@ -28,7 +27,6 @@ static CGFloat const kHeaderMinWidth = 40; // 头像在顶部时的宽度
 @property (nonatomic,strong) UIButton *leftButton;
 
 
-@property (nonatomic,strong) MDTabBar *mdTabbar;
 
 
 @end
@@ -167,9 +165,7 @@ static CGFloat const kHeaderMinWidth = 40; // 头像在顶部时的宽度
         _mdTabbar.rippleColor = [UIColor whiteColor];
         
         _mdTabbar.horizontalPaddingPerItem = 40;
-        
-        _mdTabbar.delegate = self;
-        
+                
         [self.bgView addSubview:_mdTabbar];
     }
     
@@ -190,5 +186,7 @@ static CGFloat const kHeaderMinWidth = 40; // 头像在顶部时的宽度
     
     [self.mdTabbar setItems:items];
 }
+
+
 
 @end

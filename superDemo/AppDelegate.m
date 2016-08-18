@@ -19,6 +19,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    [AMapServices sharedServices].apiKey = @"354993461110dd5150b694c451d655b1";
+
     BOOL isCopy = [[NSUserDefaults standardUserDefaults]boolForKey:kIsCopyH5ToTmp];
     
     if (!isCopy) {

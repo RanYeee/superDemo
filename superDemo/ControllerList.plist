@@ -46,9 +46,15 @@
 	</dict>
 	<dict>
 		<key>className</key>
-		<string>RNSlideViewController</string>
+		<string>SlideViewController</string>
 		<key>dec</key>
 		<string>模仿rio首页控制器</string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>RNMapViewController</string>
+		<key>dec</key>
+		<string>高德地图</string>
 	</dict>
 	<dict>
 		<key>classArray</key>
