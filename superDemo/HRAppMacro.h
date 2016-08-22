@@ -42,7 +42,7 @@
 #define debugError()
 #endif
 
-#define MyLog(x)    NSLog(@" %@",x)
+#define RNLog(x)    NSLog(@#x)
 
 //G－C－D
 #define BACK(block) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block)
@@ -84,8 +84,8 @@
 #define PhotosMessageDir ([[NSString documentPath] stringByAppendingPathComponent:@"/PhotosMessageDir/"])
 #define VoiceMessageDir ([[NSString documentPath] stringByAppendingPathComponent:@"/VoiceMessageDir/"])
 #define BlacklistDir    ([[NSString documentPath] stringByAppendingPathComponent:@"/BlacklistDir/"])
-#define WS(weakSelf)    __weak __typeof(&*self)weakSelf = self;
-
+#define WS(self)    __weak __typeof(&*self)weakSelf = self;
+#define RNWeakSelf(type)  __weak typeof(type) weak##type = type;
 #define SCREEN_WIDTH  ([UIScreen mainScreen].bounds.size.width)
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 

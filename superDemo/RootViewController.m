@@ -7,6 +7,7 @@
 //
 
 #import "RootViewController.h"
+#import "MainViewCell.h"
 
 
 @interface RootViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -34,13 +35,17 @@
 
     }
     
-    self.tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+    self.tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
     
     self.tableView.delegate = self;
     
     self.tableView.dataSource = self;
     
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
     [self.view addSubview:self.tableView];
+
+    
 
 }
 
@@ -56,10 +61,10 @@
 
 #pragma mark - tabelView delegate & dataSource
 
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    
-    return 1;
-}
+//-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+//    
+//    return 1;
+//}
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
@@ -68,31 +73,39 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellID"];
+    static NSString *cellId = @"cellID";
+    
+    MainViewCell *cell = nil;
+    
+    cell = [tableView dequeueReusableCellWithIdentifier:cellId];
     
     if (!cell) {
         
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cellID"];
+        cell = [MainViewCell loadFromXib];
     }
+    
     
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
-    NSString *decText = [NSString stringWithFormat:@"[%d]  %@",indexPath.row+1,[_controllerArr[indexPath.row] objectForKey:@"dec"]];
+//    NSString *decText = [NSString stringWithFormat:@"[%d]  %@",indexPath.row+1,[_controllerArr[indexPath.row] objectForKey:@"dec"]];
     
-    cell.textLabel.text = decText;
-    
-    if (_controllerArr[indexPath.row][@"classArray"]) {
-        
-        cell.detailTextLabel.text = @"...";
-    }
-    
+    NSString *decText = [NSString stringWithFormat:@"%@",[_controllerArr[indexPath.row] objectForKey:@"dec"]];
+//
+//    cell.textLabel.text = decText;
+//    
+//    if (_controllerArr[indexPath.row][@"classArray"]) {
+//        
+//        cell.detailTextLabel.text = @"...";
+//    }
+    cell.contentTextLabel.text = decText;
+
     return cell;
 }
 
-//-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-//    
-//    
-//}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return 60;
+}
 
 //-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
 //    

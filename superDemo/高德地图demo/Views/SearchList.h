@@ -12,4 +12,8 @@
 
 @property (nonatomic ,strong) NSArray *resultArray;
 
+- (void)show;
+
+- (void)hide;
+
 @end

@@ -23,13 +23,20 @@
     
     if (self) {
 
-        self.tableView = [[UITableView alloc]initWithFrame:frame style:UITableViewStylePlain];
+        self.frame = frame;
+        
+        self.backgroundColor = [UIColor clearColor];
+        
+        self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, frame.size.width, 0) style:UITableViewStylePlain];
         
         self.tableView.delegate = self;
         
         self.tableView.dataSource = self;
         
         [self addSubview:self.tableView];
+
+        self.hidden = YES;
+        
         
     }
     
@@ -59,7 +66,8 @@
     
     if (_resultArray.count > 0) {
         
-        cell.textLabel.text = _resultArray[indexPath.row];
+        AMapTip *tip = _resultArray[indexPath.row];
+        cell.textLabel.text = tip.name;
     }
     
     return cell;
@@ -68,6 +76,45 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
+}
+
+- (void)show
+{
+
+
+    [UIView animateWithDuration:0.3 animations:^{
+       
+        self.hidden = NO;
+
+        CGRect tableRect = self.tableView.frame;
+        
+        tableRect.size.height = self.frame.size.height;
+        
+        self.tableView.frame = tableRect;
+        
+        
+    }];
+}
+
+- (void)hide
+{
+
+    
+    [UIView animateWithDuration:0.3 animations:^{
+        
+        CGRect tableRect = self.tableView.frame;
+        
+        tableRect.size.height = 0;
+        
+        self.tableView.frame = tableRect;
+        
+    } completion:^(BOOL finished) {
+        
+        self.hidden = YES;
+
+    }];
+    
+ 
 }
 
 #pragma mark - setter

@@ -194,6 +194,10 @@
 		29D670971CF5D4180008C196 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D670961CF5D4180008C196 /* QuartzCore.framework */; };
 		29D6709A1CF5D5190008C196 /* MyVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D670991CF5D5190008C196 /* MyVideoController.m */; };
 		29D6709B1CF5D5190008C196 /* MyVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D670991CF5D5190008C196 /* MyVideoController.m */; };
+		29DFDE0A1D6AE4B3008BDBC6 /* MainViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DFDE081D6AE4B2008BDBC6 /* MainViewCell.m */; };
+		29DFDE0B1D6AE4B3008BDBC6 /* MainViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DFDE081D6AE4B2008BDBC6 /* MainViewCell.m */; };
+		29DFDE0C1D6AE4B3008BDBC6 /* MainViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29DFDE091D6AE4B2008BDBC6 /* MainViewCell.xib */; };
+		29DFDE0D1D6AE4B3008BDBC6 /* MainViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29DFDE091D6AE4B2008BDBC6 /* MainViewCell.xib */; };
 		29FF61CB1D2DF1C40021B7D7 /* WKWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FF61CA1D2DF1C40021B7D7 /* WKWebController.m */; };
 		29FF61CE1D2DF9EC0021B7D7 /* UIWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FF61CD1D2DF9EC0021B7D7 /* UIWebController.m */; };
 		29FF61D21D2DFD980021B7D7 /* KLFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FF61D11D2DFD980021B7D7 /* KLFileManager.m */; };
@@ -748,6 +752,9 @@
 		29D670961CF5D4180008C196 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		29D670981CF5D5190008C196 /* MyVideoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyVideoController.h; sourceTree = "<group>"; };
 		29D670991CF5D5190008C196 /* MyVideoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyVideoController.m; sourceTree = "<group>"; };
+		29DFDE071D6AE4B2008BDBC6 /* MainViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewCell.h; sourceTree = "<group>"; };
+		29DFDE081D6AE4B2008BDBC6 /* MainViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewCell.m; sourceTree = "<group>"; };
+		29DFDE091D6AE4B2008BDBC6 /* MainViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewCell.xib; sourceTree = "<group>"; };
 		29FF61C91D2DF1C40021B7D7 /* WKWebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebController.h; sourceTree = "<group>"; };
 		29FF61CA1D2DF1C40021B7D7 /* WKWebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebController.m; sourceTree = "<group>"; };
 		29FF61CC1D2DF9EC0021B7D7 /* UIWebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWebController.h; sourceTree = "<group>"; };
@@ -1572,6 +1579,25 @@
 			path = VideoView;
 			sourceTree = "<group>";
 		};
+		29DFDE051D6AE475008BDBC6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				29DFDE061D6AE488008BDBC6 /* Views */,
+			);
+			name = Main;
+			path = superDemo/Main;
+			sourceTree = SOURCE_ROOT;
+		};
+		29DFDE061D6AE488008BDBC6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				29DFDE071D6AE4B2008BDBC6 /* MainViewCell.h */,
+				29DFDE081D6AE4B2008BDBC6 /* MainViewCell.m */,
+				29DFDE091D6AE4B2008BDBC6 /* MainViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		29FF61CF1D2DFD790021B7D7 /* ToolKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -2239,6 +2265,7 @@
 				8834B61A1CB752D400428D18 /* cell展开视图 */,
 				29D6708B1CF5D3720008C196 /* VideoView */,
 				29C5EFBD1D3DFAEA00949CB4 /* AddressPickerDemo */,
+				29DFDE051D6AE475008BDBC6 /* Main */,
 				8834B5EA1CB7512C00428D18 /* AppDelegate.h */,
 				291044331D65ADCE002ECFFE /* AppDelegate.m */,
 				8834B5F01CB7512C00428D18 /* Main.storyboard */,
@@ -2502,6 +2529,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				296BDBF71CDC4261005AD41A /* Main.storyboard in Resources */,
+				29DFDE0D1D6AE4B3008BDBC6 /* MainViewCell.xib in Resources */,
 				29C5EFE51D3DFAEA00949CB4 /* AddressSelectorController.xib in Resources */,
 				29FF66301D363D910021B7D7 /* AGImagePickerController.bundle in Resources */,
 				29FF66941D363D910021B7D7 /* MHSelectPickerView.xib in Resources */,
@@ -2560,6 +2588,7 @@
 				29FF666F1D363D910021B7D7 /* IQKeyboardManager.bundle in Resources */,
 				8834B6491CB752D400428D18 /* ThreeItemCellTableViewCell.xib in Resources */,
 				29FF66E11D363D910021B7D7 /* MWPhotoBrowser.bundle in Resources */,
+				29DFDE0C1D6AE4B3008BDBC6 /* MainViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2779,6 +2808,7 @@
 				29FF66F61D363D910021B7D7 /* PSTGridLayoutInfo.m in Sources */,
 				29FF667C1D363D910021B7D7 /* MASLayoutConstraint.m in Sources */,
 				29FF67101D363D910021B7D7 /* UIButton+WebCache.m in Sources */,
+				29DFDE0B1D6AE4B3008BDBC6 /* MainViewCell.m in Sources */,
 				29B1E6161D59CB100033F2D3 /* MDToast.m in Sources */,
 				29B1E5F01D59CB100033F2D3 /* NSCalendarHelper.m in Sources */,
 				29FF66221D363D910021B7D7 /* AFNetworkReachabilityManager.m in Sources */,
@@ -2848,6 +2878,7 @@
 				29FF66DF1D363D910021B7D7 /* MWZoomingScrollView.m in Sources */,
 				29FF66FB1D363D910021B7D7 /* PSTGridLayoutSection.m in Sources */,
 				29FF66D11D363D910021B7D7 /* MWCaptionView.m in Sources */,
+				29DFDE0A1D6AE4B3008BDBC6 /* MainViewCell.m in Sources */,
 				29FF66311D363D910021B7D7 /* AGImagePickerController.m in Sources */,
 				29FF668B1D363D910021B7D7 /* MBProgressHUD.m in Sources */,
 				29FF66591D363D910021B7D7 /* IQUIView+Hierarchy.m in Sources */,

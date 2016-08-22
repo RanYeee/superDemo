@@ -7,10 +7,6 @@
 //
 
 #import "RNMapViewController.h"
-#import <MAMapKit/MAMapKit.h>
-#import <MAMapKit/MAUserLocation.h>
-#import <AMapSearchKit/AMapSearchKit.h>
-#import <AMapLocationKit/AMapLocationKit.h>
 #import "SearchList.h"
 @interface RNMapViewController ()<MAMapViewDelegate,AMapLocationManagerDelegate,AMapSearchDelegate,UISearchBarDelegate>
 {
@@ -32,7 +28,7 @@
 
 @property (nonatomic, strong) AMapSearchAPI *search;
 
-@property (nonatomic, strong) UIView *coverView;
+@property (nonatomic, strong) UIControl *coverView;
 
 @property (nonatomic, strong) SearchList *searchList;
 
@@ -57,8 +53,9 @@
 
     [self.view addSubview:self.searchBar];
     
-    [self.mapView addSubview:self.searchList];
-    
+    [self.mapView addSubview:self.coverView];
+
+    [self.mapView insertSubview:self.searchList aboveSubview:self.coverView];
     
 }
 
@@ -69,19 +66,18 @@
     
     if (!_searchList) {
         
-        _searchList = [[SearchList alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(self.searchBar.frame), SCREEN_WIDTH, SCREEN_HEIGHT-20)];
+        _searchList = [[SearchList alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(self.searchBar.frame), SCREEN_WIDTH, SCREEN_HEIGHT/2)];
         
-        _searchList.hidden = YES;
     }
     
     return _searchList;
 }
 
--(UIView *)coverView
+-(UIControl *)coverView
 {
     if (!_coverView) {
         
-        _coverView = [[UIView alloc]initWithFrame:self.view.bounds];
+        _coverView = [[UIControl alloc]initWithFrame:self.view.bounds];
         
         _coverView.backgroundColor = [UIColor blackColor];
         
@@ -89,6 +85,7 @@
         
         _coverView.hidden = YES;
         
+        [_coverView addTarget:self action:@selector(coveViewClickAction) forControlEvents:UIControlEventTouchUpInside];
     }
     
     return _coverView;
@@ -99,9 +96,8 @@
     if (!_mapView) {
         
         _mapView = [[MAMapView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds))];
-        _mapView.delegate = self;
         
-        _mapView.showsCompass = NO;
+        _mapView.delegate = self;
         
         _mapView.showsUserLocation = YES;
         
@@ -116,9 +112,11 @@
 {
     if (!_searchBar) {
         
-        _searchBar = [[UISearchBar alloc]initWithFrame:CGRectMake(0, 20, SCREEN_WIDTH, 44)];
+        _searchBar = [[UISearchBar alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 74)];
         
         _searchBar.delegate = self;
+        
+        _searchBar.showsCancelButton = YES;
     }
     
     return _searchBar;
@@ -290,7 +288,7 @@ updatingLocation:(BOOL)updatingLocation
     for (AMapTip *p in response.tips) {
         strtips = [NSString stringWithFormat:@"%@\nTip: %@", strtips, p.name];
         
-        [resultArr addObject:p.name];
+        [resultArr addObject:p];
     }
     
     [self.searchList setResultArray:resultArr];
@@ -328,6 +326,14 @@ updatingLocation:(BOOL)updatingLocation
     
 }
 
+#pragma mark - target
+
+- (void)coveViewClickAction
+{
+    [self.searchList hide];
+    
+    self.coverView.hidden = YES;
+}
 
 #pragma mark - searchBarDelegate
 -(void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
@@ -340,16 +346,31 @@ updatingLocation:(BOOL)updatingLocation
 
 -(void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar
 {
-    self.searchList.hidden = NO;
+
+    [self.searchList show];
+    
+    self.coverView.hidden = NO;
     
     NSLog(@"didbegin");
 }
 
 -(void)searchBarTextDidEndEditing:(UISearchBar *)searchBar
 {
-    self.searchList.hidden = YES;
-    
-    NSLog(@"didend");
 
+    NSLog(@"didend");
+    
+
+}
+
+-(void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
+{
+
+    [self.searchList hide];
+
+    [searchBar resignFirstResponder];
+    
+    self.coverView.hidden = YES;
+    
+    NSLog(@"cancle");
 }
 @end
