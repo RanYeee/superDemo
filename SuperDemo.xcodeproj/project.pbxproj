@@ -198,6 +198,8 @@
 		29DFDE0B1D6AE4B3008BDBC6 /* MainViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DFDE081D6AE4B2008BDBC6 /* MainViewCell.m */; };
 		29DFDE0C1D6AE4B3008BDBC6 /* MainViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29DFDE091D6AE4B2008BDBC6 /* MainViewCell.xib */; };
 		29DFDE0D1D6AE4B3008BDBC6 /* MainViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29DFDE091D6AE4B2008BDBC6 /* MainViewCell.xib */; };
+		29F3F5D51D6D47D3004272B6 /* MaterTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F3F5D41D6D47D3004272B6 /* MaterTopView.m */; };
+		29F3F5D81D6E99A5004272B6 /* RootDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F3F5D71D6E99A5004272B6 /* RootDetailViewController.m */; };
 		29FF61CB1D2DF1C40021B7D7 /* WKWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FF61CA1D2DF1C40021B7D7 /* WKWebController.m */; };
 		29FF61CE1D2DF9EC0021B7D7 /* UIWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FF61CD1D2DF9EC0021B7D7 /* UIWebController.m */; };
 		29FF61D21D2DFD980021B7D7 /* KLFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FF61D11D2DFD980021B7D7 /* KLFileManager.m */; };
@@ -755,6 +757,10 @@
 		29DFDE071D6AE4B2008BDBC6 /* MainViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewCell.h; sourceTree = "<group>"; };
 		29DFDE081D6AE4B2008BDBC6 /* MainViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewCell.m; sourceTree = "<group>"; };
 		29DFDE091D6AE4B2008BDBC6 /* MainViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewCell.xib; sourceTree = "<group>"; };
+		29F3F5D31D6D47D3004272B6 /* MaterTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaterTopView.h; sourceTree = "<group>"; };
+		29F3F5D41D6D47D3004272B6 /* MaterTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaterTopView.m; sourceTree = "<group>"; };
+		29F3F5D61D6E99A5004272B6 /* RootDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootDetailViewController.h; sourceTree = "<group>"; };
+		29F3F5D71D6E99A5004272B6 /* RootDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootDetailViewController.m; sourceTree = "<group>"; };
 		29FF61C91D2DF1C40021B7D7 /* WKWebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebController.h; sourceTree = "<group>"; };
 		29FF61CA1D2DF1C40021B7D7 /* WKWebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebController.m; sourceTree = "<group>"; };
 		29FF61CC1D2DF9EC0021B7D7 /* UIWebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWebController.h; sourceTree = "<group>"; };
@@ -1583,6 +1589,8 @@
 			isa = PBXGroup;
 			children = (
 				29DFDE061D6AE488008BDBC6 /* Views */,
+				29F3F5D61D6E99A5004272B6 /* RootDetailViewController.h */,
+				29F3F5D71D6E99A5004272B6 /* RootDetailViewController.m */,
 			);
 			name = Main;
 			path = superDemo/Main;
@@ -1594,6 +1602,8 @@
 				29DFDE071D6AE4B2008BDBC6 /* MainViewCell.h */,
 				29DFDE081D6AE4B2008BDBC6 /* MainViewCell.m */,
 				29DFDE091D6AE4B2008BDBC6 /* MainViewCell.xib */,
+				29F3F5D31D6D47D3004272B6 /* MaterTopView.h */,
+				29F3F5D41D6D47D3004272B6 /* MaterTopView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -2884,6 +2894,7 @@
 				29FF66591D363D910021B7D7 /* IQUIView+Hierarchy.m in Sources */,
 				29B1E5DD1D59CB100033F2D3 /* MDCalendar.m in Sources */,
 				2974C43D1D51DFAE00248E81 /* FadeWordView.m in Sources */,
+				29F3F5D81D6E99A5004272B6 /* RootDetailViewController.m in Sources */,
 				29B1E6091D59CB100033F2D3 /* MDSnackbar.m in Sources */,
 				29FF66ED1D363D910021B7D7 /* PSTCollectionViewFlowLayout.m in Sources */,
 				2977D58A1D62B9A90043D0E2 /* SlideViewController.m in Sources */,
@@ -3019,6 +3030,7 @@
 				29C5EFB61D3DFAAA00949CB4 /* FMDatabaseQueue.m in Sources */,
 				29FF663F1D363D910021B7D7 /* AGIPCToolbarItem.m in Sources */,
 				29C5EFB41D3DFAAA00949CB4 /* FMDatabasePool.m in Sources */,
+				29F3F5D51D6D47D3004272B6 /* MaterTopView.m in Sources */,
 				29FF66271D363D910021B7D7 /* AFURLRequestSerialization.m in Sources */,
 				29B1E61F1D59CB100033F2D3 /* MDBubbleLabel.m in Sources */,
 				29FF66851D363D910021B7D7 /* View+MASAdditions.m in Sources */,

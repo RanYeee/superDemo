@@ -31,9 +31,29 @@
     }
 
     NSString *str = [NSDate getPastORFutureDateWithYear:0 month:-1 day:0];
-    
+    [self changeNavBarStyle];
     NSLog(@"date>>> %@",str);
     return YES;
+}
+
+- (void)changeNavBarStyle
+{
+    
+    //设置NavigationBar背景颜色
+//    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithHexString:@"#03A9F4"]];
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navBar"] forBarMetrics:UIBarMetricsDefault];
+    //@{}代表Dictionary
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    
+    [[UIBarButtonItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]} forState:UIControlStateNormal];
+    
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    
+    //不设置这个无法修改状态栏字体颜色
+    [[UINavigationBar appearance] setBarStyle:UIBarStyleBlack];
+    
+    [[UITabBar appearance] setTintColor:[UIColor colorWithHexString:@"#269EBC"]];
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

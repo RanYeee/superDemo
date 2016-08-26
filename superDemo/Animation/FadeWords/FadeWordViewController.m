@@ -30,13 +30,13 @@
     
     fadeView.text = @"Loading...";
     
-//    [self.view addSubview:fadeView];
+    [self.view addSubview:fadeView];
     
     [fadeView fadeToRightWithDuration:1.5f isAnimation:YES];
     
-    BezierView *bezier = [[BezierView alloc]init];
-    bezier.frame = self.view.bounds;
-    [self.view addSubview:bezier];
+//    BezierView *bezier = [[BezierView alloc]init];
+//    bezier.frame = self.view.bounds;
+//    [self.view addSubview:bezier];
 
 
 }

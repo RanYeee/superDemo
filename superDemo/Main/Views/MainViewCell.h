@@ -11,8 +11,9 @@
 @interface MainViewCell : UITableViewCell
 @property (strong, nonatomic) IBOutlet UIImageView *boxImageView;
 
-@property (strong, nonatomic) IBOutlet UILabel *contentTextLabel;
+@property (strong, nonatomic) IBOutlet UILabel *mainTitleLabel;
 
+@property (strong, nonatomic) IBOutlet UILabel *detailTitleLabel;
 
 + (instancetype)loadFromXib;
 

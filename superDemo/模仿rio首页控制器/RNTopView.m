@@ -60,7 +60,7 @@ static CGFloat const kHeaderMinWidth = 40; // 头像在顶部时的宽度
 
     if (offsetY > 0 && offsetY <kSelfHeight) {
         
-        self.bgView.top = -offsetY / 2;
+        self.top = -offsetY / 2;
         
         self.bgView.backgroundColor = [UIColor colorWithRed:0.3725 green:0.702 blue:(offsetY/100) alpha:1.0];
         
@@ -73,7 +73,7 @@ static CGFloat const kHeaderMinWidth = 40; // 头像在顶部时的宽度
         
     }else if(offsetY >kSelfHeight){
         
-        self.bgView.top = -(kSelfHeight/2);
+        self.top = -(kSelfHeight/2);
         
         self.bgView.backgroundColor = [UIColor colorWithRed:0.3725 green:0.702 blue:1 alpha:1.0];
         

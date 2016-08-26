@@ -8,13 +8,17 @@
 
 #import "RootViewController.h"
 #import "MainViewCell.h"
+#import "MaterTopView.h"
+#import "RootDetailViewController.h"
 
 
-@interface RootViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface RootViewController ()<UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate>
 
 @property (strong,nonatomic) UITableView *tableView;
 
 @property (copy,nonatomic) NSMutableArray *controllerArr;
+
+@property (nonatomic,strong) MaterTopView *topView;
 
 @end
 
@@ -35,17 +39,31 @@
 
     }
     
+    self.topView = [[MaterTopView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT/2.5)];
+    
+    self.topView.mainTitle = @"Super Demo";
+    
+    self.topView.detailTitle = @"My personal project";
+    
+    
+    [self.view addSubview: self.topView];
+    
     self.tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
     
     self.tableView.delegate = self;
     
     self.tableView.dataSource = self;
     
-    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    
-    [self.view addSubview:self.tableView];
+    self.tableView.contentInset = UIEdgeInsetsMake(self.topView.height - 40, 0, 0, 0);
 
+//    [self.tableView setTableHeaderView:self.topView];
+//    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
+    
+    
+    [self.view insertSubview:self.tableView belowSubview:self.topView];
+
+//    self.navigationController.delegate = self;
 
 }
 
@@ -54,10 +72,23 @@
 {
     [super viewWillAppear:animated];
     
-    self.navigationController.navigationBar.hidden = NO;
-    
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
     
 }
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
+}
+
+#pragma mark - UINavigationControllerDelegate// 将要显示控制器
+//- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
+//    // 判断要显示的控制器是否是自己
+//    BOOL isShowHomePage = [viewController isKindOfClass:[self class]];
+//    [self.navigationController setNavigationBarHidden:isShowHomePage animated:YES];
+//}
 
 #pragma mark - tabelView delegate & dataSource
 
@@ -90,6 +121,8 @@
 //    NSString *decText = [NSString stringWithFormat:@"[%d]  %@",indexPath.row+1,[_controllerArr[indexPath.row] objectForKey:@"dec"]];
     
     NSString *decText = [NSString stringWithFormat:@"%@",[_controllerArr[indexPath.row] objectForKey:@"dec"]];
+    
+    NSString *createTime = [NSString stringWithFormat:@"%@",[_controllerArr[indexPath.row] objectForKey:@"createTime"]];
 //
 //    cell.textLabel.text = decText;
 //    
@@ -97,14 +130,16 @@
 //        
 //        cell.detailTextLabel.text = @"...";
 //    }
-    cell.contentTextLabel.text = decText;
+    cell.mainTitleLabel.text = decText;
+    
+    cell.detailTitleLabel.text = createTime;
 
     return cell;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    return 60;
+    return 90;
 }
 
 //-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
@@ -128,9 +163,9 @@
     
     if([_controllerArr[indexPath.row]objectForKey:@"classArray"]) {
         
-        RootViewController *detailVC = [[RootViewController alloc]init];
+        RootDetailViewController *detailVC = [[RootDetailViewController alloc]init];
         
-        detailVC.controllerArray = [_controllerArr[indexPath.row]objectForKey:@"classArray"];
+        detailVC.dataArray = [_controllerArr[indexPath.row]objectForKey:@"classArray"];
         
         detailVC.title = [_controllerArr[indexPath.row]objectForKey:@"dec"];
         
@@ -142,6 +177,15 @@
         return;
     }
 
+}
+
+#pragma mark - scrollViewDelegate
+
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    
+    
+    [self.topView reloadViewWithScrollView:scrollView];
+    
 }
 
 @end

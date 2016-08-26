@@ -13,11 +13,7 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
-    
-    UIImage *boxImage = [[UIImage imageNamed:@"timeBox"] stretchableImageWithLeftCapWidth:10 topCapHeight:10];
 
-    
-    [self.boxImageView setImage:boxImage];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
