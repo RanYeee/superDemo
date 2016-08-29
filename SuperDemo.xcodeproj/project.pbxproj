@@ -66,6 +66,18 @@
 		2977D5B71D630EED0043D0E2 /* AMapLocationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2977D5B61D630EED0043D0E2 /* AMapLocationKit.framework */; };
 		2977D5B91D63126B0043D0E2 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2977D5B81D63126B0043D0E2 /* AMap.bundle */; };
 		2977D5BB1D640E240043D0E2 /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2977D5BA1D640E240043D0E2 /* AMapSearchKit.framework */; };
+		29A9F6891D7405B800DA4077 /* LeftMemuStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A9F6851D7405B800DA4077 /* LeftMemuStoryboard.storyboard */; };
+		29A9F68A1D7405B800DA4077 /* LeftMemuStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A9F6851D7405B800DA4077 /* LeftMemuStoryboard.storyboard */; };
+		29A9F68B1D7405B800DA4077 /* LeftMemuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A9F6871D7405B800DA4077 /* LeftMemuViewController.m */; };
+		29A9F68C1D7405B800DA4077 /* LeftMemuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A9F6871D7405B800DA4077 /* LeftMemuViewController.m */; };
+		29A9F68D1D7405B800DA4077 /* MenuItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29A9F6881D7405B800DA4077 /* MenuItems.plist */; };
+		29A9F68E1D7405B800DA4077 /* MenuItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29A9F6881D7405B800DA4077 /* MenuItems.plist */; };
+		29A9F6911D7408FA00DA4077 /* LeftMemuDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A9F6901D7408FA00DA4077 /* LeftMemuDetailViewController.m */; };
+		29A9F6921D7408FA00DA4077 /* LeftMemuDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A9F6901D7408FA00DA4077 /* LeftMemuDetailViewController.m */; };
+		29A9F6951D740B7100DA4077 /* LeftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A9F6941D740B7100DA4077 /* LeftTableViewController.m */; };
+		29A9F6961D740B7100DA4077 /* LeftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A9F6941D740B7100DA4077 /* LeftTableViewController.m */; };
+		29A9F6991D740BDA00DA4077 /* LeftMemuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A9F6981D740BDA00DA4077 /* LeftMemuCell.m */; };
+		29A9F69A1D740BDA00DA4077 /* LeftMemuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A9F6981D740BDA00DA4077 /* LeftMemuCell.m */; };
 		29B1E5791D5884CC0033F2D3 /* UIScrollView+SVInfiniteScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B1E5761D5884CC0033F2D3 /* UIScrollView+SVInfiniteScrolling.m */; };
 		29B1E57A1D5884CD0033F2D3 /* UIScrollView+SVInfiniteScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B1E5761D5884CC0033F2D3 /* UIScrollView+SVInfiniteScrolling.m */; };
 		29B1E57B1D5884CD0033F2D3 /* UIScrollView+SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B1E5781D5884CC0033F2D3 /* UIScrollView+SVPullToRefresh.m */; };
@@ -627,6 +639,16 @@
 		2977D5B61D630EED0043D0E2 /* AMapLocationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapLocationKit.framework; sourceTree = "<group>"; };
 		2977D5B81D63126B0043D0E2 /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AMap.bundle; sourceTree = "<group>"; };
 		2977D5BA1D640E240043D0E2 /* AMapSearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapSearchKit.framework; sourceTree = "<group>"; };
+		29A9F6851D7405B800DA4077 /* LeftMemuStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LeftMemuStoryboard.storyboard; sourceTree = "<group>"; };
+		29A9F6861D7405B800DA4077 /* LeftMemuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMemuViewController.h; sourceTree = "<group>"; };
+		29A9F6871D7405B800DA4077 /* LeftMemuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMemuViewController.m; sourceTree = "<group>"; };
+		29A9F6881D7405B800DA4077 /* MenuItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MenuItems.plist; sourceTree = "<group>"; };
+		29A9F68F1D7408FA00DA4077 /* LeftMemuDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMemuDetailViewController.h; sourceTree = "<group>"; };
+		29A9F6901D7408FA00DA4077 /* LeftMemuDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMemuDetailViewController.m; sourceTree = "<group>"; };
+		29A9F6931D740B7100DA4077 /* LeftTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftTableViewController.h; sourceTree = "<group>"; };
+		29A9F6941D740B7100DA4077 /* LeftTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftTableViewController.m; sourceTree = "<group>"; };
+		29A9F6971D740BDA00DA4077 /* LeftMemuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMemuCell.h; sourceTree = "<group>"; };
+		29A9F6981D740BDA00DA4077 /* LeftMemuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMemuCell.m; sourceTree = "<group>"; };
 		29B1E5741D5884CC0033F2D3 /* SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVPullToRefresh.h; sourceTree = "<group>"; };
 		29B1E5751D5884CC0033F2D3 /* UIScrollView+SVInfiniteScrolling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SVInfiniteScrolling.h"; sourceTree = "<group>"; };
 		29B1E5761D5884CC0033F2D3 /* UIScrollView+SVInfiniteScrolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVInfiniteScrolling.m"; sourceTree = "<group>"; };
@@ -1364,6 +1386,24 @@
 			);
 			name = "高德地图demo";
 			path = "superDemo/高德地图demo";
+			sourceTree = SOURCE_ROOT;
+		};
+		29A9F6841D7405B800DA4077 /* 侧滑菜单 */ = {
+			isa = PBXGroup;
+			children = (
+				29A9F6851D7405B800DA4077 /* LeftMemuStoryboard.storyboard */,
+				29A9F6861D7405B800DA4077 /* LeftMemuViewController.h */,
+				29A9F6871D7405B800DA4077 /* LeftMemuViewController.m */,
+				29A9F6881D7405B800DA4077 /* MenuItems.plist */,
+				29A9F68F1D7408FA00DA4077 /* LeftMemuDetailViewController.h */,
+				29A9F6901D7408FA00DA4077 /* LeftMemuDetailViewController.m */,
+				29A9F6931D740B7100DA4077 /* LeftTableViewController.h */,
+				29A9F6941D740B7100DA4077 /* LeftTableViewController.m */,
+				29A9F6971D740BDA00DA4077 /* LeftMemuCell.h */,
+				29A9F6981D740BDA00DA4077 /* LeftMemuCell.m */,
+			);
+			name = "侧滑菜单";
+			path = "superDemo/侧滑菜单";
 			sourceTree = SOURCE_ROOT;
 		};
 		29B1E5731D5884CC0033F2D3 /* SVPullToRefresh */ = {
@@ -2261,6 +2301,7 @@
 		8834B5E61CB7512C00428D18 /* SuperDemo */ = {
 			isa = PBXGroup;
 			children = (
+				29A9F6841D7405B800DA4077 /* 侧滑菜单 */,
 				2977D5A81D6306200043D0E2 /* 高德地图demo */,
 				2977D58E1D62F5AE0043D0E2 /* Foundation */,
 				294365451D55D9DB00E71085 /* 模仿rio首页控制器 */,
@@ -2538,8 +2579,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29A9F68E1D7405B800DA4077 /* MenuItems.plist in Resources */,
 				296BDBF71CDC4261005AD41A /* Main.storyboard in Resources */,
 				29DFDE0D1D6AE4B3008BDBC6 /* MainViewCell.xib in Resources */,
+				29A9F68A1D7405B800DA4077 /* LeftMemuStoryboard.storyboard in Resources */,
 				29C5EFE51D3DFAEA00949CB4 /* AddressSelectorController.xib in Resources */,
 				29FF66301D363D910021B7D7 /* AGImagePickerController.bundle in Resources */,
 				29FF66941D363D910021B7D7 /* MHSelectPickerView.xib in Resources */,
@@ -2575,7 +2618,9 @@
 			files = (
 				8834B6421CB752D400428D18 /* FormViewCell.xib in Resources */,
 				8834B6461CB752D400428D18 /* KLSugarFormCell.xib in Resources */,
+				29A9F6891D7405B800DA4077 /* LeftMemuStoryboard.storyboard in Resources */,
 				8834B6441CB752D400428D18 /* KLFormHeaderView.xib in Resources */,
+				29A9F68D1D7405B800DA4077 /* MenuItems.plist in Resources */,
 				29FF66931D363D910021B7D7 /* MHSelectPickerView.xib in Resources */,
 				29FF66C71D363D910021B7D7 /* MJRefresh.bundle in Resources */,
 				29FF662F1D363D910021B7D7 /* AGImagePickerController.bundle in Resources */,
@@ -2685,6 +2730,7 @@
 				296BDBF41CDC3DA0005AD41A /* UIColor+HRExtension.m in Sources */,
 				29FF66A01D363D910021B7D7 /* MJMethod.m in Sources */,
 				29B1E6241D59CB100033F2D3 /* MDSliderThumbView.m in Sources */,
+				29A9F6961D740B7100DA4077 /* LeftTableViewController.m in Sources */,
 				29B1E5E21D59CB100033F2D3 /* MDCalendarDateHeader.m in Sources */,
 				29D6709B1CF5D5190008C196 /* MyVideoController.m in Sources */,
 				296BDBF21CDC3D5D005AD41A /* KLWebViewHelps.m in Sources */,
@@ -2780,6 +2826,7 @@
 				29B1E61A1D59CB100033F2D3 /* MDCircularProgressLayer.m in Sources */,
 				29FF66921D363D910021B7D7 /* MHSelectPickerView.m in Sources */,
 				29FF66C61D363D910021B7D7 /* MJRefreshStateHeader.m in Sources */,
+				29A9F68C1D7405B800DA4077 /* LeftMemuViewController.m in Sources */,
 				296BDBEE1CDC3C91005AD41A /* AppDelegate.m in Sources */,
 				29B1E5EE1D59CB100033F2D3 /* MDTimePickerDialog.m in Sources */,
 				29B1E6261D59CB100033F2D3 /* MDSliderTickMarksView.m in Sources */,
@@ -2801,6 +2848,7 @@
 				29FF67081D363D910021B7D7 /* SDWebImageDownloader.m in Sources */,
 				29FF66681D363D910021B7D7 /* IQPreviousNextView.m in Sources */,
 				2974C44B1D532A0200248E81 /* BezierViewController.m in Sources */,
+				29A9F69A1D740BDA00DA4077 /* LeftMemuCell.m in Sources */,
 				29FF66EA1D363D910021B7D7 /* PSTCollectionViewController.m in Sources */,
 				29FF663A1D363D910021B7D7 /* AGIPCGridCell.m in Sources */,
 				29B1E5DE1D59CB100033F2D3 /* MDCalendar.m in Sources */,
@@ -2850,6 +2898,7 @@
 				29FF66621D363D910021B7D7 /* IQKeyboardReturnKeyHandler.m in Sources */,
 				29B1E5E61D59CB100033F2D3 /* MDCalendarYearSelector.m in Sources */,
 				29FF661C1D363D910021B7D7 /* AFHTTPRequestOperation.m in Sources */,
+				29A9F6921D7408FA00DA4077 /* LeftMemuDetailViewController.m in Sources */,
 				29FF66201D363D910021B7D7 /* AFHTTPSessionManager.m in Sources */,
 				29FF66DC1D363D910021B7D7 /* MWTapDetectingImageView.m in Sources */,
 				29FF66461D363D910021B7D7 /* UIButton+AGIPC.m in Sources */,
@@ -2891,6 +2940,7 @@
 				29DFDE0A1D6AE4B3008BDBC6 /* MainViewCell.m in Sources */,
 				29FF66311D363D910021B7D7 /* AGImagePickerController.m in Sources */,
 				29FF668B1D363D910021B7D7 /* MBProgressHUD.m in Sources */,
+				29A9F6991D740BDA00DA4077 /* LeftMemuCell.m in Sources */,
 				29FF66591D363D910021B7D7 /* IQUIView+Hierarchy.m in Sources */,
 				29B1E5DD1D59CB100033F2D3 /* MDCalendar.m in Sources */,
 				2974C43D1D51DFAE00248E81 /* FadeWordView.m in Sources */,
@@ -2908,6 +2958,7 @@
 				296BDBAC1CDB2C9F005AD41A /* H5WebViewController.m in Sources */,
 				29C5EFDC1D3DFAEA00949CB4 /* CityEntity.m in Sources */,
 				29C5EFB21D3DFAAA00949CB4 /* FMDatabaseAdditions.m in Sources */,
+				29A9F68B1D7405B800DA4077 /* LeftMemuViewController.m in Sources */,
 				29C5EFB81D3DFAAA00949CB4 /* FMResultSet.m in Sources */,
 				29FF66D91D363D910021B7D7 /* MWPhotoBrowser.m in Sources */,
 				29FF66EB1D363D910021B7D7 /* PSTCollectionViewData.m in Sources */,
@@ -2928,6 +2979,7 @@
 				29B1E5DB1D59CB100033F2D3 /* AutoResizeTextView.m in Sources */,
 				29FF66D31D363D910021B7D7 /* MWGridCell.m in Sources */,
 				29FF66811D363D910021B7D7 /* NSArray+MASAdditions.m in Sources */,
+				29A9F6911D7408FA00DA4077 /* LeftMemuDetailViewController.m in Sources */,
 				29B1E6011D59CB100033F2D3 /* MDCollectionViewCell.m in Sources */,
 				29FF66251D363D910021B7D7 /* AFURLConnectionOperation.m in Sources */,
 				29FF66531D363D910021B7D7 /* IQNSArray+Sort.m in Sources */,
@@ -3057,6 +3109,7 @@
 				29B1E6151D59CB100033F2D3 /* MDToast.m in Sources */,
 				29FF66A71D363D910021B7D7 /* NSObject+MJKeyValue.m in Sources */,
 				29C5EFD41D3DFAEA00949CB4 /* ComPickerView.m in Sources */,
+				29A9F6951D740B7100DA4077 /* LeftTableViewController.m in Sources */,
 				29FF670F1D363D910021B7D7 /* UIButton+WebCache.m in Sources */,
 				29FF669F1D363D910021B7D7 /* MJMethod.m in Sources */,
 				2974C4531D54824500248E81 /* RNProgressHUD.m in Sources */,

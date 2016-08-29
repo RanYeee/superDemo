@@ -150,14 +150,28 @@
     
     if ([_controllerArr[indexPath.row]objectForKey:@"className"]) {
         
-        
         NSString *className = [_controllerArr[indexPath.row]objectForKey:@"className"];
+
         
-        Class controllerClass = NSClassFromString(className);
-        
-        id nextVC = [[controllerClass alloc]init];
-        
-        [self.navigationController pushViewController:nextVC animated:YES];
+        if ([_controllerArr[indexPath.row]objectForKey:@"storyBoard"]) {
+            
+            NSString *storyBoardName = [_controllerArr[indexPath.row]objectForKey:@"storyBoard"];
+            
+            UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:storyBoardName bundle:nil];
+            
+            UIViewController *rootVC = [storyBoard instantiateViewControllerWithIdentifier:className];
+            
+            [self presentViewController:rootVC animated:YES completion:nil];
+            
+        }else{
+            
+            Class controllerClass = NSClassFromString(className);
+            
+            id nextVC = [[controllerClass alloc]init];
+            
+            [self.navigationController pushViewController:nextVC animated:YES];
+        }
+
     
     }
     
@@ -172,7 +186,9 @@
         [self.navigationController pushViewController:detailVC animated:YES];
         
         
-    }else{
+    }
+    
+    else{
         
         return;
     }

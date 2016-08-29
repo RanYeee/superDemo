@@ -75,6 +75,16 @@
 		<string>高德地图</string>
 	</dict>
 	<dict>
+		<key>storyBoard</key>
+		<string>LeftMemuStoryboard</string>
+		<key>createTime</key>
+		<string>2016.08.29</string>
+		<key>className</key>
+		<string>LeftMemuViewController</string>
+		<key>dec</key>
+		<string>侧滑菜单</string>
+	</dict>
+	<dict>
 		<key>createTime</key>
 		<string>2016.07.23</string>
 		<key>classArray</key>

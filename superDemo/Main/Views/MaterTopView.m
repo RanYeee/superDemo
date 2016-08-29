@@ -193,7 +193,7 @@
     CGFloat centerX = kSelfWidth / 2;
     CGFloat centerY = (kSelfHeight + offsetY) / 2;
     CGFloat offset = floor(MIN(offsetY / 2, kSelfHeight/2));
-            NSLog(@"%f",offset);
+//            NSLog(@"%f",offset);
 
     if (offsetY > 0) {
         self.top = -offset;
@@ -205,7 +205,7 @@
         // 每移动1像素需要改变的比例
         CGFloat kEachPixel = (1 - self.titleLabel.height / self.titleLabel.width) / (kSelfHeight - kNavigationBarHeight);
         CGFloat kScale = MAX((1 - offsetY * kEachPixel),0.6);
-        NSLog(@">>>>>>%f",kScale);
+//        NSLog(@">>>>>>%f",kScale);
         if (kScale == 0.6f) {
             
             self.titleLabel.top = self.leftButton.top;
@@ -213,7 +213,7 @@
         }
         
         self.titleLabel.transform = CGAffineTransformMakeScale(kScale, kScale);
-        
+    
         self.detailLabel.alpha = 1-offsetY/100;
 
     }

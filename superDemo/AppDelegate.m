@@ -19,7 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [AMapServices sharedServices].apiKey = @"354993461110dd5150b694c451d655b1";
+//    [AMapServices sharedServices].apiKey = @"354993461110dd5150b694c451d655b1";
 
     BOOL isCopy = [[NSUserDefaults standardUserDefaults]boolForKey:kIsCopyH5ToTmp];
     
@@ -30,9 +30,7 @@
 
     }
 
-    NSString *str = [NSDate getPastORFutureDateWithYear:0 month:-1 day:0];
-    [self changeNavBarStyle];
-    NSLog(@"date>>> %@",str);
+
     return YES;
 }
 

@@ -2,17 +2,18 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "ThumbsUpBig.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "scale" : "2x",
-      "filename" : "apple-icon-180x180@2x.png"
+      "filename" : "ThumbsUpBig@2x.png",
+      "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "apple-icon-180x180@3x.png",
-      "scale" : "3x"
+      "scale" : "3x",
+      "filename" : "ThumbsUpBig@3x.png"
     }
   ],
   "info" : {
