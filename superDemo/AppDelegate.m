@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "KLFileManager.h"
 #import "NSDate+DDAddition.h"
+#import "AESEncrypt.h"
 
 @interface AppDelegate ()
 
@@ -30,8 +31,18 @@
 
     }
 
-
+    [self aesTest];
+    
     return YES;
+}
+
+- (void)aesTest
+{
+    NSString *encyStr = [AESEncrypt encryptAES:@"xar1993" key:@"xar"];
+    
+    NSString *deEncyStr = [AESEncrypt decryptAES:encyStr key:@"xar"];
+    
+    NSLog(@">>>>>>encyStr = %@\n      deEncyStr = %@",encyStr,deEncyStr);
 }
 
 - (void)changeNavBarStyle

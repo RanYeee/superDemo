@@ -8,13 +8,13 @@
 
 #import "LeftMemuViewController.h"
 #import "LeftMemuDetailViewController.h"
+#import "HamburgerView.h"
 
 @interface LeftMemuViewController ()<UIScrollViewDelegate>
 
 {
     LeftMemuDetailViewController *_detailVC;
     
-    BOOL _isShow;
 }
 @property (strong, nonatomic) IBOutlet UIScrollView *scorllView;
 @property (strong, nonatomic) IBOutlet UIView *menuContainView;
@@ -25,9 +25,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-//    self.menuContainView.layer.anchorPoint = CGPointMake(1.0, 0.5);
-    
 
     _isShow = NO;
     
@@ -41,10 +38,6 @@
 
 }
 
--(void)viewWillAppear:(BOOL)animated
-{
-//    self.navigationController.navigationBarHidden = YES;
-}
 
 - (void)hideOrShowMenu:(BOOL)isShow animated:(BOOL)isAnimated
 {
@@ -62,34 +55,33 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     
-//    if ([segue.identifier isEqualToString:@"DetailViewSegue"]) {
-//        
-//        UIViewController *vc = segue.destinationViewController;
-//        
-//        _detailVC = (LeftMemuDetailViewController *)vc;
-//    }
+    if ([segue.identifier isEqualToString:@"DetailViewSegue"]) {
+                
+        UINavigationController *navVC = (UINavigationController *)segue.destinationViewController;
+        
+        _detailVC = (LeftMemuDetailViewController *)navVC.topViewController;
+    }
 
 }
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     
-    NSLog(@"contoffset>>> %@",NSStringFromCGPoint(scrollView.contentOffset));
-    
     CGFloat multiplier = 1.0 / CGRectGetWidth(self.menuContainView.bounds);
+    
     CGFloat offset = scrollView.contentOffset.x * multiplier;
+    
     CGFloat fraction = 1.0 - offset;
-    //    println("didScroll offset \(offset)")
+
     self.menuContainView.layer.transform = [self transformForFraction:fraction];
+    
     self.menuContainView.alpha = fraction;
     
-//    if let detailViewController = detailViewController {
-//        if let rotatingView = detailViewController.hamburgerView {
-//            rotatingView.rotate(fraction)
-//        }
-//    }
-    
 
+    HamburgerView *rotatingView = (HamburgerView *)_detailVC.hamburger;
+    
+    [rotatingView rotateWithFraction:fraction];
+    
     scrollView.pagingEnabled = scrollView.contentOffset.x < (scrollView.contentSize.width - CGRectGetWidth(scrollView.frame));
     
     CGFloat menuOffset = CGRectGetWidth(self.menuContainView.bounds);
@@ -101,12 +93,19 @@
 
 - (CATransform3D)transformForFraction:(CGFloat)fraction
 {
+    
     CATransform3D identity = CATransform3DIdentity;
+    
     identity.m34 = -1.0 / 1000.0;
+    
     double angle = (1.0 - fraction) * -M_PI_2;
+    
     CGFloat xOffset = CGRectGetWidth(self.menuContainView.bounds) * 0.5;
+    
     CATransform3D rotateTransform = CATransform3DRotate(identity, angle, 0.0, 1.0, 0.0);
+    
     CATransform3D translateTransform = CATransform3DMakeTranslation(xOffset, 0.0, 0.0);
+    
     return CATransform3DConcat(rotateTransform, translateTransform);
     
 }

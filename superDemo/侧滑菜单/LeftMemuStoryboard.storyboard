@@ -37,7 +37,7 @@
                                                 <rect key="frame" x="80" y="0.0" width="600" height="600"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 <connections>
-                                                    <segue destination="qbA-oG-jM4" kind="embed" id="5R3-IA-WP6"/>
+                                                    <segue destination="qbA-oG-jM4" kind="embed" identifier="DetailViewSegue" id="5R3-IA-WP6"/>
                                                 </connections>
                                             </containerView>
                                         </subviews>
@@ -194,10 +194,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="juL-kC-31w"/>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="jKL-A3-67B" id="ARb-XR-Isw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Bf-FR-PL4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="923" y="657"/>
+            <point key="canvasLocation" x="1072" y="676"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MQn-jj-syC">

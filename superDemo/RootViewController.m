@@ -56,14 +56,10 @@
     
     self.tableView.contentInset = UIEdgeInsetsMake(self.topView.height - 40, 0, 0, 0);
 
-//    [self.tableView setTableHeaderView:self.topView];
-//    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    
     
     
     [self.view insertSubview:self.tableView belowSubview:self.topView];
 
-//    self.navigationController.delegate = self;
 
 }
 

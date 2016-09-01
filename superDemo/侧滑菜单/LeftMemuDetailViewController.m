@@ -7,31 +7,70 @@
 //
 
 #import "LeftMemuDetailViewController.h"
+#import "LeftMemuViewController.h"
 
 @interface LeftMemuDetailViewController ()
-
+{
+    LeftMemuViewController * _menuVC;
+}
+@property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
 @end
 
 @implementation LeftMemuDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    [self setNavBarLeftButton];
+    
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(showDetailView:) name:@"KCallToShowInDetailViewNotification" object:nil];
+    
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(closeMenu)];
+    
+    [self.view addGestureRecognizer:tapGesture];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)closeMenu
+{
+    [_menuVC hideOrShowMenu:NO animated:YES];
 }
 
-/*
-#pragma mark - Navigation
+- (void)setNavBarLeftButton
+{
+    _hamburger = [[HamburgerView alloc]initWithFrame:CGRectMake(0, 0, 20, 20)];
+    
+    UINavigationController *navVC = (UINavigationController *)self.parentViewController;
+    
+    _menuVC = (LeftMemuViewController *)navVC.parentViewController;
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    [_hamburger tapViewBlock:^{
+                
+        
+        [_menuVC hideOrShowMenu:!_menuVC.isShow animated:YES];
+        
+    }];
+    
+    self.navigationController.navigationBar.clipsToBounds = YES;
+    
+    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc]initWithCustomView:_hamburger];
+    
+    self.navigationItem.leftBarButtonItem = leftItem;
 }
-*/
 
+- (void)showDetailView:(NSNotification *)info
+{
+    NSDictionary *dict = info.object;
+    
+    self.view.backgroundColor =  [UIColor colorWithArray:dict[@"colors"]];
+    
+    self.backgroundImageView.image = [UIImage imageNamed: dict[@"bigImage"]];
+
+    [_menuVC hideOrShowMenu:!_menuVC.isShow animated:YES];
+}
+
+-(void)dealloc
+{
+    
+    [[NSNotificationCenter defaultCenter]removeObserver:self name:@"KCallToShowInDetailViewNotification" object:nil];
+}
 @end

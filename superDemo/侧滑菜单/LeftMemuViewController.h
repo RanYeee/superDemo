@@ -10,4 +10,9 @@
 
 @interface LeftMemuViewController : UIViewController
 
+- (void)hideOrShowMenu:(BOOL)isShow animated:(BOOL)isAnimated;
+
+@property (nonatomic ,assign) BOOL isShow;
+
+
 @end

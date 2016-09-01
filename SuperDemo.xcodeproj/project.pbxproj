@@ -66,6 +66,8 @@
 		2977D5B71D630EED0043D0E2 /* AMapLocationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2977D5B61D630EED0043D0E2 /* AMapLocationKit.framework */; };
 		2977D5B91D63126B0043D0E2 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2977D5B81D63126B0043D0E2 /* AMap.bundle */; };
 		2977D5BB1D640E240043D0E2 /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2977D5BA1D640E240043D0E2 /* AMapSearchKit.framework */; };
+		2998D26E1D78163100C27418 /* AESEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 2998D26D1D78163100C27418 /* AESEncrypt.m */; };
+		2998D26F1D78163100C27418 /* AESEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 2998D26D1D78163100C27418 /* AESEncrypt.m */; };
 		29A9F6891D7405B800DA4077 /* LeftMemuStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A9F6851D7405B800DA4077 /* LeftMemuStoryboard.storyboard */; };
 		29A9F68A1D7405B800DA4077 /* LeftMemuStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A9F6851D7405B800DA4077 /* LeftMemuStoryboard.storyboard */; };
 		29A9F68B1D7405B800DA4077 /* LeftMemuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A9F6871D7405B800DA4077 /* LeftMemuViewController.m */; };
@@ -78,6 +80,7 @@
 		29A9F6961D740B7100DA4077 /* LeftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A9F6941D740B7100DA4077 /* LeftTableViewController.m */; };
 		29A9F6991D740BDA00DA4077 /* LeftMemuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A9F6981D740BDA00DA4077 /* LeftMemuCell.m */; };
 		29A9F69A1D740BDA00DA4077 /* LeftMemuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A9F6981D740BDA00DA4077 /* LeftMemuCell.m */; };
+		29A9F69D1D75575000DA4077 /* HamburgerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A9F69C1D75575000DA4077 /* HamburgerView.m */; };
 		29B1E5791D5884CC0033F2D3 /* UIScrollView+SVInfiniteScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B1E5761D5884CC0033F2D3 /* UIScrollView+SVInfiniteScrolling.m */; };
 		29B1E57A1D5884CD0033F2D3 /* UIScrollView+SVInfiniteScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B1E5761D5884CC0033F2D3 /* UIScrollView+SVInfiniteScrolling.m */; };
 		29B1E57B1D5884CD0033F2D3 /* UIScrollView+SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B1E5781D5884CC0033F2D3 /* UIScrollView+SVPullToRefresh.m */; };
@@ -639,6 +642,8 @@
 		2977D5B61D630EED0043D0E2 /* AMapLocationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapLocationKit.framework; sourceTree = "<group>"; };
 		2977D5B81D63126B0043D0E2 /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AMap.bundle; sourceTree = "<group>"; };
 		2977D5BA1D640E240043D0E2 /* AMapSearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapSearchKit.framework; sourceTree = "<group>"; };
+		2998D26C1D78163100C27418 /* AESEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESEncrypt.h; sourceTree = "<group>"; };
+		2998D26D1D78163100C27418 /* AESEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESEncrypt.m; sourceTree = "<group>"; };
 		29A9F6851D7405B800DA4077 /* LeftMemuStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LeftMemuStoryboard.storyboard; sourceTree = "<group>"; };
 		29A9F6861D7405B800DA4077 /* LeftMemuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMemuViewController.h; sourceTree = "<group>"; };
 		29A9F6871D7405B800DA4077 /* LeftMemuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMemuViewController.m; sourceTree = "<group>"; };
@@ -649,6 +654,8 @@
 		29A9F6941D740B7100DA4077 /* LeftTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftTableViewController.m; sourceTree = "<group>"; };
 		29A9F6971D740BDA00DA4077 /* LeftMemuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMemuCell.h; sourceTree = "<group>"; };
 		29A9F6981D740BDA00DA4077 /* LeftMemuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMemuCell.m; sourceTree = "<group>"; };
+		29A9F69B1D75575000DA4077 /* HamburgerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HamburgerView.h; sourceTree = "<group>"; };
+		29A9F69C1D75575000DA4077 /* HamburgerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HamburgerView.m; sourceTree = "<group>"; };
 		29B1E5741D5884CC0033F2D3 /* SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVPullToRefresh.h; sourceTree = "<group>"; };
 		29B1E5751D5884CC0033F2D3 /* UIScrollView+SVInfiniteScrolling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SVInfiniteScrolling.h"; sourceTree = "<group>"; };
 		29B1E5761D5884CC0033F2D3 /* UIScrollView+SVInfiniteScrolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVInfiniteScrolling.m"; sourceTree = "<group>"; };
@@ -1388,6 +1395,16 @@
 			path = "superDemo/高德地图demo";
 			sourceTree = SOURCE_ROOT;
 		};
+		2998D26B1D7815D300C27418 /* AES加密 */ = {
+			isa = PBXGroup;
+			children = (
+				2998D26C1D78163100C27418 /* AESEncrypt.h */,
+				2998D26D1D78163100C27418 /* AESEncrypt.m */,
+			);
+			name = "AES加密";
+			path = "superDemo/AES加密";
+			sourceTree = SOURCE_ROOT;
+		};
 		29A9F6841D7405B800DA4077 /* 侧滑菜单 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1401,6 +1418,8 @@
 				29A9F6941D740B7100DA4077 /* LeftTableViewController.m */,
 				29A9F6971D740BDA00DA4077 /* LeftMemuCell.h */,
 				29A9F6981D740BDA00DA4077 /* LeftMemuCell.m */,
+				29A9F69B1D75575000DA4077 /* HamburgerView.h */,
+				29A9F69C1D75575000DA4077 /* HamburgerView.m */,
 			);
 			name = "侧滑菜单";
 			path = "superDemo/侧滑菜单";
@@ -2301,6 +2320,7 @@
 		8834B5E61CB7512C00428D18 /* SuperDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2998D26B1D7815D300C27418 /* AES加密 */,
 				29A9F6841D7405B800DA4077 /* 侧滑菜单 */,
 				2977D5A81D6306200043D0E2 /* 高德地图demo */,
 				2977D58E1D62F5AE0043D0E2 /* Foundation */,
@@ -2901,6 +2921,7 @@
 				29A9F6921D7408FA00DA4077 /* LeftMemuDetailViewController.m in Sources */,
 				29FF66201D363D910021B7D7 /* AFHTTPSessionManager.m in Sources */,
 				29FF66DC1D363D910021B7D7 /* MWTapDetectingImageView.m in Sources */,
+				2998D26F1D78163100C27418 /* AESEncrypt.m in Sources */,
 				29FF66461D363D910021B7D7 /* UIButton+AGIPC.m in Sources */,
 				29FF66FE1D363D910021B7D7 /* MKAnnotationView+WebCache.m in Sources */,
 				29FF66EC1D363D910021B7D7 /* PSTCollectionViewData.m in Sources */,
@@ -3051,6 +3072,7 @@
 				29FF66C91D363D910021B7D7 /* MJRefreshConst.m in Sources */,
 				29B1E5EB1D59CB100033F2D3 /* MDDatePickerDialog.m in Sources */,
 				29FF675A1D363E640021B7D7 /* UINavigationItem+CustomBackButton.m in Sources */,
+				29A9F69D1D75575000DA4077 /* HamburgerView.m in Sources */,
 				29FF674E1D363E640021B7D7 /* NSString+Additions.m in Sources */,
 				29FF66D51D363D910021B7D7 /* MWGridViewController.m in Sources */,
 				29FF662B1D363D910021B7D7 /* AFURLSessionManager.m in Sources */,
@@ -3140,6 +3162,7 @@
 				29B1E5F51D59CB100033F2D3 /* MDMathHelper.m in Sources */,
 				29FF668F1D363D910021B7D7 /* MHDatePicker.m in Sources */,
 				29FF66CF1D363D910021B7D7 /* UIView+MJExtension.m in Sources */,
+				2998D26E1D78163100C27418 /* AESEncrypt.m in Sources */,
 				29FF67051D363D910021B7D7 /* SDWebImageDecoder.m in Sources */,
 				29FF66E71D363D910021B7D7 /* PSTCollectionViewCell.m in Sources */,
 				296BDBB21CDB31A5005AD41A /* UIColor+HRExtension.m in Sources */,

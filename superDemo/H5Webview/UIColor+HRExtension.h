@@ -15,4 +15,6 @@
 + (UIColor *)HFPinkColor;
 + (UIColor *)colorWithHex:(int)color;
 
++ (UIColor *)colorWihtArray:(NSArray *)colorArr;
+
 @end

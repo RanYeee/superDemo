@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HamburgerView.h"
 
 @interface LeftMemuDetailViewController : UIViewController
+
+@property (nonatomic ,strong) HamburgerView *hamburger;
 
 @end

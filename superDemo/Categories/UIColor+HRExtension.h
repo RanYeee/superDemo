@@ -14,5 +14,5 @@
 + (UIColor *)colorWithHexNumber:(NSInteger)rgbValue;
 + (UIColor *)HFPinkColor;
 + (UIColor *)colorWithHex:(int)color;
-
++ (UIColor *)colorWithArray:(NSArray *)colorArr;
 @end
