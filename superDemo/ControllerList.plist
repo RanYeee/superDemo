@@ -109,5 +109,13 @@
 		<key>dec</key>
 		<string>动画</string>
 	</dict>
+	<dict>
+		<key>createTime</key>
+		<string>2016.12.13</string>
+		<key>className</key>
+		<string>KLTextViewController</string>
+		<key>dec</key>
+		<string>带placeholder的TextView</string>
+	</dict>
 </array>
 </plist>

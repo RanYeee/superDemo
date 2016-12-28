@@ -20,6 +20,7 @@
 		29119C111D46036000468A51 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 29119C0F1D46036000468A51 /* Util.m */; };
 		294365481D55DB2200E71085 /* RNSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 294365471D55DB2200E71085 /* RNSlideViewController.m */; };
 		294365491D55DB2200E71085 /* RNSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 294365471D55DB2200E71085 /* RNSlideViewController.m */; };
+		296870F41D87F2F000506A59 /* ProgressButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 296870F31D87F2F000506A59 /* ProgressButton.m */; };
 		296BDBA81CDB2C64005AD41A /* html in Resources */ = {isa = PBXBuildFile; fileRef = 296BDBA71CDB2C64005AD41A /* html */; };
 		296BDBAC1CDB2C9F005AD41A /* H5WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 296BDBAB1CDB2C9F005AD41A /* H5WebViewController.m */; };
 		296BDBAF1CDB2D6A005AD41A /* KLWebViewHelps.m in Sources */ = {isa = PBXBuildFile; fileRef = 296BDBAE1CDB2D6A005AD41A /* KLWebViewHelps.m */; };
@@ -215,6 +216,12 @@
 		29DFDE0D1D6AE4B3008BDBC6 /* MainViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29DFDE091D6AE4B2008BDBC6 /* MainViewCell.xib */; };
 		29F3F5D51D6D47D3004272B6 /* MaterTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F3F5D41D6D47D3004272B6 /* MaterTopView.m */; };
 		29F3F5D81D6E99A5004272B6 /* RootDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F3F5D71D6E99A5004272B6 /* RootDetailViewController.m */; };
+		29F7D6751E0119460037C6CD /* KLTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F7D6741E0119460037C6CD /* KLTextView.m */; };
+		29F7D6761E0119460037C6CD /* KLTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F7D6741E0119460037C6CD /* KLTextView.m */; };
+		29F7D67A1E0119EA0037C6CD /* KLTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F7D6781E0119EA0037C6CD /* KLTextViewController.m */; };
+		29F7D67B1E0119EA0037C6CD /* KLTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F7D6781E0119EA0037C6CD /* KLTextViewController.m */; };
+		29F7D67C1E0119EA0037C6CD /* KLTextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29F7D6791E0119EA0037C6CD /* KLTextViewController.xib */; };
+		29F7D67D1E0119EA0037C6CD /* KLTextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29F7D6791E0119EA0037C6CD /* KLTextViewController.xib */; };
 		29FF61CB1D2DF1C40021B7D7 /* WKWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FF61CA1D2DF1C40021B7D7 /* WKWebController.m */; };
 		29FF61CE1D2DF9EC0021B7D7 /* UIWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FF61CD1D2DF9EC0021B7D7 /* UIWebController.m */; };
 		29FF61D21D2DFD980021B7D7 /* KLFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FF61D11D2DFD980021B7D7 /* KLFileManager.m */; };
@@ -587,6 +594,8 @@
 		29119C0F1D46036000468A51 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
 		294365461D55DB2200E71085 /* RNSlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNSlideViewController.h; sourceTree = "<group>"; };
 		294365471D55DB2200E71085 /* RNSlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNSlideViewController.m; sourceTree = "<group>"; };
+		296870F21D87F2F000506A59 /* ProgressButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressButton.h; sourceTree = "<group>"; };
+		296870F31D87F2F000506A59 /* ProgressButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressButton.m; sourceTree = "<group>"; };
 		296BDBA71CDB2C64005AD41A /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html; sourceTree = "<group>"; };
 		296BDBAA1CDB2C9F005AD41A /* H5WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H5WebViewController.h; sourceTree = "<group>"; };
 		296BDBAB1CDB2C9F005AD41A /* H5WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = H5WebViewController.m; sourceTree = "<group>"; };
@@ -790,6 +799,11 @@
 		29F3F5D41D6D47D3004272B6 /* MaterTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaterTopView.m; sourceTree = "<group>"; };
 		29F3F5D61D6E99A5004272B6 /* RootDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootDetailViewController.h; sourceTree = "<group>"; };
 		29F3F5D71D6E99A5004272B6 /* RootDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootDetailViewController.m; sourceTree = "<group>"; };
+		29F7D6731E0119460037C6CD /* KLTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTextView.h; sourceTree = "<group>"; };
+		29F7D6741E0119460037C6CD /* KLTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTextView.m; sourceTree = "<group>"; };
+		29F7D6771E0119EA0037C6CD /* KLTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTextViewController.h; sourceTree = "<group>"; };
+		29F7D6781E0119EA0037C6CD /* KLTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTextViewController.m; sourceTree = "<group>"; };
+		29F7D6791E0119EA0037C6CD /* KLTextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLTextViewController.xib; sourceTree = "<group>"; };
 		29FF61C91D2DF1C40021B7D7 /* WKWebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebController.h; sourceTree = "<group>"; };
 		29FF61CA1D2DF1C40021B7D7 /* WKWebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebController.m; sourceTree = "<group>"; };
 		29FF61CC1D2DF9EC0021B7D7 /* UIWebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWebController.h; sourceTree = "<group>"; };
@@ -1270,6 +1284,15 @@
 			path = "superDemo/模仿rio首页控制器";
 			sourceTree = SOURCE_ROOT;
 		};
+		296870F11D87F2DA00506A59 /* ProgressButton */ = {
+			isa = PBXGroup;
+			children = (
+				296870F21D87F2F000506A59 /* ProgressButton.h */,
+				296870F31D87F2F000506A59 /* ProgressButton.m */,
+			);
+			path = ProgressButton;
+			sourceTree = "<group>";
+		};
 		296BDBA61CDB2C59005AD41A /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
@@ -1341,6 +1364,7 @@
 		2974C4381D51DF2700248E81 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				296870F11D87F2DA00506A59 /* ProgressButton */,
 				2974C4431D531FDB00248E81 /* Bezier */,
 				2974C43A1D51DF6200248E81 /* FadeWords */,
 			);
@@ -1666,6 +1690,19 @@
 			);
 			path = Views;
 			sourceTree = "<group>";
+		};
+		29F7D6721E0119460037C6CD /* KLTextView */ = {
+			isa = PBXGroup;
+			children = (
+				29F7D6731E0119460037C6CD /* KLTextView.h */,
+				29F7D6741E0119460037C6CD /* KLTextView.m */,
+				29F7D6771E0119EA0037C6CD /* KLTextViewController.h */,
+				29F7D6781E0119EA0037C6CD /* KLTextViewController.m */,
+				29F7D6791E0119EA0037C6CD /* KLTextViewController.xib */,
+			);
+			name = KLTextView;
+			path = superDemo/KLTextView;
+			sourceTree = SOURCE_ROOT;
 		};
 		29FF61CF1D2DFD790021B7D7 /* ToolKit */ = {
 			isa = PBXGroup;
@@ -2320,6 +2357,7 @@
 		8834B5E61CB7512C00428D18 /* SuperDemo */ = {
 			isa = PBXGroup;
 			children = (
+				29F7D6721E0119460037C6CD /* KLTextView */,
 				2998D26B1D7815D300C27418 /* AES加密 */,
 				29A9F6841D7405B800DA4077 /* 侧滑菜单 */,
 				2977D5A81D6306200043D0E2 /* 高德地图demo */,
@@ -2555,6 +2593,8 @@
 					};
 					8834B5E31CB7512C00428D18 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = U353BQ28K8;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -2603,6 +2643,7 @@
 				296BDBF71CDC4261005AD41A /* Main.storyboard in Resources */,
 				29DFDE0D1D6AE4B3008BDBC6 /* MainViewCell.xib in Resources */,
 				29A9F68A1D7405B800DA4077 /* LeftMemuStoryboard.storyboard in Resources */,
+				29F7D67D1E0119EA0037C6CD /* KLTextViewController.xib in Resources */,
 				29C5EFE51D3DFAEA00949CB4 /* AddressSelectorController.xib in Resources */,
 				29FF66301D363D910021B7D7 /* AGImagePickerController.bundle in Resources */,
 				29FF66941D363D910021B7D7 /* MHSelectPickerView.xib in Resources */,
@@ -2645,6 +2686,7 @@
 				29FF66C71D363D910021B7D7 /* MJRefresh.bundle in Resources */,
 				29FF662F1D363D910021B7D7 /* AGImagePickerController.bundle in Resources */,
 				8834B63B1CB752D400428D18 /* account_arrows@2x.png in Resources */,
+				29F7D67C1E0119EA0037C6CD /* KLTextViewController.xib in Resources */,
 				296BDBA81CDB2C64005AD41A /* html in Resources */,
 				8834B64B1CB752D400428D18 /* ThreeItemView.xib in Resources */,
 				8834B5F71CB7512C00428D18 /* LaunchScreen.storyboard in Resources */,
@@ -2780,6 +2822,7 @@
 				29B1E5DC1D59CB100033F2D3 /* AutoResizeTextView.m in Sources */,
 				29FF66EE1D363D910021B7D7 /* PSTCollectionViewFlowLayout.m in Sources */,
 				29FF66D21D363D910021B7D7 /* MWCaptionView.m in Sources */,
+				29F7D67B1E0119EA0037C6CD /* KLTextViewController.m in Sources */,
 				29FF66FC1D363D910021B7D7 /* PSTGridLayoutSection.m in Sources */,
 				29FF67531D363E640021B7D7 /* UIButton+Prescription.m in Sources */,
 				29FF67161D363D910021B7D7 /* UIImage+WebP.m in Sources */,
@@ -2823,6 +2866,7 @@
 				29FF66881D363D910021B7D7 /* ViewController+MASAdditions.m in Sources */,
 				2974C43E1D51DFAE00248E81 /* FadeWordView.m in Sources */,
 				29FF675F1D363E640021B7D7 /* UIView+SHCZExt.m in Sources */,
+				29F7D6761E0119460037C6CD /* KLTextView.m in Sources */,
 				29FF662A1D363D910021B7D7 /* AFURLResponseSerialization.m in Sources */,
 				29FF66821D363D910021B7D7 /* NSArray+MASAdditions.m in Sources */,
 				29FF66CA1D363D910021B7D7 /* MJRefreshConst.m in Sources */,
@@ -3027,6 +3071,7 @@
 				29FF66911D363D910021B7D7 /* MHSelectPickerView.m in Sources */,
 				29FF666B1D363D910021B7D7 /* IQToolbar.m in Sources */,
 				29FF66E51D363D910021B7D7 /* PSTCollectionView.m in Sources */,
+				29F7D6751E0119460037C6CD /* KLTextView.m in Sources */,
 				29B1E60D1D59CB100033F2D3 /* MDTabBar.m in Sources */,
 				29FF66DB1D363D910021B7D7 /* MWTapDetectingImageView.m in Sources */,
 				29FF665B1D363D910021B7D7 /* IQUIViewController+Additions.m in Sources */,
@@ -3058,6 +3103,7 @@
 				29FF67501D363E640021B7D7 /* UIBarButtonItem+HRNagativeSpace.m in Sources */,
 				8834B6431CB752D400428D18 /* KLFormHeaderView.m in Sources */,
 				29B1E5EF1D59CB100033F2D3 /* NSCalendarHelper.m in Sources */,
+				29F7D67A1E0119EA0037C6CD /* KLTextViewController.m in Sources */,
 				29FF66391D363D910021B7D7 /* AGIPCGridCell.m in Sources */,
 				29FF66211D363D910021B7D7 /* AFNetworkReachabilityManager.m in Sources */,
 				29FF66BB1D363D910021B7D7 /* MJRefreshBackGifFooter.m in Sources */,
@@ -3114,6 +3160,7 @@
 				29FF664F1D363D910021B7D7 /* HPGrowingTextView.m in Sources */,
 				29C5EFDE1D3DFAEA00949CB4 /* ProvinceEntity.m in Sources */,
 				29FF66511D363D910021B7D7 /* HPTextViewInternal.m in Sources */,
+				296870F41D87F2F000506A59 /* ProgressButton.m in Sources */,
 				29FF663B1D363D910021B7D7 /* AGIPCGridItem.m in Sources */,
 				29FF66F11D363D910021B7D7 /* PSTCollectionViewLayout.m in Sources */,
 				8834B6411CB752D400428D18 /* FormViewCell.m in Sources */,
@@ -3420,6 +3467,8 @@
 			buildSettings = {
 				ARCHS = " $(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = U353BQ28K8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/superDemo/Foundation",
@@ -3443,6 +3492,8 @@
 			buildSettings = {
 				ARCHS = " $(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = U353BQ28K8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/superDemo/Foundation",
