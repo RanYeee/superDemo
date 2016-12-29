@@ -12,7 +12,7 @@
 #import "AESEncrypt.h"
 
 @interface AppDelegate ()
-
+@property (nonatomic,strong) UIView *view;
 @end
 
 @implementation AppDelegate
@@ -22,16 +22,20 @@
     
 //    [AMapServices sharedServices].apiKey = @"354993461110dd5150b694c451d655b1";
 
-    BOOL isCopy = [[NSUserDefaults standardUserDefaults]boolForKey:kIsCopyH5ToTmp];
+    UIViewController *viewController = [[UIStoryboard storyboardWithName:@"LaunchScreen" bundle:nil] instantiateViewControllerWithIdentifier:@"LaunchScreen"];
     
-    if (!isCopy) {
-     
-        [KLFileManager createHTMLDirectory];
-
-
-    }
-
-    [self aesTest];
+    UIView *launchView = viewController.view;
+    UIWindow *mainWindow = [UIApplication sharedApplication].keyWindow;
+    launchView.frame = [UIApplication sharedApplication].keyWindow.frame;
+    [mainWindow addSubview:launchView];
+    
+    [UIView animateWithDuration:1.6f delay:0.5f options:UIViewAnimationOptionBeginFromCurrentState animations:^{
+        launchView.alpha = 0.0f;
+        launchView.layer.transform = CATransform3DScale(CATransform3DIdentity, 1.5f, 1.5f, 1.0f);
+    } completion:^(BOOL finished) {
+        [launchView removeFromSuperview];
+    }];
+    
     
     return YES;
 }

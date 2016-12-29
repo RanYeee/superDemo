@@ -117,5 +117,13 @@
 		<key>dec</key>
 		<string>带placeholder的TextView</string>
 	</dict>
+	<dict>
+		<key>createTime</key>
+		<string>2016.12.28</string>
+		<key>className</key>
+		<string>NibBridgeViewController</string>
+		<key>dec</key>
+		<string>xib桥接demo</string>
+	</dict>
 </array>
 </plist>

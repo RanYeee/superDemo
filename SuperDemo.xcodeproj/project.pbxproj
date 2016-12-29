@@ -67,6 +67,12 @@
 		2977D5B71D630EED0043D0E2 /* AMapLocationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2977D5B61D630EED0043D0E2 /* AMapLocationKit.framework */; };
 		2977D5B91D63126B0043D0E2 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2977D5B81D63126B0043D0E2 /* AMap.bundle */; };
 		2977D5BB1D640E240043D0E2 /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2977D5BA1D640E240043D0E2 /* AMapSearchKit.framework */; };
+		298D6F4C1E139BBD00640043 /* XXNibBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 298D6F491E139BBD00640043 /* XXNibBridge.m */; };
+		298D6F4D1E139BBD00640043 /* XXNibConvention.m in Sources */ = {isa = PBXBuildFile; fileRef = 298D6F4B1E139BBD00640043 /* XXNibConvention.m */; };
+		298D6F511E139D2E00640043 /* NibBridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 298D6F4F1E139D2E00640043 /* NibBridgeViewController.m */; };
+		298D6F521E139D2E00640043 /* NibBridgeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298D6F501E139D2E00640043 /* NibBridgeViewController.xib */; };
+		298D6F551E139D5300640043 /* XibTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298D6F541E139D5300640043 /* XibTestView.m */; };
+		298D6F571E139E7900640043 /* XibTestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298D6F561E139E7900640043 /* XibTestView.xib */; };
 		2998D26E1D78163100C27418 /* AESEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 2998D26D1D78163100C27418 /* AESEncrypt.m */; };
 		2998D26F1D78163100C27418 /* AESEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 2998D26D1D78163100C27418 /* AESEncrypt.m */; };
 		29A9F6891D7405B800DA4077 /* LeftMemuStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A9F6851D7405B800DA4077 /* LeftMemuStoryboard.storyboard */; };
@@ -651,6 +657,16 @@
 		2977D5B61D630EED0043D0E2 /* AMapLocationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapLocationKit.framework; sourceTree = "<group>"; };
 		2977D5B81D63126B0043D0E2 /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AMap.bundle; sourceTree = "<group>"; };
 		2977D5BA1D640E240043D0E2 /* AMapSearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapSearchKit.framework; sourceTree = "<group>"; };
+		298D6F481E139BBD00640043 /* XXNibBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXNibBridge.h; sourceTree = "<group>"; };
+		298D6F491E139BBD00640043 /* XXNibBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXNibBridge.m; sourceTree = "<group>"; };
+		298D6F4A1E139BBD00640043 /* XXNibConvention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXNibConvention.h; sourceTree = "<group>"; };
+		298D6F4B1E139BBD00640043 /* XXNibConvention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXNibConvention.m; sourceTree = "<group>"; };
+		298D6F4E1E139D2E00640043 /* NibBridgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NibBridgeViewController.h; sourceTree = "<group>"; };
+		298D6F4F1E139D2E00640043 /* NibBridgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NibBridgeViewController.m; sourceTree = "<group>"; };
+		298D6F501E139D2E00640043 /* NibBridgeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NibBridgeViewController.xib; sourceTree = "<group>"; };
+		298D6F531E139D5300640043 /* XibTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibTestView.h; sourceTree = "<group>"; };
+		298D6F541E139D5300640043 /* XibTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibTestView.m; sourceTree = "<group>"; };
+		298D6F561E139E7900640043 /* XibTestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XibTestView.xib; sourceTree = "<group>"; };
 		2998D26C1D78163100C27418 /* AESEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESEncrypt.h; sourceTree = "<group>"; };
 		2998D26D1D78163100C27418 /* AESEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESEncrypt.m; sourceTree = "<group>"; };
 		29A9F6851D7405B800DA4077 /* LeftMemuStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LeftMemuStoryboard.storyboard; sourceTree = "<group>"; };
@@ -1418,6 +1434,32 @@
 			name = "高德地图demo";
 			path = "superDemo/高德地图demo";
 			sourceTree = SOURCE_ROOT;
+		};
+		298D6F461E139BBD00640043 /* NibBridge */ = {
+			isa = PBXGroup;
+			children = (
+				298D6F471E139BBD00640043 /* XXNibBridge */,
+				298D6F4E1E139D2E00640043 /* NibBridgeViewController.h */,
+				298D6F4F1E139D2E00640043 /* NibBridgeViewController.m */,
+				298D6F501E139D2E00640043 /* NibBridgeViewController.xib */,
+				298D6F531E139D5300640043 /* XibTestView.h */,
+				298D6F541E139D5300640043 /* XibTestView.m */,
+				298D6F561E139E7900640043 /* XibTestView.xib */,
+			);
+			name = NibBridge;
+			path = superDemo/NibBridge;
+			sourceTree = SOURCE_ROOT;
+		};
+		298D6F471E139BBD00640043 /* XXNibBridge */ = {
+			isa = PBXGroup;
+			children = (
+				298D6F481E139BBD00640043 /* XXNibBridge.h */,
+				298D6F491E139BBD00640043 /* XXNibBridge.m */,
+				298D6F4A1E139BBD00640043 /* XXNibConvention.h */,
+				298D6F4B1E139BBD00640043 /* XXNibConvention.m */,
+			);
+			path = XXNibBridge;
+			sourceTree = "<group>";
 		};
 		2998D26B1D7815D300C27418 /* AES加密 */ = {
 			isa = PBXGroup;
@@ -2357,6 +2399,7 @@
 		8834B5E61CB7512C00428D18 /* SuperDemo */ = {
 			isa = PBXGroup;
 			children = (
+				298D6F461E139BBD00640043 /* NibBridge */,
 				29F7D6721E0119460037C6CD /* KLTextView */,
 				2998D26B1D7815D300C27418 /* AES加密 */,
 				29A9F6841D7405B800DA4077 /* 侧滑菜单 */,
@@ -2690,8 +2733,10 @@
 				296BDBA81CDB2C64005AD41A /* html in Resources */,
 				8834B64B1CB752D400428D18 /* ThreeItemView.xib in Resources */,
 				8834B5F71CB7512C00428D18 /* LaunchScreen.storyboard in Resources */,
+				298D6F521E139D2E00640043 /* NibBridgeViewController.xib in Resources */,
 				2977D5B91D63126B0043D0E2 /* AMap.bundle in Resources */,
 				8834B6521CB755F400428D18 /* ControllerList.plist in Resources */,
+				298D6F571E139E7900640043 /* XibTestView.xib in Resources */,
 				8834B5F41CB7512C00428D18 /* Assets.xcassets in Resources */,
 				29C5EFD61D3DFAEA00949CB4 /* ComPickerView.xib in Resources */,
 				8834B63D1CB752D400428D18 /* ExpendCell.xib in Resources */,
@@ -3024,6 +3069,7 @@
 				29C5EFDC1D3DFAEA00949CB4 /* CityEntity.m in Sources */,
 				29C5EFB21D3DFAAA00949CB4 /* FMDatabaseAdditions.m in Sources */,
 				29A9F68B1D7405B800DA4077 /* LeftMemuViewController.m in Sources */,
+				298D6F551E139D5300640043 /* XibTestView.m in Sources */,
 				29C5EFB81D3DFAAA00949CB4 /* FMResultSet.m in Sources */,
 				29FF66D91D363D910021B7D7 /* MWPhotoBrowser.m in Sources */,
 				29FF66EB1D363D910021B7D7 /* PSTCollectionViewData.m in Sources */,
@@ -3039,10 +3085,12 @@
 				29FF66DD1D363D910021B7D7 /* MWTapDetectingView.m in Sources */,
 				29FF66F51D363D910021B7D7 /* PSTGridLayoutInfo.m in Sources */,
 				29C5EFB01D3DFAAA00949CB4 /* FMDatabase.m in Sources */,
+				298D6F4C1E139BBD00640043 /* XXNibBridge.m in Sources */,
 				29FF66B31D363D910021B7D7 /* MJRefreshHeader.m in Sources */,
 				29D6709A1CF5D5190008C196 /* MyVideoController.m in Sources */,
 				29B1E5DB1D59CB100033F2D3 /* AutoResizeTextView.m in Sources */,
 				29FF66D31D363D910021B7D7 /* MWGridCell.m in Sources */,
+				298D6F511E139D2E00640043 /* NibBridgeViewController.m in Sources */,
 				29FF66811D363D910021B7D7 /* NSArray+MASAdditions.m in Sources */,
 				29A9F6911D7408FA00DA4077 /* LeftMemuDetailViewController.m in Sources */,
 				29B1E6011D59CB100033F2D3 /* MDCollectionViewCell.m in Sources */,
@@ -3208,6 +3256,7 @@
 				29FF671D1D363D910021B7D7 /* UIBarButtonItem+WZLBadge.m in Sources */,
 				29B1E5F51D59CB100033F2D3 /* MDMathHelper.m in Sources */,
 				29FF668F1D363D910021B7D7 /* MHDatePicker.m in Sources */,
+				298D6F4D1E139BBD00640043 /* XXNibConvention.m in Sources */,
 				29FF66CF1D363D910021B7D7 /* UIView+MJExtension.m in Sources */,
 				2998D26E1D78163100C27418 /* AESEncrypt.m in Sources */,
 				29FF67051D363D910021B7D7 /* SDWebImageDecoder.m in Sources */,

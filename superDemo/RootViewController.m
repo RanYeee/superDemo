@@ -56,7 +56,7 @@
     
     self.tableView.contentInset = UIEdgeInsetsMake(self.topView.height - 40, 0, 0, 0);
 
-    
+    self.tableView.backgroundColor = [UIColor colorWithHexString:@"#FFFFFF"];
     
     [self.view insertSubview:self.tableView belowSubview:self.topView];
 
