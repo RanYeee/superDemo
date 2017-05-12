@@ -1,0 +1,23 @@
+PODS:
+  - JSPatch (1.1.2):
+    - JSPatch/Core (= 1.1.2)
+  - JSPatch/Core (1.1.2)
+  - lottie-ios (1.0.2)
+  - QMUIKit (1.2)
+  - SVProgressHUD (2.1.2)
+
+DEPENDENCIES:
+  - JSPatch
+  - lottie-ios
+  - QMUIKit (~> 1.2)
+  - SVProgressHUD
+
+SPEC CHECKSUMS:
+  JSPatch: 741205ebb2e2238c223a436e4c8cf75cf40a345f
+  lottie-ios: 8564a52e01a29c180ded076cb059aae8ec378cf1
+  QMUIKit: 8657144089e3a825ceb3c0f0ffd96c8f5de0653a
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+
+PODFILE CHECKSUM: 158f31205ae928262bb496ff0281a5a60e674d53
+
+COCOAPODS: 1.2.0

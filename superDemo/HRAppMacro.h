@@ -86,8 +86,8 @@
 #define BlacklistDir    ([[NSString documentPath] stringByAppendingPathComponent:@"/BlacklistDir/"])
 #define WS(self)    __weak __typeof(&*self)weakSelf = self;
 #define RNWeakSelf(type)  __weak typeof(type) weak##type = type;
-#define SCREEN_WIDTH  ([UIScreen mainScreen].bounds.size.width)
-#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+//#define SCREEN_WIDTH  ([UIScreen mainScreen].bounds.size.width)
+//#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 
 #define IPHONE4 ([[UIScreen mainScreen] bounds].size.height == 480)
 #define IS_AboveIOS7   [[[UIDevice currentDevice] systemVersion] floatValue]>=7.0?YES:NO

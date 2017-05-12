@@ -125,5 +125,21 @@
 		<key>dec</key>
 		<string>xib桥接demo</string>
 	</dict>
+	<dict>
+		<key>createTime</key>
+		<string>2017.02.06</string>
+		<key>className</key>
+		<string>LottieViewController</string>
+		<key>dec</key>
+		<string>airbnb开源动画</string>
+	</dict>
+	<dict>
+		<key>createTime</key>
+		<string>2017.05.08</string>
+		<key>className</key>
+		<string>RNZoomViewController</string>
+		<key>dec</key>
+		<string>view窗口化</string>
+	</dict>
 </array>
 </plist>

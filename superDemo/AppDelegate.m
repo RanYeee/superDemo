@@ -10,7 +10,8 @@
 #import "KLFileManager.h"
 #import "NSDate+DDAddition.h"
 #import "AESEncrypt.h"
-
+#import <QMUIKit/QMUIConfigurationManager.h>
+#import <QMUIKit/QMUIConfigurationTemplate.h>
 @interface AppDelegate ()
 @property (nonatomic,strong) UIView *view;
 @end
@@ -21,7 +22,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
 //    [AMapServices sharedServices].apiKey = @"354993461110dd5150b694c451d655b1";
+    
+    [QMUIConfigurationTemplate setupConfigurationTemplate];
 
+    [QMUIConfigurationManager renderGlobalAppearances];
+    
+    
     UIViewController *viewController = [[UIStoryboard storyboardWithName:@"LaunchScreen" bundle:nil] instantiateViewControllerWithIdentifier:@"LaunchScreen"];
     
     UIView *launchView = viewController.view;
@@ -36,7 +42,7 @@
         [launchView removeFromSuperview];
     }];
     
-    
+
     return YES;
 }
 

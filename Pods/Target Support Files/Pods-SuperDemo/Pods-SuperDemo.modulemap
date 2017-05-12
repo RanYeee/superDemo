@@ -1,0 +1,6 @@
+framework module Pods_SuperDemo {
+  umbrella header "Pods-SuperDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

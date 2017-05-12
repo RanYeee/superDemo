@@ -20,6 +20,8 @@
 		29119C111D46036000468A51 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 29119C0F1D46036000468A51 /* Util.m */; };
 		294365481D55DB2200E71085 /* RNSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 294365471D55DB2200E71085 /* RNSlideViewController.m */; };
 		294365491D55DB2200E71085 /* RNSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 294365471D55DB2200E71085 /* RNSlideViewController.m */; };
+		2957045C1EC001B0009D4E30 /* RNZoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2957045B1EC001B0009D4E30 /* RNZoomView.m */; };
+		2957045F1EC007EC009D4E30 /* RNZoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2957045E1EC007EC009D4E30 /* RNZoomViewController.m */; };
 		296870F41D87F2F000506A59 /* ProgressButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 296870F31D87F2F000506A59 /* ProgressButton.m */; };
 		296BDBA81CDB2C64005AD41A /* html in Resources */ = {isa = PBXBuildFile; fileRef = 296BDBA71CDB2C64005AD41A /* html */; };
 		296BDBAC1CDB2C9F005AD41A /* H5WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 296BDBAB1CDB2C9F005AD41A /* H5WebViewController.m */; };
@@ -216,10 +218,13 @@
 		29D670971CF5D4180008C196 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D670961CF5D4180008C196 /* QuartzCore.framework */; };
 		29D6709A1CF5D5190008C196 /* MyVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D670991CF5D5190008C196 /* MyVideoController.m */; };
 		29D6709B1CF5D5190008C196 /* MyVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D670991CF5D5190008C196 /* MyVideoController.m */; };
+		29D763321EC4035000E16942 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D763311EC4035000E16942 /* NetworkExtension.framework */; };
 		29DFDE0A1D6AE4B3008BDBC6 /* MainViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DFDE081D6AE4B2008BDBC6 /* MainViewCell.m */; };
 		29DFDE0B1D6AE4B3008BDBC6 /* MainViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DFDE081D6AE4B2008BDBC6 /* MainViewCell.m */; };
 		29DFDE0C1D6AE4B3008BDBC6 /* MainViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29DFDE091D6AE4B2008BDBC6 /* MainViewCell.xib */; };
 		29DFDE0D1D6AE4B3008BDBC6 /* MainViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29DFDE091D6AE4B2008BDBC6 /* MainViewCell.xib */; };
+		29E0BFC31E485BE4006224EA /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E0BFC21E485BE4006224EA /* Lottie.framework */; };
+		29E0BFCA1E4861E5006224EA /* LottieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E0BFC91E4861E5006224EA /* LottieViewController.m */; };
 		29F3F5D51D6D47D3004272B6 /* MaterTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F3F5D41D6D47D3004272B6 /* MaterTopView.m */; };
 		29F3F5D81D6E99A5004272B6 /* RootDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F3F5D71D6E99A5004272B6 /* RootDetailViewController.m */; };
 		29F7D6751E0119460037C6CD /* KLTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F7D6741E0119460037C6CD /* KLTextView.m */; };
@@ -526,6 +531,7 @@
 		29FF675F1D363E640021B7D7 /* UIView+SHCZExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FF67411D363E640021B7D7 /* UIView+SHCZExt.m */; };
 		29FF67601D363E640021B7D7 /* UIView+SimpleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FF67431D363E640021B7D7 /* UIView+SimpleAnimation.m */; };
 		29FF67611D363E640021B7D7 /* UIView+SimpleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FF67431D363E640021B7D7 /* UIView+SimpleAnimation.m */; };
+		76813BC53EA65C963EB5A775 /* Pods_SuperDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F55B55446A1A3FB7B8EB2750 /* Pods_SuperDemo.framework */; };
 		8834B5E91CB7512C00428D18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8834B5E81CB7512C00428D18 /* main.m */; };
 		8834B5F21CB7512C00428D18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8834B5F01CB7512C00428D18 /* Main.storyboard */; };
 		8834B5F41CB7512C00428D18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8834B5F31CB7512C00428D18 /* Assets.xcassets */; };
@@ -600,6 +606,10 @@
 		29119C0F1D46036000468A51 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
 		294365461D55DB2200E71085 /* RNSlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNSlideViewController.h; sourceTree = "<group>"; };
 		294365471D55DB2200E71085 /* RNSlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNSlideViewController.m; sourceTree = "<group>"; };
+		2957045A1EC001B0009D4E30 /* RNZoomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNZoomView.h; sourceTree = "<group>"; };
+		2957045B1EC001B0009D4E30 /* RNZoomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNZoomView.m; sourceTree = "<group>"; };
+		2957045D1EC007EC009D4E30 /* RNZoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNZoomViewController.h; sourceTree = "<group>"; };
+		2957045E1EC007EC009D4E30 /* RNZoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNZoomViewController.m; sourceTree = "<group>"; };
 		296870F21D87F2F000506A59 /* ProgressButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressButton.h; sourceTree = "<group>"; };
 		296870F31D87F2F000506A59 /* ProgressButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressButton.m; sourceTree = "<group>"; };
 		296BDBA71CDB2C64005AD41A /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html; sourceTree = "<group>"; };
@@ -808,9 +818,13 @@
 		29D670961CF5D4180008C196 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		29D670981CF5D5190008C196 /* MyVideoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyVideoController.h; sourceTree = "<group>"; };
 		29D670991CF5D5190008C196 /* MyVideoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyVideoController.m; sourceTree = "<group>"; };
+		29D763311EC4035000E16942 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		29DFDE071D6AE4B2008BDBC6 /* MainViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewCell.h; sourceTree = "<group>"; };
 		29DFDE081D6AE4B2008BDBC6 /* MainViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewCell.m; sourceTree = "<group>"; };
 		29DFDE091D6AE4B2008BDBC6 /* MainViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewCell.xib; sourceTree = "<group>"; };
+		29E0BFC21E485BE4006224EA /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Lottie.framework; sourceTree = "<group>"; };
+		29E0BFC81E4861E5006224EA /* LottieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LottieViewController.h; sourceTree = "<group>"; };
+		29E0BFC91E4861E5006224EA /* LottieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LottieViewController.m; sourceTree = "<group>"; };
 		29F3F5D31D6D47D3004272B6 /* MaterTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaterTopView.h; sourceTree = "<group>"; };
 		29F3F5D41D6D47D3004272B6 /* MaterTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaterTopView.m; sourceTree = "<group>"; };
 		29F3F5D61D6E99A5004272B6 /* RootDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootDetailViewController.h; sourceTree = "<group>"; };
@@ -1136,6 +1150,7 @@
 		29FF67411D363E640021B7D7 /* UIView+SHCZExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SHCZExt.m"; sourceTree = "<group>"; };
 		29FF67421D363E640021B7D7 /* UIView+SimpleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SimpleAnimation.h"; sourceTree = "<group>"; };
 		29FF67431D363E640021B7D7 /* UIView+SimpleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SimpleAnimation.m"; sourceTree = "<group>"; };
+		78FF2B8B05FBBD2365F19F92 /* Pods-SuperDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		8834B5E41CB7512C00428D18 /* SuperDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8834B5E81CB7512C00428D18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8834B5EA1CB7512C00428D18 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1182,6 +1197,8 @@
 		8834B64E1CB753D300428D18 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		8834B64F1CB753D300428D18 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		8834B6511CB755F400428D18 /* ControllerList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ControllerList.plist; sourceTree = "<group>"; };
+		EBABE8E8EA870CB1F5D5277B /* Pods-SuperDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F55B55446A1A3FB7B8EB2750 /* Pods_SuperDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1212,11 +1229,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29D763321EC4035000E16942 /* NetworkExtension.framework in Frameworks */,
 				2977D5BB1D640E240043D0E2 /* AMapSearchKit.framework in Frameworks */,
 				2977D5A71D62F72E0043D0E2 /* Foundation.framework in Frameworks */,
 				2977D5A51D62F7290043D0E2 /* UIKit.framework in Frameworks */,
 				2977D5A31D62F7130043D0E2 /* Security.framework in Frameworks */,
 				2977D5A11D62F70E0043D0E2 /* libc++.tbd in Frameworks */,
+				29E0BFC31E485BE4006224EA /* Lottie.framework in Frameworks */,
 				2977D59F1D62F7030043D0E2 /* libstdc++.6.0.9.tbd in Frameworks */,
 				2977D59D1D62F6FC0043D0E2 /* libz.tbd in Frameworks */,
 				2977D5B71D630EED0043D0E2 /* AMapLocationKit.framework in Frameworks */,
@@ -1234,6 +1253,7 @@
 				29D670931CF5D4070008C196 /* CoreMedia.framework in Frameworks */,
 				29D670911CF5D3F90008C196 /* AVFoundation.framework in Frameworks */,
 				29103E8B1CE5AD2C00804559 /* WebKit.framework in Frameworks */,
+				76813BC53EA65C963EB5A775 /* Pods_SuperDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1298,6 +1318,18 @@
 			);
 			name = "模仿rio首页控制器";
 			path = "superDemo/模仿rio首页控制器";
+			sourceTree = SOURCE_ROOT;
+		};
+		295704591EC0015C009D4E30 /* view窗口化 */ = {
+			isa = PBXGroup;
+			children = (
+				2957045A1EC001B0009D4E30 /* RNZoomView.h */,
+				2957045B1EC001B0009D4E30 /* RNZoomView.m */,
+				2957045D1EC007EC009D4E30 /* RNZoomViewController.h */,
+				2957045E1EC007EC009D4E30 /* RNZoomViewController.m */,
+			);
+			name = "view窗口化";
+			path = "superDemo/view窗口化";
 			sourceTree = SOURCE_ROOT;
 		};
 		296870F11D87F2DA00506A59 /* ProgressButton */ = {
@@ -1415,6 +1447,7 @@
 		2977D58E1D62F5AE0043D0E2 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				29E0BFC21E485BE4006224EA /* Lottie.framework */,
 				2977D5BA1D640E240043D0E2 /* AMapSearchKit.framework */,
 				2977D5B61D630EED0043D0E2 /* AMapLocationKit.framework */,
 				2977D5B41D630E3D0043D0E2 /* AMapFoundationKit.framework */,
@@ -1731,6 +1764,15 @@
 				29F3F5D41D6D47D3004272B6 /* MaterTopView.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		29E0BFC41E48611E006224EA /* LottieDemo */ = {
+			isa = PBXGroup;
+			children = (
+				29E0BFC81E4861E5006224EA /* LottieViewController.h */,
+				29E0BFC91E4861E5006224EA /* LottieViewController.m */,
+			);
+			path = LottieDemo;
 			sourceTree = "<group>";
 		};
 		29F7D6721E0119460037C6CD /* KLTextView */ = {
@@ -2380,6 +2422,8 @@
 				296BDBD21CDC36F1005AD41A /* childDemoTests */,
 				296BDBDD1CDC36F1005AD41A /* childDemoUITests */,
 				8834B5E51CB7512C00428D18 /* Products */,
+				AEA7B296E05F13F1AF1AEF4E /* Pods */,
+				A04E3AAF81F98A059437672C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -2399,6 +2443,8 @@
 		8834B5E61CB7512C00428D18 /* SuperDemo */ = {
 			isa = PBXGroup;
 			children = (
+				295704591EC0015C009D4E30 /* view窗口化 */,
+				29E0BFC41E48611E006224EA /* LottieDemo */,
 				298D6F461E139BBD00640043 /* NibBridge */,
 				29F7D6721E0119460037C6CD /* KLTextView */,
 				2998D26B1D7815D300C27418 /* AES加密 */,
@@ -2505,6 +2551,24 @@
 			path = ExpendTableView;
 			sourceTree = "<group>";
 		};
+		A04E3AAF81F98A059437672C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29D763311EC4035000E16942 /* NetworkExtension.framework */,
+				F55B55446A1A3FB7B8EB2750 /* Pods_SuperDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AEA7B296E05F13F1AF1AEF4E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78FF2B8B05FBBD2365F19F92 /* Pods-SuperDemo.debug.xcconfig */,
+				EBABE8E8EA870CB1F5D5277B /* Pods-SuperDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2565,9 +2629,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8834B6111CB7512C00428D18 /* Build configuration list for PBXNativeTarget "SuperDemo" */;
 			buildPhases = (
+				673B8F91689E4A0D76D96103 /* [CP] Check Pods Manifest.lock */,
 				8834B5E01CB7512C00428D18 /* Sources */,
 				8834B5E11CB7512C00428D18 /* Frameworks */,
 				8834B5E21CB7512C00428D18 /* Resources */,
+				334A3DA5D415C88A6FC70E9B /* [CP] Embed Pods Frameworks */,
+				CE294FA5B05607902609D28E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2769,6 +2836,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		334A3DA5D415C88A6FC70E9B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		673B8F91689E4A0D76D96103 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CE294FA5B05607902609D28E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		296BDBCB1CDC36F1005AD41A /* Sources */ = {
@@ -3142,6 +3257,7 @@
 				29FF667B1D363D910021B7D7 /* MASLayoutConstraint.m in Sources */,
 				29FF670B1D363D910021B7D7 /* SDWebImageManager.m in Sources */,
 				29FF66731D363D910021B7D7 /* LTAlertView.m in Sources */,
+				2957045C1EC001B0009D4E30 /* RNZoomView.m in Sources */,
 				29FF66E31D363D910021B7D7 /* NSIndexPath+PSTCollectionViewAdditions.m in Sources */,
 				29FF66C31D363D910021B7D7 /* MJRefreshNormalHeader.m in Sources */,
 				29FF66B91D363D910021B7D7 /* MJRefreshAutoStateFooter.m in Sources */,
@@ -3192,6 +3308,7 @@
 				29FF66291D363D910021B7D7 /* AFURLResponseSerialization.m in Sources */,
 				29FF668D1D363D910021B7D7 /* DateTools.m in Sources */,
 				29FF66651D363D910021B7D7 /* IQBarButtonItem.m in Sources */,
+				2957045F1EC007EC009D4E30 /* RNZoomViewController.m in Sources */,
 				29FF66491D363D910021B7D7 /* UIViewController+CWPopup.m in Sources */,
 				29FF66F91D363D910021B7D7 /* PSTGridLayoutRow.m in Sources */,
 				29B1E6071D59CB100033F2D3 /* MDSlider.m in Sources */,
@@ -3231,6 +3348,7 @@
 				29FF669F1D363D910021B7D7 /* MJMethod.m in Sources */,
 				2974C4531D54824500248E81 /* RNProgressHUD.m in Sources */,
 				29FF67191D363D910021B7D7 /* UIImageView+WebCache.m in Sources */,
+				29E0BFCA1E4861E5006224EA /* LottieViewController.m in Sources */,
 				29B1E6211D59CB100033F2D3 /* MDSliderIcon.m in Sources */,
 				29FF61D21D2DFD980021B7D7 /* KLFileManager.m in Sources */,
 				29FF66231D363D910021B7D7 /* AFSecurityPolicy.m in Sources */,
@@ -3513,6 +3631,7 @@
 		};
 		8834B6121CB7512C00428D18 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78FF2B8B05FBBD2365F19F92 /* Pods-SuperDemo.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = " $(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -3538,6 +3657,7 @@
 		};
 		8834B6131CB7512C00428D18 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBABE8E8EA870CB1F5D5277B /* Pods-SuperDemo.release.xcconfig */;
 			buildSettings = {
 				ARCHS = " $(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
