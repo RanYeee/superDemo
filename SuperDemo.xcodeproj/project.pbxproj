@@ -20,6 +20,10 @@
 		29119C111D46036000468A51 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 29119C0F1D46036000468A51 /* Util.m */; };
 		294365481D55DB2200E71085 /* RNSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 294365471D55DB2200E71085 /* RNSlideViewController.m */; };
 		294365491D55DB2200E71085 /* RNSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 294365471D55DB2200E71085 /* RNSlideViewController.m */; };
+		2943ED771ECC20CD00EE9C22 /* JSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2943ED761ECC20CD00EE9C22 /* JSViewController.m */; };
+		2943ED7C1ECC222400EE9C22 /* SaveImage_Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 2943ED7B1ECC222400EE9C22 /* SaveImage_Util.m */; };
+		2943ED7E1ECC29A300EE9C22 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2943ED7D1ECC29A300EE9C22 /* JavaScriptCore.framework */; };
+		2943ED801ECC2B1F00EE9C22 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 2943ED7F1ECC2B1F00EE9C22 /* test.html */; };
 		2957045C1EC001B0009D4E30 /* RNZoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2957045B1EC001B0009D4E30 /* RNZoomView.m */; };
 		2957045F1EC007EC009D4E30 /* RNZoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2957045E1EC007EC009D4E30 /* RNZoomViewController.m */; };
 		296870F41D87F2F000506A59 /* ProgressButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 296870F31D87F2F000506A59 /* ProgressButton.m */; };
@@ -218,7 +222,6 @@
 		29D670971CF5D4180008C196 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D670961CF5D4180008C196 /* QuartzCore.framework */; };
 		29D6709A1CF5D5190008C196 /* MyVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D670991CF5D5190008C196 /* MyVideoController.m */; };
 		29D6709B1CF5D5190008C196 /* MyVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D670991CF5D5190008C196 /* MyVideoController.m */; };
-		29D763321EC4035000E16942 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D763311EC4035000E16942 /* NetworkExtension.framework */; };
 		29DFDE0A1D6AE4B3008BDBC6 /* MainViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DFDE081D6AE4B2008BDBC6 /* MainViewCell.m */; };
 		29DFDE0B1D6AE4B3008BDBC6 /* MainViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DFDE081D6AE4B2008BDBC6 /* MainViewCell.m */; };
 		29DFDE0C1D6AE4B3008BDBC6 /* MainViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29DFDE091D6AE4B2008BDBC6 /* MainViewCell.xib */; };
@@ -606,6 +609,12 @@
 		29119C0F1D46036000468A51 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
 		294365461D55DB2200E71085 /* RNSlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNSlideViewController.h; sourceTree = "<group>"; };
 		294365471D55DB2200E71085 /* RNSlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNSlideViewController.m; sourceTree = "<group>"; };
+		2943ED751ECC20CD00EE9C22 /* JSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSViewController.h; sourceTree = "<group>"; };
+		2943ED761ECC20CD00EE9C22 /* JSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSViewController.m; sourceTree = "<group>"; };
+		2943ED7A1ECC222400EE9C22 /* SaveImage_Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveImage_Util.h; sourceTree = "<group>"; };
+		2943ED7B1ECC222400EE9C22 /* SaveImage_Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveImage_Util.m; sourceTree = "<group>"; };
+		2943ED7D1ECC29A300EE9C22 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		2943ED7F1ECC2B1F00EE9C22 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 		2957045A1EC001B0009D4E30 /* RNZoomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNZoomView.h; sourceTree = "<group>"; };
 		2957045B1EC001B0009D4E30 /* RNZoomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNZoomView.m; sourceTree = "<group>"; };
 		2957045D1EC007EC009D4E30 /* RNZoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNZoomViewController.h; sourceTree = "<group>"; };
@@ -1229,7 +1238,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29D763321EC4035000E16942 /* NetworkExtension.framework in Frameworks */,
+				2943ED7E1ECC29A300EE9C22 /* JavaScriptCore.framework in Frameworks */,
 				2977D5BB1D640E240043D0E2 /* AMapSearchKit.framework in Frameworks */,
 				2977D5A71D62F72E0043D0E2 /* Foundation.framework in Frameworks */,
 				2977D5A51D62F7290043D0E2 /* UIKit.framework in Frameworks */,
@@ -1318,6 +1327,19 @@
 			);
 			name = "模仿rio首页控制器";
 			path = "superDemo/模仿rio首页控制器";
+			sourceTree = SOURCE_ROOT;
+		};
+		2943ED741ECC208000EE9C22 /* js与oc交互 */ = {
+			isa = PBXGroup;
+			children = (
+				2943ED7F1ECC2B1F00EE9C22 /* test.html */,
+				2943ED751ECC20CD00EE9C22 /* JSViewController.h */,
+				2943ED761ECC20CD00EE9C22 /* JSViewController.m */,
+				2943ED7A1ECC222400EE9C22 /* SaveImage_Util.h */,
+				2943ED7B1ECC222400EE9C22 /* SaveImage_Util.m */,
+			);
+			name = "js与oc交互";
+			path = "superDemo/js与oc交互";
 			sourceTree = SOURCE_ROOT;
 		};
 		295704591EC0015C009D4E30 /* view窗口化 */ = {
@@ -2443,6 +2465,7 @@
 		8834B5E61CB7512C00428D18 /* SuperDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2943ED741ECC208000EE9C22 /* js与oc交互 */,
 				295704591EC0015C009D4E30 /* view窗口化 */,
 				29E0BFC41E48611E006224EA /* LottieDemo */,
 				298D6F461E139BBD00640043 /* NibBridge */,
@@ -2554,6 +2577,7 @@
 		A04E3AAF81F98A059437672C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2943ED7D1ECC29A300EE9C22 /* JavaScriptCore.framework */,
 				29D763311EC4035000E16942 /* NetworkExtension.framework */,
 				F55B55446A1A3FB7B8EB2750 /* Pods_SuperDemo.framework */,
 			);
@@ -2707,7 +2731,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -2799,6 +2823,7 @@
 				29F7D67C1E0119EA0037C6CD /* KLTextViewController.xib in Resources */,
 				296BDBA81CDB2C64005AD41A /* html in Resources */,
 				8834B64B1CB752D400428D18 /* ThreeItemView.xib in Resources */,
+				2943ED801ECC2B1F00EE9C22 /* test.html in Resources */,
 				8834B5F71CB7512C00428D18 /* LaunchScreen.storyboard in Resources */,
 				298D6F521E139D2E00640043 /* NibBridgeViewController.xib in Resources */,
 				2977D5B91D63126B0043D0E2 /* AMap.bundle in Resources */,
@@ -3219,6 +3244,7 @@
 				29FF67581D363E640021B7D7 /* UIImage+UIImageAddition.m in Sources */,
 				29FF67091D363D910021B7D7 /* SDWebImageDownloaderOperation.m in Sources */,
 				8834B63E1CB752D400428D18 /* ExpendHeaderView.m in Sources */,
+				2943ED771ECC20CD00EE9C22 /* JSViewController.m in Sources */,
 				29FF66451D363D910021B7D7 /* UIButton+AGIPC.m in Sources */,
 				29FF66631D363D910021B7D7 /* IQTextView.m in Sources */,
 				29FF66871D363D910021B7D7 /* ViewController+MASAdditions.m in Sources */,
@@ -3362,6 +3388,7 @@
 				29FF66791D363D910021B7D7 /* MASConstraintMaker.m in Sources */,
 				29B1E5FB1D59CB100033F2D3 /* UIFontHelper.m in Sources */,
 				8834B6451CB752D400428D18 /* KLSugarFormCell.m in Sources */,
+				2943ED7C1ECC222400EE9C22 /* SaveImage_Util.m in Sources */,
 				29B1E6231D59CB100033F2D3 /* MDSliderThumbView.m in Sources */,
 				29FF675C1D363E640021B7D7 /* UIView+DDAddition.m in Sources */,
 				29B1E60F1D59CB100033F2D3 /* MDTabBarViewController.m in Sources */,
@@ -3643,7 +3670,7 @@
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/SuperDemo/CD-Prefix.pch";
 				INFOPLIST_FILE = SuperDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3669,7 +3696,7 @@
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/SuperDemo/CD-Prefix.pch";
 				INFOPLIST_FILE = SuperDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

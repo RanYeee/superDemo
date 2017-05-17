@@ -141,5 +141,13 @@
 		<key>dec</key>
 		<string>view窗口化</string>
 	</dict>
+	<dict>
+		<key>createTime</key>
+		<string>2017.05.17</string>
+		<key>className</key>
+		<string>JSViewController</string>
+		<key>dec</key>
+		<string>JS调用OCMethond(相机和相册)</string>
+	</dict>
 </array>
 </plist>
