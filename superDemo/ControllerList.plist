@@ -149,5 +149,21 @@
 		<key>dec</key>
 		<string>JS调用OCMethond(相机和相册)</string>
 	</dict>
+	<dict>
+		<key>createTime</key>
+		<string>2017.06.23</string>
+		<key>className</key>
+		<string>DrugViewController</string>
+		<key>dec</key>
+		<string>电子处方药品动态cell</string>
+	</dict>
+	<dict>
+		<key>createTime</key>
+		<string>2017.06.30</string>
+		<key>className</key>
+		<string>DynamicViewController</string>
+		<key>dec</key>
+		<string>cell中的动态按钮布局</string>
+	</dict>
 </array>
 </plist>

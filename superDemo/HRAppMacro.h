@@ -143,6 +143,8 @@
 
 #define kRemoveBackView         for (UIView *item in kWindow.subviews) {if(item.tag == 10000){[UIView animateWithDuration:0.4 animations:^{item.alpha = 0.0;} completion:^(BOOL finished) {[item removeFromSuperview];}];}}
 
+#define kShowHUDToastInView(view,message)   kHiddenHUDAndAvtivity;[HRProgressHUD showHUDInView:view onlyMessage:message];
+
 #define kShowHUDToast(message)   [HRProgressHUD showHUDInView:kWindow onlyMessage:message];
 
 #define kShowErrorToast(msg) [HRProgressHUD showErrorHUD:kWindow message:msg];

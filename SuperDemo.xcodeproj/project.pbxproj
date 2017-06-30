@@ -18,6 +18,12 @@
 		29119C0C1D4602D400468A51 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29119C0A1D4602CB00468A51 /* CoreImage.framework */; };
 		29119C101D46036000468A51 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 29119C0F1D46036000468A51 /* Util.m */; };
 		29119C111D46036000468A51 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 29119C0F1D46036000468A51 /* Util.m */; };
+		29159EA91EFCADFC0072D402 /* DrugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29159EA81EFCADFC0072D402 /* DrugViewController.m */; };
+		29159EAC1EFCAE660072D402 /* EDrugDynamicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29159EAB1EFCAE660072D402 /* EDrugDynamicCell.m */; };
+		29159EAF1EFCAEE70072D402 /* EDrugParameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29159EAE1EFCAEE70072D402 /* EDrugParameView.m */; };
+		29159EB11EFCAEFA0072D402 /* EDrugParameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29159EB01EFCAEFA0072D402 /* EDrugParameView.xib */; };
+		2917E6421F00BA5C007028DD /* NSString+intJudge.m in Sources */ = {isa = PBXBuildFile; fileRef = 2917E6411F00BA5C007028DD /* NSString+intJudge.m */; };
+		2917E6451F00D6B8007028DD /* EDrug.m in Sources */ = {isa = PBXBuildFile; fileRef = 2917E6441F00D6B8007028DD /* EDrug.m */; };
 		294365481D55DB2200E71085 /* RNSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 294365471D55DB2200E71085 /* RNSlideViewController.m */; };
 		294365491D55DB2200E71085 /* RNSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 294365471D55DB2200E71085 /* RNSlideViewController.m */; };
 		2943ED771ECC20CD00EE9C22 /* JSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2943ED761ECC20CD00EE9C22 /* JSViewController.m */; };
@@ -79,6 +85,8 @@
 		298D6F521E139D2E00640043 /* NibBridgeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298D6F501E139D2E00640043 /* NibBridgeViewController.xib */; };
 		298D6F551E139D5300640043 /* XibTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298D6F541E139D5300640043 /* XibTestView.m */; };
 		298D6F571E139E7900640043 /* XibTestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298D6F561E139E7900640043 /* XibTestView.xib */; };
+		29979A351F0691CE00D4F95C /* DynamicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29979A341F0691CE00D4F95C /* DynamicViewController.m */; };
+		29979A381F06923100D4F95C /* DynamicButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29979A371F06923100D4F95C /* DynamicButtonCell.m */; };
 		2998D26E1D78163100C27418 /* AESEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 2998D26D1D78163100C27418 /* AESEncrypt.m */; };
 		2998D26F1D78163100C27418 /* AESEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 2998D26D1D78163100C27418 /* AESEncrypt.m */; };
 		29A9F6891D7405B800DA4077 /* LeftMemuStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A9F6851D7405B800DA4077 /* LeftMemuStoryboard.storyboard */; };
@@ -607,6 +615,17 @@
 		29119C0A1D4602CB00468A51 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		29119C0E1D46036000468A51 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
 		29119C0F1D46036000468A51 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		29159EA71EFCADFC0072D402 /* DrugViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrugViewController.h; sourceTree = "<group>"; };
+		29159EA81EFCADFC0072D402 /* DrugViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrugViewController.m; sourceTree = "<group>"; };
+		29159EAA1EFCAE660072D402 /* EDrugDynamicCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EDrugDynamicCell.h; sourceTree = "<group>"; };
+		29159EAB1EFCAE660072D402 /* EDrugDynamicCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EDrugDynamicCell.m; sourceTree = "<group>"; };
+		29159EAD1EFCAEE70072D402 /* EDrugParameView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EDrugParameView.h; sourceTree = "<group>"; };
+		29159EAE1EFCAEE70072D402 /* EDrugParameView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EDrugParameView.m; sourceTree = "<group>"; };
+		29159EB01EFCAEFA0072D402 /* EDrugParameView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EDrugParameView.xib; sourceTree = "<group>"; };
+		2917E6401F00BA5C007028DD /* NSString+intJudge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+intJudge.h"; sourceTree = "<group>"; };
+		2917E6411F00BA5C007028DD /* NSString+intJudge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+intJudge.m"; sourceTree = "<group>"; };
+		2917E6431F00D6B8007028DD /* EDrug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDrug.h; sourceTree = "<group>"; };
+		2917E6441F00D6B8007028DD /* EDrug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDrug.m; sourceTree = "<group>"; };
 		294365461D55DB2200E71085 /* RNSlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNSlideViewController.h; sourceTree = "<group>"; };
 		294365471D55DB2200E71085 /* RNSlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNSlideViewController.m; sourceTree = "<group>"; };
 		2943ED751ECC20CD00EE9C22 /* JSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSViewController.h; sourceTree = "<group>"; };
@@ -686,6 +705,10 @@
 		298D6F531E139D5300640043 /* XibTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibTestView.h; sourceTree = "<group>"; };
 		298D6F541E139D5300640043 /* XibTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibTestView.m; sourceTree = "<group>"; };
 		298D6F561E139E7900640043 /* XibTestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XibTestView.xib; sourceTree = "<group>"; };
+		29979A331F0691CE00D4F95C /* DynamicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicViewController.h; sourceTree = "<group>"; };
+		29979A341F0691CE00D4F95C /* DynamicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicViewController.m; sourceTree = "<group>"; };
+		29979A361F06923100D4F95C /* DynamicButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicButtonCell.h; sourceTree = "<group>"; };
+		29979A371F06923100D4F95C /* DynamicButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicButtonCell.m; sourceTree = "<group>"; };
 		2998D26C1D78163100C27418 /* AESEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESEncrypt.h; sourceTree = "<group>"; };
 		2998D26D1D78163100C27418 /* AESEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESEncrypt.m; sourceTree = "<group>"; };
 		29A9F6851D7405B800DA4077 /* LeftMemuStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LeftMemuStoryboard.storyboard; sourceTree = "<group>"; };
@@ -1313,6 +1336,23 @@
 			path = superDemo/Utils;
 			sourceTree = SOURCE_ROOT;
 		};
+		29159EA61EFCADCE0072D402 /* 电子处方药品动态cell */ = {
+			isa = PBXGroup;
+			children = (
+				2917E6431F00D6B8007028DD /* EDrug.h */,
+				2917E6441F00D6B8007028DD /* EDrug.m */,
+				29159EA71EFCADFC0072D402 /* DrugViewController.h */,
+				29159EA81EFCADFC0072D402 /* DrugViewController.m */,
+				29159EAA1EFCAE660072D402 /* EDrugDynamicCell.h */,
+				29159EAB1EFCAE660072D402 /* EDrugDynamicCell.m */,
+				29159EAD1EFCAEE70072D402 /* EDrugParameView.h */,
+				29159EAE1EFCAEE70072D402 /* EDrugParameView.m */,
+				29159EB01EFCAEFA0072D402 /* EDrugParameView.xib */,
+			);
+			name = "电子处方药品动态cell";
+			path = "superDemo/电子处方药品动态cell";
+			sourceTree = SOURCE_ROOT;
+		};
 		294365451D55D9DB00E71085 /* 模仿rio首页控制器 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1516,6 +1556,18 @@
 			path = XXNibBridge;
 			sourceTree = "<group>";
 		};
+		29979A321F06914C00D4F95C /* cell中的动态按钮布局 */ = {
+			isa = PBXGroup;
+			children = (
+				29979A331F0691CE00D4F95C /* DynamicViewController.h */,
+				29979A341F0691CE00D4F95C /* DynamicViewController.m */,
+				29979A361F06923100D4F95C /* DynamicButtonCell.h */,
+				29979A371F06923100D4F95C /* DynamicButtonCell.m */,
+			);
+			name = "cell中的动态按钮布局";
+			path = "superDemo/cell中的动态按钮布局";
+			sourceTree = SOURCE_ROOT;
+		};
 		2998D26B1D7815D300C27418 /* AES加密 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1687,6 +1739,14 @@
 			);
 			path = SuggestPopup;
 			sourceTree = "<group>";
+		};
+		29C4EF131EEE6F8D0051A6FC /* runtime */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = runtime;
+			path = superDemo/runtime;
+			sourceTree = SOURCE_ROOT;
 		};
 		29C5EFA41D3DFAAA00949CB4 /* FMDB-2.5v */ = {
 			isa = PBXGroup;
@@ -2382,6 +2442,8 @@
 		29FF67251D363E640021B7D7 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				2917E6401F00BA5C007028DD /* NSString+intJudge.h */,
+				2917E6411F00BA5C007028DD /* NSString+intJudge.m */,
 				29FF67261D363E640021B7D7 /* CALayer+Addition.h */,
 				29FF67271D363E640021B7D7 /* CALayer+Addition.m */,
 				29FF67281D363E640021B7D7 /* NSDate+DDAddition.h */,
@@ -2465,6 +2527,9 @@
 		8834B5E61CB7512C00428D18 /* SuperDemo */ = {
 			isa = PBXGroup;
 			children = (
+				29979A321F06914C00D4F95C /* cell中的动态按钮布局 */,
+				29159EA61EFCADCE0072D402 /* 电子处方药品动态cell */,
+				29C4EF131EEE6F8D0051A6FC /* runtime */,
 				2943ED741ECC208000EE9C22 /* js与oc交互 */,
 				295704591EC0015C009D4E30 /* view窗口化 */,
 				29E0BFC41E48611E006224EA /* LottieDemo */,
@@ -2831,6 +2896,7 @@
 				298D6F571E139E7900640043 /* XibTestView.xib in Resources */,
 				8834B5F41CB7512C00428D18 /* Assets.xcassets in Resources */,
 				29C5EFD61D3DFAEA00949CB4 /* ComPickerView.xib in Resources */,
+				29159EB11EFCAEFA0072D402 /* EDrugParameView.xib in Resources */,
 				8834B63D1CB752D400428D18 /* ExpendCell.xib in Resources */,
 				8834B5F21CB7512C00428D18 /* Main.storyboard in Resources */,
 				8834B6401CB752D400428D18 /* FormView.xib in Resources */,
@@ -3180,6 +3246,7 @@
 				29B1E5FF1D59CB100033F2D3 /* MDButton.m in Sources */,
 				29FF66371D363D910021B7D7 /* AGIPCAssetsController.m in Sources */,
 				29FF67011D363D910021B7D7 /* SDImageCache.m in Sources */,
+				29159EA91EFCADFC0072D402 /* DrugViewController.m in Sources */,
 				29FF67601D363E640021B7D7 /* UIView+SimpleAnimation.m in Sources */,
 				29FF66751D363D910021B7D7 /* MASCompositeConstraint.m in Sources */,
 				29FF667D1D363D910021B7D7 /* MASViewAttribute.m in Sources */,
@@ -3188,6 +3255,7 @@
 				29FF66FB1D363D910021B7D7 /* PSTGridLayoutSection.m in Sources */,
 				29FF66D11D363D910021B7D7 /* MWCaptionView.m in Sources */,
 				29DFDE0A1D6AE4B3008BDBC6 /* MainViewCell.m in Sources */,
+				29159EAC1EFCAE660072D402 /* EDrugDynamicCell.m in Sources */,
 				29FF66311D363D910021B7D7 /* AGImagePickerController.m in Sources */,
 				29FF668B1D363D910021B7D7 /* MBProgressHUD.m in Sources */,
 				29A9F6991D740BDA00DA4077 /* LeftMemuCell.m in Sources */,
@@ -3203,6 +3271,7 @@
 				29B1E6191D59CB100033F2D3 /* MDCircularProgressLayer.m in Sources */,
 				29FF674A1D363E640021B7D7 /* NSObject+log.m in Sources */,
 				29FF675E1D363E640021B7D7 /* UIView+SHCZExt.m in Sources */,
+				2917E6421F00BA5C007028DD /* NSString+intJudge.m in Sources */,
 				29FF66A31D363D910021B7D7 /* MJTypeEncoding.m in Sources */,
 				29FF66BF1D363D910021B7D7 /* MJRefreshBackStateFooter.m in Sources */,
 				296BDBAC1CDB2C9F005AD41A /* H5WebViewController.m in Sources */,
@@ -3223,6 +3292,7 @@
 				29FF66F31D363D910021B7D7 /* PSTCollectionViewUpdateItem.m in Sources */,
 				29FF66EF1D363D910021B7D7 /* PSTCollectionViewItemKey.m in Sources */,
 				29FF66DD1D363D910021B7D7 /* MWTapDetectingView.m in Sources */,
+				29979A381F06923100D4F95C /* DynamicButtonCell.m in Sources */,
 				29FF66F51D363D910021B7D7 /* PSTGridLayoutInfo.m in Sources */,
 				29C5EFB01D3DFAAA00949CB4 /* FMDatabase.m in Sources */,
 				298D6F4C1E139BBD00640043 /* XXNibBridge.m in Sources */,
@@ -3332,6 +3402,7 @@
 				29B1E5F71D59CB100033F2D3 /* NSDateHelper.m in Sources */,
 				8834B64A1CB752D400428D18 /* ThreeItemView.m in Sources */,
 				29FF66291D363D910021B7D7 /* AFURLResponseSerialization.m in Sources */,
+				29159EAF1EFCAEE70072D402 /* EDrugParameView.m in Sources */,
 				29FF668D1D363D910021B7D7 /* DateTools.m in Sources */,
 				29FF66651D363D910021B7D7 /* IQBarButtonItem.m in Sources */,
 				2957045F1EC007EC009D4E30 /* RNZoomViewController.m in Sources */,
@@ -3341,6 +3412,7 @@
 				29C5EFB61D3DFAAA00949CB4 /* FMDatabaseQueue.m in Sources */,
 				29FF663F1D363D910021B7D7 /* AGIPCToolbarItem.m in Sources */,
 				29C5EFB41D3DFAAA00949CB4 /* FMDatabasePool.m in Sources */,
+				2917E6451F00D6B8007028DD /* EDrug.m in Sources */,
 				29F3F5D51D6D47D3004272B6 /* MaterTopView.m in Sources */,
 				29FF66271D363D910021B7D7 /* AFURLRequestSerialization.m in Sources */,
 				29B1E61F1D59CB100033F2D3 /* MDBubbleLabel.m in Sources */,
@@ -3408,6 +3480,7 @@
 				29FF66E71D363D910021B7D7 /* PSTCollectionViewCell.m in Sources */,
 				296BDBB21CDB31A5005AD41A /* UIColor+HRExtension.m in Sources */,
 				29FF66AF1D363D910021B7D7 /* MJRefreshComponent.m in Sources */,
+				29979A351F0691CE00D4F95C /* DynamicViewController.m in Sources */,
 				29B1E6271D59CB100033F2D3 /* MDSuggestPopupView.m in Sources */,
 				2974C4411D51DFE300248E81 /* FadeWordViewController.m in Sources */,
 				29FF66B11D363D910021B7D7 /* MJRefreshFooter.m in Sources */,
