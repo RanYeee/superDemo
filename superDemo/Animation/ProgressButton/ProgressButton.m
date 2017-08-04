@@ -63,6 +63,8 @@
         
         self.progressView.width = self.width;
         
+        self.title_label.text = @"100";
+        
         return;
     }
 

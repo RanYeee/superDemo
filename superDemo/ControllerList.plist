@@ -105,6 +105,14 @@
 				<key>dec</key>
 				<string>贝塞尔曲线动画</string>
 			</dict>
+			<dict>
+				<key>createTime</key>
+				<string>2017.07.20</string>
+				<key>className</key>
+				<string>QuartzCodeViewController</string>
+				<key>dec</key>
+				<string>QuartzCode生成的动画</string>
+			</dict>
 		</array>
 		<key>dec</key>
 		<string>动画</string>
@@ -164,6 +172,22 @@
 		<string>DynamicViewController</string>
 		<key>dec</key>
 		<string>cell中的动态按钮布局</string>
+	</dict>
+	<dict>
+		<key>createTime</key>
+		<string>2017.07.10</string>
+		<key>className</key>
+		<string>SelectTextfieldDemoViewController</string>
+		<key>dec</key>
+		<string>带选项的textField</string>
+	</dict>
+	<dict>
+		<key>createTime</key>
+		<string>2017.08.03</string>
+		<key>className</key>
+		<string>ScanViewController</string>
+		<key>dec</key>
+		<string>二维码扫描自动放大</string>
 	</dict>
 </array>
 </plist>

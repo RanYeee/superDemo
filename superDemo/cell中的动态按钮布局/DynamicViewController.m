@@ -45,7 +45,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    //每个cell一个id标志
+    //每个cell一个id、标志
     NSString *cellID = [NSString stringWithFormat:@"cellID_%d",indexPath.section];
     
 //    static NSString *cellID = @"cellID";

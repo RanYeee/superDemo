@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		29103E8B1CE5AD2C00804559 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29103E8A1CE5AD2C00804559 /* WebKit.framework */; };
-		291044341D65ADCE002ECFFE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 291044331D65ADCE002ECFFE /* AppDelegate.m */; };
+		291044341D65ADCE002ECFFE /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 291044331D65ADCE002ECFFE /* AppDelegate.mm */; };
 		291044371D65B351002ECFFE /* SearchList.m in Sources */ = {isa = PBXBuildFile; fileRef = 291044361D65B351002ECFFE /* SearchList.m */; };
 		29119C061D46026D00468A51 /* DrawQRCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29119C041D46026D00468A51 /* DrawQRCodeController.m */; };
 		29119C071D46026D00468A51 /* DrawQRCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29119C041D46026D00468A51 /* DrawQRCodeController.m */; };
@@ -24,6 +24,7 @@
 		29159EB11EFCAEFA0072D402 /* EDrugParameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29159EB01EFCAEFA0072D402 /* EDrugParameView.xib */; };
 		2917E6421F00BA5C007028DD /* NSString+intJudge.m in Sources */ = {isa = PBXBuildFile; fileRef = 2917E6411F00BA5C007028DD /* NSString+intJudge.m */; };
 		2917E6451F00D6B8007028DD /* EDrug.m in Sources */ = {isa = PBXBuildFile; fileRef = 2917E6441F00D6B8007028DD /* EDrug.m */; };
+		293C87BA1F32CAF7007CE171 /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 293C87B91F32CAF7007CE171 /* ScanViewController.m */; };
 		294365481D55DB2200E71085 /* RNSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 294365471D55DB2200E71085 /* RNSlideViewController.m */; };
 		294365491D55DB2200E71085 /* RNSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 294365471D55DB2200E71085 /* RNSlideViewController.m */; };
 		2943ED771ECC20CD00EE9C22 /* JSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2943ED761ECC20CD00EE9C22 /* JSViewController.m */; };
@@ -32,6 +33,9 @@
 		2943ED801ECC2B1F00EE9C22 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 2943ED7F1ECC2B1F00EE9C22 /* test.html */; };
 		2957045C1EC001B0009D4E30 /* RNZoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2957045B1EC001B0009D4E30 /* RNZoomView.m */; };
 		2957045F1EC007EC009D4E30 /* RNZoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2957045E1EC007EC009D4E30 /* RNZoomViewController.m */; };
+		295F18F11F20595C0021AA78 /* StarLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 295F18EE1F20595C0021AA78 /* StarLoadingView.m */; };
+		295F18F21F20595C0021AA78 /* QCMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 295F18F01F20595C0021AA78 /* QCMethod.m */; };
+		295F18F51F20598F0021AA78 /* QuartzCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 295F18F41F20598F0021AA78 /* QuartzCodeViewController.m */; };
 		296870F41D87F2F000506A59 /* ProgressButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 296870F31D87F2F000506A59 /* ProgressButton.m */; };
 		296BDBA81CDB2C64005AD41A /* html in Resources */ = {isa = PBXBuildFile; fileRef = 296BDBA71CDB2C64005AD41A /* html */; };
 		296BDBAC1CDB2C9F005AD41A /* H5WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 296BDBAB1CDB2C9F005AD41A /* H5WebViewController.m */; };
@@ -102,6 +106,10 @@
 		29A9F6991D740BDA00DA4077 /* LeftMemuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A9F6981D740BDA00DA4077 /* LeftMemuCell.m */; };
 		29A9F69A1D740BDA00DA4077 /* LeftMemuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A9F6981D740BDA00DA4077 /* LeftMemuCell.m */; };
 		29A9F69D1D75575000DA4077 /* HamburgerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A9F69C1D75575000DA4077 /* HamburgerView.m */; };
+		29AE95591F0F330B007747D3 /* SelectTextfieldDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AE95581F0F330B007747D3 /* SelectTextfieldDemoViewController.m */; };
+		29AE95631F0F75B7007747D3 /* RNSelectedTextfield.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AE95621F0F75B7007747D3 /* RNSelectedTextfield.m */; };
+		29AE95651F1329A9007747D3 /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = 29AE95641F1329A9007747D3 /* down.png */; };
+		29AE95681F1359DA007747D3 /* RNInputHistoryListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AE95671F1359DA007747D3 /* RNInputHistoryListView.m */; };
 		29B1E5791D5884CC0033F2D3 /* UIScrollView+SVInfiniteScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B1E5761D5884CC0033F2D3 /* UIScrollView+SVInfiniteScrolling.m */; };
 		29B1E57A1D5884CD0033F2D3 /* UIScrollView+SVInfiniteScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B1E5761D5884CC0033F2D3 /* UIScrollView+SVInfiniteScrolling.m */; };
 		29B1E57B1D5884CD0033F2D3 /* UIScrollView+SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B1E5781D5884CC0033F2D3 /* UIScrollView+SVPullToRefresh.m */; };
@@ -606,7 +614,7 @@
 
 /* Begin PBXFileReference section */
 		29103E8A1CE5AD2C00804559 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		291044331D65ADCE002ECFFE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		291044331D65ADCE002ECFFE /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		291044351D65B351002ECFFE /* SearchList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchList.h; sourceTree = "<group>"; };
 		291044361D65B351002ECFFE /* SearchList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchList.m; sourceTree = "<group>"; };
 		29119C031D46026D00468A51 /* DrawQRCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawQRCodeController.h; sourceTree = "<group>"; };
@@ -626,6 +634,8 @@
 		2917E6411F00BA5C007028DD /* NSString+intJudge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+intJudge.m"; sourceTree = "<group>"; };
 		2917E6431F00D6B8007028DD /* EDrug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDrug.h; sourceTree = "<group>"; };
 		2917E6441F00D6B8007028DD /* EDrug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDrug.m; sourceTree = "<group>"; };
+		293C87B81F32CAF7007CE171 /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
+		293C87B91F32CAF7007CE171 /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
 		294365461D55DB2200E71085 /* RNSlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNSlideViewController.h; sourceTree = "<group>"; };
 		294365471D55DB2200E71085 /* RNSlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNSlideViewController.m; sourceTree = "<group>"; };
 		2943ED751ECC20CD00EE9C22 /* JSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSViewController.h; sourceTree = "<group>"; };
@@ -638,6 +648,12 @@
 		2957045B1EC001B0009D4E30 /* RNZoomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNZoomView.m; sourceTree = "<group>"; };
 		2957045D1EC007EC009D4E30 /* RNZoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNZoomViewController.h; sourceTree = "<group>"; };
 		2957045E1EC007EC009D4E30 /* RNZoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNZoomViewController.m; sourceTree = "<group>"; };
+		295F18ED1F20595C0021AA78 /* StarLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarLoadingView.h; sourceTree = "<group>"; };
+		295F18EE1F20595C0021AA78 /* StarLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarLoadingView.m; sourceTree = "<group>"; };
+		295F18EF1F20595C0021AA78 /* QCMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCMethod.h; sourceTree = "<group>"; };
+		295F18F01F20595C0021AA78 /* QCMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCMethod.m; sourceTree = "<group>"; };
+		295F18F31F20598F0021AA78 /* QuartzCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzCodeViewController.h; sourceTree = "<group>"; };
+		295F18F41F20598F0021AA78 /* QuartzCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartzCodeViewController.m; sourceTree = "<group>"; };
 		296870F21D87F2F000506A59 /* ProgressButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressButton.h; sourceTree = "<group>"; };
 		296870F31D87F2F000506A59 /* ProgressButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressButton.m; sourceTree = "<group>"; };
 		296BDBA71CDB2C64005AD41A /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html; sourceTree = "<group>"; };
@@ -723,6 +739,13 @@
 		29A9F6981D740BDA00DA4077 /* LeftMemuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMemuCell.m; sourceTree = "<group>"; };
 		29A9F69B1D75575000DA4077 /* HamburgerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HamburgerView.h; sourceTree = "<group>"; };
 		29A9F69C1D75575000DA4077 /* HamburgerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HamburgerView.m; sourceTree = "<group>"; };
+		29AE95571F0F330B007747D3 /* SelectTextfieldDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectTextfieldDemoViewController.h; sourceTree = "<group>"; };
+		29AE95581F0F330B007747D3 /* SelectTextfieldDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectTextfieldDemoViewController.m; sourceTree = "<group>"; };
+		29AE95611F0F75B7007747D3 /* RNSelectedTextfield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNSelectedTextfield.h; sourceTree = "<group>"; };
+		29AE95621F0F75B7007747D3 /* RNSelectedTextfield.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNSelectedTextfield.m; sourceTree = "<group>"; };
+		29AE95641F1329A9007747D3 /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
+		29AE95661F1359DA007747D3 /* RNInputHistoryListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNInputHistoryListView.h; sourceTree = "<group>"; };
+		29AE95671F1359DA007747D3 /* RNInputHistoryListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNInputHistoryListView.m; sourceTree = "<group>"; };
 		29B1E5741D5884CC0033F2D3 /* SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVPullToRefresh.h; sourceTree = "<group>"; };
 		29B1E5751D5884CC0033F2D3 /* UIScrollView+SVInfiniteScrolling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SVInfiniteScrolling.h"; sourceTree = "<group>"; };
 		29B1E5761D5884CC0033F2D3 /* UIScrollView+SVInfiniteScrolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVInfiniteScrolling.m"; sourceTree = "<group>"; };
@@ -1353,6 +1376,16 @@
 			path = "superDemo/电子处方药品动态cell";
 			sourceTree = SOURCE_ROOT;
 		};
+		293C87B71F32CADD007CE171 /* 二维码扫描自动放大 */ = {
+			isa = PBXGroup;
+			children = (
+				293C87B81F32CAF7007CE171 /* ScanViewController.h */,
+				293C87B91F32CAF7007CE171 /* ScanViewController.m */,
+			);
+			name = "二维码扫描自动放大";
+			path = "superDemo/二维码扫描自动放大";
+			sourceTree = SOURCE_ROOT;
+		};
 		294365451D55D9DB00E71085 /* 模仿rio首页控制器 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1393,6 +1426,19 @@
 			name = "view窗口化";
 			path = "superDemo/view窗口化";
 			sourceTree = SOURCE_ROOT;
+		};
+		295F18EC1F20595C0021AA78 /* QuartzCode */ = {
+			isa = PBXGroup;
+			children = (
+				295F18ED1F20595C0021AA78 /* StarLoadingView.h */,
+				295F18EE1F20595C0021AA78 /* StarLoadingView.m */,
+				295F18EF1F20595C0021AA78 /* QCMethod.h */,
+				295F18F01F20595C0021AA78 /* QCMethod.m */,
+				295F18F31F20598F0021AA78 /* QuartzCodeViewController.h */,
+				295F18F41F20598F0021AA78 /* QuartzCodeViewController.m */,
+			);
+			path = QuartzCode;
+			sourceTree = "<group>";
 		};
 		296870F11D87F2DA00506A59 /* ProgressButton */ = {
 			isa = PBXGroup;
@@ -1474,6 +1520,7 @@
 		2974C4381D51DF2700248E81 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				295F18EC1F20595C0021AA78 /* QuartzCode */,
 				296870F11D87F2DA00506A59 /* ProgressButton */,
 				2974C4431D531FDB00248E81 /* Bezier */,
 				2974C43A1D51DF6200248E81 /* FadeWords */,
@@ -1596,6 +1643,21 @@
 			);
 			name = "侧滑菜单";
 			path = "superDemo/侧滑菜单";
+			sourceTree = SOURCE_ROOT;
+		};
+		29AE95561F0F32DC007747D3 /* 带选项的textfield */ = {
+			isa = PBXGroup;
+			children = (
+				29AE95571F0F330B007747D3 /* SelectTextfieldDemoViewController.h */,
+				29AE95581F0F330B007747D3 /* SelectTextfieldDemoViewController.m */,
+				29AE95611F0F75B7007747D3 /* RNSelectedTextfield.h */,
+				29AE95621F0F75B7007747D3 /* RNSelectedTextfield.m */,
+				29AE95641F1329A9007747D3 /* down.png */,
+				29AE95661F1359DA007747D3 /* RNInputHistoryListView.h */,
+				29AE95671F1359DA007747D3 /* RNInputHistoryListView.m */,
+			);
+			name = "带选项的textfield";
+			path = "superDemo/带选项的textfield";
 			sourceTree = SOURCE_ROOT;
 		};
 		29B1E5731D5884CC0033F2D3 /* SVPullToRefresh */ = {
@@ -2527,6 +2589,8 @@
 		8834B5E61CB7512C00428D18 /* SuperDemo */ = {
 			isa = PBXGroup;
 			children = (
+				293C87B71F32CADD007CE171 /* 二维码扫描自动放大 */,
+				29AE95561F0F32DC007747D3 /* 带选项的textfield */,
 				29979A321F06914C00D4F95C /* cell中的动态按钮布局 */,
 				29159EA61EFCADCE0072D402 /* 电子处方药品动态cell */,
 				29C4EF131EEE6F8D0051A6FC /* runtime */,
@@ -2553,7 +2617,7 @@
 				29C5EFBD1D3DFAEA00949CB4 /* AddressPickerDemo */,
 				29DFDE051D6AE475008BDBC6 /* Main */,
 				8834B5EA1CB7512C00428D18 /* AppDelegate.h */,
-				291044331D65ADCE002ECFFE /* AppDelegate.m */,
+				291044331D65ADCE002ECFFE /* AppDelegate.mm */,
 				8834B5F01CB7512C00428D18 /* Main.storyboard */,
 				8834B6511CB755F400428D18 /* ControllerList.plist */,
 				8834B64E1CB753D300428D18 /* RootViewController.h */,
@@ -2877,6 +2941,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8834B6421CB752D400428D18 /* FormViewCell.xib in Resources */,
+				29AE95651F1329A9007747D3 /* down.png in Resources */,
 				8834B6461CB752D400428D18 /* KLSugarFormCell.xib in Resources */,
 				29A9F6891D7405B800DA4077 /* LeftMemuStoryboard.storyboard in Resources */,
 				8834B6441CB752D400428D18 /* KLFormHeaderView.xib in Resources */,
@@ -3239,9 +3304,11 @@
 				29FF67441D363E640021B7D7 /* CALayer+Addition.m in Sources */,
 				8834B6481CB752D400428D18 /* ThreeItemCellTableViewCell.m in Sources */,
 				29B1E6251D59CB100033F2D3 /* MDSliderTickMarksView.m in Sources */,
+				293C87BA1F32CAF7007CE171 /* ScanViewController.m in Sources */,
 				29B1E5ED1D59CB100033F2D3 /* MDTimePickerDialog.m in Sources */,
 				29B1E61D1D59CB100033F2D3 /* MDProgressLayer.m in Sources */,
 				29B1E6131D59CB100033F2D3 /* MDTextField.m in Sources */,
+				29AE95681F1359DA007747D3 /* RNInputHistoryListView.m in Sources */,
 				29FF669D1D363D910021B7D7 /* MJMember.m in Sources */,
 				29B1E5FF1D59CB100033F2D3 /* MDButton.m in Sources */,
 				29FF66371D363D910021B7D7 /* AGIPCAssetsController.m in Sources */,
@@ -3274,6 +3341,7 @@
 				2917E6421F00BA5C007028DD /* NSString+intJudge.m in Sources */,
 				29FF66A31D363D910021B7D7 /* MJTypeEncoding.m in Sources */,
 				29FF66BF1D363D910021B7D7 /* MJRefreshBackStateFooter.m in Sources */,
+				29AE95631F0F75B7007747D3 /* RNSelectedTextfield.m in Sources */,
 				296BDBAC1CDB2C9F005AD41A /* H5WebViewController.m in Sources */,
 				29C5EFDC1D3DFAEA00949CB4 /* CityEntity.m in Sources */,
 				29C5EFB21D3DFAAA00949CB4 /* FMDatabaseAdditions.m in Sources */,
@@ -3370,6 +3438,7 @@
 				2977D5AF1D6306640043D0E2 /* RNMapViewController.m in Sources */,
 				2974C44A1D532A0200248E81 /* BezierViewController.m in Sources */,
 				29FF664D1D363D910021B7D7 /* Foundation+Log.m in Sources */,
+				295F18F11F20595C0021AA78 /* StarLoadingView.m in Sources */,
 				29FF66971D363D910021B7D7 /* MJConst.m in Sources */,
 				8834B63F1CB752D400428D18 /* FormView.m in Sources */,
 				29FF66571D363D910021B7D7 /* IQUITextFieldView+Additions.m in Sources */,
@@ -3394,6 +3463,7 @@
 				29FF66431D363D910021B7D7 /* ALAsset+AGIPC.m in Sources */,
 				29D6708E1CF5D3A10008C196 /* LocalVideoView.m in Sources */,
 				29FF66AD1D363D910021B7D7 /* MJRefreshBackFooter.m in Sources */,
+				295F18F51F20598F0021AA78 /* QuartzCodeViewController.m in Sources */,
 				29FF661D1D363D910021B7D7 /* AFHTTPRequestOperationManager.m in Sources */,
 				29FF661F1D363D910021B7D7 /* AFHTTPSessionManager.m in Sources */,
 				29B1E5F31D59CB100033F2D3 /* MDDeviceHelper.m in Sources */,
@@ -3419,10 +3489,12 @@
 				29FF66851D363D910021B7D7 /* View+MASAdditions.m in Sources */,
 				29FF66711D363D910021B7D7 /* JSONKit.m in Sources */,
 				29FF67541D363E640021B7D7 /* UIColor+HRExtension.m in Sources */,
+				295F18F21F20595C0021AA78 /* QCMethod.m in Sources */,
 				29B1E60B1D59CB100033F2D3 /* MDSwitch.m in Sources */,
 				29FF664F1D363D910021B7D7 /* HPGrowingTextView.m in Sources */,
 				29C5EFDE1D3DFAEA00949CB4 /* ProvinceEntity.m in Sources */,
 				29FF66511D363D910021B7D7 /* HPTextViewInternal.m in Sources */,
+				29AE95591F0F330B007747D3 /* SelectTextfieldDemoViewController.m in Sources */,
 				296870F41D87F2F000506A59 /* ProgressButton.m in Sources */,
 				29FF663B1D363D910021B7D7 /* AGIPCGridItem.m in Sources */,
 				29FF66F11D363D910021B7D7 /* PSTCollectionViewLayout.m in Sources */,
@@ -3435,7 +3507,7 @@
 				29FF66551D363D910021B7D7 /* IQUIScrollView+Additions.m in Sources */,
 				29FF61CB1D2DF1C40021B7D7 /* WKWebController.m in Sources */,
 				29B1E5F11D59CB100033F2D3 /* NSDate+MDExtension.m in Sources */,
-				291044341D65ADCE002ECFFE /* AppDelegate.m in Sources */,
+				291044341D65ADCE002ECFFE /* AppDelegate.mm in Sources */,
 				2974C4461D531FF000248E81 /* BezierView.m in Sources */,
 				29C5EFE01D3DFAEA00949CB4 /* KLAddressPickerView.m in Sources */,
 				29B1E6151D59CB100033F2D3 /* MDToast.m in Sources */,
