@@ -8,7 +8,7 @@
 
 #import "QuartzCodeViewController.h"
 #import "StarLoadingView.h"
-
+#import "SearchEmptyView.h"
 @interface QuartzCodeViewController ()
 
 @end
@@ -20,7 +20,7 @@
 
     self.view.backgroundColor = [UIColor whiteColor];
     
-    StarLoadingView *loadingView = [[StarLoadingView alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
+    SearchEmptyView *loadingView = [[SearchEmptyView alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
     
     loadingView.center = self.view.center;
     

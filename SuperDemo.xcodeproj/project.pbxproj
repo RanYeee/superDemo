@@ -230,6 +230,16 @@
 		29C5EFE31D3DFAEA00949CB4 /* AddressSelectorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C5EFD01D3DFAEA00949CB4 /* AddressSelectorController.m */; };
 		29C5EFE41D3DFAEA00949CB4 /* AddressSelectorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29C5EFD11D3DFAEA00949CB4 /* AddressSelectorController.xib */; };
 		29C5EFE51D3DFAEA00949CB4 /* AddressSelectorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29C5EFD11D3DFAEA00949CB4 /* AddressSelectorController.xib */; };
+		29C8BDF01F394AAB00CEA92F /* WKWebTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C8BDEF1F394AAB00CEA92F /* WKWebTestController.m */; };
+		29C8BDF51F3AF54700CEA92F /* HoriWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C8BDF41F3AF54700CEA92F /* HoriWKWebViewController.m */; };
+		29C8BDFB1F3B109500CEA92F /* HoriWKWebViewController+provider.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C8BDFA1F3B109500CEA92F /* HoriWKWebViewController+provider.m */; };
+		29C8BDFF1F3BF07900CEA92F /* html in Resources */ = {isa = PBXBuildFile; fileRef = 29C8BDFE1F3BF07900CEA92F /* html */; };
+		29C8BE021F3C125700CEA92F /* HoriWKWebViewController+interface.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C8BE011F3C125700CEA92F /* HoriWKWebViewController+interface.m */; };
+		29C8BE311F40237300CEA92F /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C8BE301F40237300CEA92F /* SearchTableViewController.m */; };
+		29C8BE341F402A4400CEA92F /* SearchResultTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C8BE331F402A4400CEA92F /* SearchResultTableViewController.m */; };
+		29C8BE3B1F403D4000CEA92F /* HoriSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C8BE3A1F403D4000CEA92F /* HoriSearchViewController.m */; };
+		29C8BE3E1F4047B200CEA92F /* SearchLaunchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C8BE3D1F4047B200CEA92F /* SearchLaunchView.m */; };
+		29C8BE411F40507C00CEA92F /* SearchEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C8BE3F1F40507C00CEA92F /* SearchEmptyView.m */; };
 		29D6708E1CF5D3A10008C196 /* LocalVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D6708D1CF5D3A10008C196 /* LocalVideoView.m */; };
 		29D6708F1CF5D3A20008C196 /* LocalVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D6708D1CF5D3A10008C196 /* LocalVideoView.m */; };
 		29D670911CF5D3F90008C196 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D670901CF5D3F90008C196 /* AVFoundation.framework */; };
@@ -865,6 +875,29 @@
 		29C5EFCF1D3DFAEA00949CB4 /* AddressSelectorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressSelectorController.h; sourceTree = "<group>"; };
 		29C5EFD01D3DFAEA00949CB4 /* AddressSelectorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressSelectorController.m; sourceTree = "<group>"; };
 		29C5EFD11D3DFAEA00949CB4 /* AddressSelectorController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressSelectorController.xib; sourceTree = "<group>"; };
+		29C8BDEE1F394AAB00CEA92F /* WKWebTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebTestController.h; sourceTree = "<group>"; };
+		29C8BDEF1F394AAB00CEA92F /* WKWebTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebTestController.m; sourceTree = "<group>"; };
+		29C8BDF31F3AF54700CEA92F /* HoriWKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoriWKWebViewController.h; sourceTree = "<group>"; };
+		29C8BDF41F3AF54700CEA92F /* HoriWKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoriWKWebViewController.m; sourceTree = "<group>"; };
+		29C8BDF91F3B109500CEA92F /* HoriWKWebViewController+provider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HoriWKWebViewController+provider.h"; sourceTree = "<group>"; };
+		29C8BDFA1F3B109500CEA92F /* HoriWKWebViewController+provider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HoriWKWebViewController+provider.m"; sourceTree = "<group>"; };
+		29C8BDFE1F3BF07900CEA92F /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html; sourceTree = "<group>"; };
+		29C8BE001F3C125700CEA92F /* HoriWKWebViewController+interface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HoriWKWebViewController+interface.h"; sourceTree = "<group>"; };
+		29C8BE011F3C125700CEA92F /* HoriWKWebViewController+interface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HoriWKWebViewController+interface.m"; sourceTree = "<group>"; };
+		29C8BE2F1F40237300CEA92F /* SearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTableViewController.h; sourceTree = "<group>"; };
+		29C8BE301F40237300CEA92F /* SearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewController.m; sourceTree = "<group>"; };
+		29C8BE321F402A4400CEA92F /* SearchResultTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultTableViewController.h; sourceTree = "<group>"; };
+		29C8BE331F402A4400CEA92F /* SearchResultTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultTableViewController.m; sourceTree = "<group>"; };
+		29C8BE351F40354E00CEA92F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		29C8BE361F40354E00CEA92F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		29C8BE371F40354E00CEA92F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		29C8BE381F40354F00CEA92F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		29C8BE391F403D4000CEA92F /* HoriSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoriSearchViewController.h; sourceTree = "<group>"; };
+		29C8BE3A1F403D4000CEA92F /* HoriSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoriSearchViewController.m; sourceTree = "<group>"; };
+		29C8BE3C1F4047B200CEA92F /* SearchLaunchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchLaunchView.h; sourceTree = "<group>"; };
+		29C8BE3D1F4047B200CEA92F /* SearchLaunchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchLaunchView.m; sourceTree = "<group>"; };
+		29C8BE3F1F40507C00CEA92F /* SearchEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchEmptyView.m; sourceTree = "<group>"; };
+		29C8BE401F40507C00CEA92F /* SearchEmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchEmptyView.h; sourceTree = "<group>"; };
 		29D6708C1CF5D3A10008C196 /* LocalVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalVideoView.h; sourceTree = "<group>"; };
 		29D6708D1CF5D3A10008C196 /* LocalVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalVideoView.m; sourceTree = "<group>"; };
 		29D670901CF5D3F90008C196 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -1405,11 +1438,20 @@
 		2943ED741ECC208000EE9C22 /* js与oc交互 */ = {
 			isa = PBXGroup;
 			children = (
+				29C8BDFE1F3BF07900CEA92F /* html */,
 				2943ED7F1ECC2B1F00EE9C22 /* test.html */,
 				2943ED751ECC20CD00EE9C22 /* JSViewController.h */,
 				2943ED761ECC20CD00EE9C22 /* JSViewController.m */,
 				2943ED7A1ECC222400EE9C22 /* SaveImage_Util.h */,
 				2943ED7B1ECC222400EE9C22 /* SaveImage_Util.m */,
+				29C8BDEE1F394AAB00CEA92F /* WKWebTestController.h */,
+				29C8BDEF1F394AAB00CEA92F /* WKWebTestController.m */,
+				29C8BDF31F3AF54700CEA92F /* HoriWKWebViewController.h */,
+				29C8BDF41F3AF54700CEA92F /* HoriWKWebViewController.m */,
+				29C8BDF91F3B109500CEA92F /* HoriWKWebViewController+provider.h */,
+				29C8BDFA1F3B109500CEA92F /* HoriWKWebViewController+provider.m */,
+				29C8BE001F3C125700CEA92F /* HoriWKWebViewController+interface.h */,
+				29C8BE011F3C125700CEA92F /* HoriWKWebViewController+interface.m */,
 			);
 			name = "js与oc交互";
 			path = "superDemo/js与oc交互";
@@ -1875,6 +1917,24 @@
 			);
 			path = DBEntity;
 			sourceTree = "<group>";
+		};
+		29C8BE2E1F40234A00CEA92F /* SearchTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				29C8BE401F40507C00CEA92F /* SearchEmptyView.h */,
+				29C8BE3F1F40507C00CEA92F /* SearchEmptyView.m */,
+				29C8BE2F1F40237300CEA92F /* SearchTableViewController.h */,
+				29C8BE301F40237300CEA92F /* SearchTableViewController.m */,
+				29C8BE321F402A4400CEA92F /* SearchResultTableViewController.h */,
+				29C8BE331F402A4400CEA92F /* SearchResultTableViewController.m */,
+				29C8BE391F403D4000CEA92F /* HoriSearchViewController.h */,
+				29C8BE3A1F403D4000CEA92F /* HoriSearchViewController.m */,
+				29C8BE3C1F4047B200CEA92F /* SearchLaunchView.h */,
+				29C8BE3D1F4047B200CEA92F /* SearchLaunchView.m */,
+			);
+			name = SearchTableViewController;
+			path = superDemo/SearchTableViewController;
+			sourceTree = SOURCE_ROOT;
 		};
 		29D6708B1CF5D3720008C196 /* VideoView */ = {
 			isa = PBXGroup;
@@ -2589,6 +2649,7 @@
 		8834B5E61CB7512C00428D18 /* SuperDemo */ = {
 			isa = PBXGroup;
 			children = (
+				29C8BE2E1F40234A00CEA92F /* SearchTableViewController */,
 				293C87B71F32CADD007CE171 /* 二维码扫描自动放大 */,
 				29AE95561F0F32DC007747D3 /* 带选项的textfield */,
 				29979A321F06914C00D4F95C /* cell中的动态按钮布局 */,
@@ -2959,6 +3020,7 @@
 				2977D5B91D63126B0043D0E2 /* AMap.bundle in Resources */,
 				8834B6521CB755F400428D18 /* ControllerList.plist in Resources */,
 				298D6F571E139E7900640043 /* XibTestView.xib in Resources */,
+				29C8BDFF1F3BF07900CEA92F /* html in Resources */,
 				8834B5F41CB7512C00428D18 /* Assets.xcassets in Resources */,
 				29C5EFD61D3DFAEA00949CB4 /* ComPickerView.xib in Resources */,
 				29159EB11EFCAEFA0072D402 /* EDrugParameView.xib in Resources */,
@@ -3316,6 +3378,7 @@
 				29159EA91EFCADFC0072D402 /* DrugViewController.m in Sources */,
 				29FF67601D363E640021B7D7 /* UIView+SimpleAnimation.m in Sources */,
 				29FF66751D363D910021B7D7 /* MASCompositeConstraint.m in Sources */,
+				29C8BE3B1F403D4000CEA92F /* HoriSearchViewController.m in Sources */,
 				29FF667D1D363D910021B7D7 /* MASViewAttribute.m in Sources */,
 				29FF66FF1D363D910021B7D7 /* NSData+ImageContentType.m in Sources */,
 				29FF66DF1D363D910021B7D7 /* MWZoomingScrollView.m in Sources */,
@@ -3335,6 +3398,7 @@
 				2977D58A1D62B9A90043D0E2 /* SlideViewController.m in Sources */,
 				29FF66411D363D910021B7D7 /* AGPreviewScrollView.m in Sources */,
 				8834B6471CB752D400428D18 /* MyTableViewController.m in Sources */,
+				29C8BDFB1F3B109500CEA92F /* HoriWKWebViewController+provider.m in Sources */,
 				29B1E6191D59CB100033F2D3 /* MDCircularProgressLayer.m in Sources */,
 				29FF674A1D363E640021B7D7 /* NSObject+log.m in Sources */,
 				29FF675E1D363E640021B7D7 /* UIView+SHCZExt.m in Sources */,
@@ -3364,6 +3428,7 @@
 				29FF66F51D363D910021B7D7 /* PSTGridLayoutInfo.m in Sources */,
 				29C5EFB01D3DFAAA00949CB4 /* FMDatabase.m in Sources */,
 				298D6F4C1E139BBD00640043 /* XXNibBridge.m in Sources */,
+				29C8BE311F40237300CEA92F /* SearchTableViewController.m in Sources */,
 				29FF66B31D363D910021B7D7 /* MJRefreshHeader.m in Sources */,
 				29D6709A1CF5D5190008C196 /* MyVideoController.m in Sources */,
 				29B1E5DB1D59CB100033F2D3 /* AutoResizeTextView.m in Sources */,
@@ -3384,6 +3449,7 @@
 				8834B63E1CB752D400428D18 /* ExpendHeaderView.m in Sources */,
 				2943ED771ECC20CD00EE9C22 /* JSViewController.m in Sources */,
 				29FF66451D363D910021B7D7 /* UIButton+AGIPC.m in Sources */,
+				29C8BE411F40507C00CEA92F /* SearchEmptyView.m in Sources */,
 				29FF66631D363D910021B7D7 /* IQTextView.m in Sources */,
 				29FF66871D363D910021B7D7 /* ViewController+MASAdditions.m in Sources */,
 				29B1E5801D59AE9B0033F2D3 /* RNTopView.m in Sources */,
@@ -3403,6 +3469,7 @@
 				29FF66DB1D363D910021B7D7 /* MWTapDetectingImageView.m in Sources */,
 				29FF665B1D363D910021B7D7 /* IQUIViewController+Additions.m in Sources */,
 				29B1E5F91D59CB100033F2D3 /* UIColorHelper.m in Sources */,
+				29C8BE3E1F4047B200CEA92F /* SearchLaunchView.m in Sources */,
 				29119C061D46026D00468A51 /* DrawQRCodeController.m in Sources */,
 				2977D58D1D62C4CB0043D0E2 /* ChildViewController.m in Sources */,
 				291044371D65B351002ECFFE /* SearchList.m in Sources */,
@@ -3426,6 +3493,7 @@
 				29FF66C31D363D910021B7D7 /* MJRefreshNormalHeader.m in Sources */,
 				29FF66B91D363D910021B7D7 /* MJRefreshAutoStateFooter.m in Sources */,
 				29FF66BD1D363D910021B7D7 /* MJRefreshBackNormalFooter.m in Sources */,
+				29C8BDF01F394AAB00CEA92F /* WKWebTestController.m in Sources */,
 				29FF66691D363D910021B7D7 /* IQTitleBarButtonItem.m in Sources */,
 				29C5EFDA1D3DFAEA00949CB4 /* AreaEntity.m in Sources */,
 				29FF67501D363E640021B7D7 /* UIBarButtonItem+HRNagativeSpace.m in Sources */,
@@ -3437,12 +3505,14 @@
 				29FF66BB1D363D910021B7D7 /* MJRefreshBackGifFooter.m in Sources */,
 				2977D5AF1D6306640043D0E2 /* RNMapViewController.m in Sources */,
 				2974C44A1D532A0200248E81 /* BezierViewController.m in Sources */,
+				29C8BDF51F3AF54700CEA92F /* HoriWKWebViewController.m in Sources */,
 				29FF664D1D363D910021B7D7 /* Foundation+Log.m in Sources */,
 				295F18F11F20595C0021AA78 /* StarLoadingView.m in Sources */,
 				29FF66971D363D910021B7D7 /* MJConst.m in Sources */,
 				8834B63F1CB752D400428D18 /* FormView.m in Sources */,
 				29FF66571D363D910021B7D7 /* IQUITextFieldView+Additions.m in Sources */,
 				29FF671F1D363D910021B7D7 /* CAAnimation+WAnimation.m in Sources */,
+				29C8BE021F3C125700CEA92F /* HoriWKWebViewController+interface.m in Sources */,
 				29FF67461D363E640021B7D7 /* NSDate+DDAddition.m in Sources */,
 				29FF66C91D363D910021B7D7 /* MJRefreshConst.m in Sources */,
 				29B1E5EB1D59CB100033F2D3 /* MDDatePickerDialog.m in Sources */,
@@ -3456,6 +3526,7 @@
 				29FF66A91D363D910021B7D7 /* NSObject+MJMember.m in Sources */,
 				29B1E57B1D5884CD0033F2D3 /* UIScrollView+SVPullToRefresh.m in Sources */,
 				29FF66B51D363D910021B7D7 /* MJRefreshAutoGifFooter.m in Sources */,
+				29C8BE341F402A4400CEA92F /* SearchResultTableViewController.m in Sources */,
 				29FF662D1D363D910021B7D7 /* AGImagePickerController+Helper.m in Sources */,
 				29FF66771D363D910021B7D7 /* MASConstraint.m in Sources */,
 				29FF67131D363D910021B7D7 /* UIImage+MultiFormat.m in Sources */,
@@ -3608,6 +3679,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				296BDBC31CDC36F1005AD41A /* Base */,
+				29C8BE371F40354E00CEA92F /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -3616,6 +3688,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				296BDBC81CDC36F1005AD41A /* Base */,
+				29C8BE381F40354F00CEA92F /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -3624,6 +3697,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				8834B5F11CB7512C00428D18 /* Base */,
+				29C8BE351F40354E00CEA92F /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -3632,6 +3706,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				8834B5F61CB7512C00428D18 /* Base */,
+				29C8BE361F40354E00CEA92F /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -3721,6 +3796,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -3766,6 +3842,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";

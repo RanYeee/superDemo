@@ -150,12 +150,29 @@
 		<string>view窗口化</string>
 	</dict>
 	<dict>
+		<key>classArray</key>
+		<array>
+			<dict>
+				<key>createTime</key>
+				<string>2017.05.17</string>
+				<key>className</key>
+				<string>JSViewController</string>
+				<key>dec</key>
+				<string>JS调用OCMethond(相机和相册)</string>
+			</dict>
+			<dict>
+				<key>createTime</key>
+				<string>2017.08.08</string>
+				<key>className</key>
+				<string>HoriWKWebViewController</string>
+				<key>dec</key>
+				<string>WKWebview 与 js交互</string>
+			</dict>
+		</array>
 		<key>createTime</key>
 		<string>2017.05.17</string>
-		<key>className</key>
-		<string>JSViewController</string>
 		<key>dec</key>
-		<string>JS调用OCMethond(相机和相册)</string>
+		<string>JS与OC交互</string>
 	</dict>
 	<dict>
 		<key>createTime</key>
@@ -188,6 +205,14 @@
 		<string>ScanViewController</string>
 		<key>dec</key>
 		<string>二维码扫描自动放大</string>
+	</dict>
+	<dict>
+		<key>createTime</key>
+		<string>2017.08.13</string>
+		<key>className</key>
+		<string>SearchTableViewController</string>
+		<key>dec</key>
+		<string>搜索控制器</string>
 	</dict>
 </array>
 </plist>
